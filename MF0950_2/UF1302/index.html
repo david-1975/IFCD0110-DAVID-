@@ -13,9 +13,40 @@
         <link rel="icon" type="image/vnd.microsoft.icon" href="imagen.ico">
         
         <style> 
+        body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;
+        }
         table, th, td {
             border: 1px solid black;
         }   
+        div{
+            /*background-color:#f1f1f1;*/
+            /*border: 1px solid #cccccc;*/
+            margin: 20px;
+            padding: 20px;
+                    } 
+        .nota{
+            background-color:#ffffcc;
+            border-left: 6px solid #ffeb3b;
+                    }     
+        hr {
+            border: 1px solid #eee;
+            
+        }         
+        code {
+            color: crimson;
+            background-color: #bebbbb;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 110%;
+        }        
+        .etiquetasHTML{
+            background-color: #f1f1f1;
+            border: 1px solid #cccccc;
+            font-size: 24px;
+            padding: 16px;
+        }                               
         </style>
         <script>    </script>
         <link href="css/estilos.css" rel="stylesheet">
@@ -28,7 +59,7 @@
     </head>
     <body>
         <h1>HTML Introducción</h1>
-
+        <hr>
         <h2>¿Qué es HTML?</h2>
         <p>HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
         
@@ -40,7 +71,7 @@
         <li>HTML etiquetas de la etiqueta de piezas de contenido como "mesa" "la partida", "párrafo", y así sucesivamente </li> 
         <li>Los navegadores no muestran las etiquetas HTML, pero las usan para representar el contenido de la página</li> 
     </ul>
-
+    <hr>
     <h2>Estructura básica de un documento HTML</h2>
     <div>
         <code>
@@ -60,8 +91,7 @@
         </code>
     </div>
 
-    <div>
-    <h3>Explicación de las etiquetas básicas</h3>  
+        <h3>Explicación de las etiquetas básicas</h3>  
 
     <ol>
         <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define el tipo de documento.</li>
@@ -76,14 +106,14 @@
         <li>El <code>&lt;h1&gt;</code> define un encabezado de texto.</li>
         <li>El <code>&lt;p&gt;</code> define un párrafo.</li>
     </ol>
-
-    </div>
-<div>
+    <hr>
+    
         <h4>Etiquetas HTML</h4>
-        <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
-        <div>
-            <p>&lt;Nombre de etiqueta&gt; contenido va aquí ... &lt;/ Nombre de etiqueta&gt;</p>
+        <p><b>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
+        <div class="etiquetasHTML">
+            <p><b>&lt;Nombre de etiqueta&gt;</b> contenido va aquí ... <b>&lt;/ Nombre de etiqueta&gt</b></p>
         </div>
+        
         <dl>
             <dt><b>Etiquetas HTML</b></dt>
             <dd>normalmente vienen en pares como <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code></dd>
@@ -93,8 +123,8 @@
             <dd>posee una barra inclinada que se insertada antes de que el nombre de la etiqueta</dd>
         </dl>
 
-        <div>
-            <p>Consejo: La etiqueta de inicio también se llama la etiqueta de apertura y la etiqueta final de la etiqueta de cierre .</p>
+        <div class="nota">
+            <p><b>Consejo:</p> La etiqueta de inicio también se llama la <strong> etiqueta de apertura </strong> y la etiqueta final de la <strong> etiqueta de cierre </strong> .</p>
         </div>
 </div>
 <div>
@@ -102,6 +132,7 @@
     <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br><br>
     El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
     <img src="img/img_chrome.png"alt="imagen navegador chrome" width="635" height="361">
+    <hr>
 </div>
 <div>
     <h6>Versiones de HTML</h6>
@@ -136,6 +167,24 @@
             <td>2014</td>
         </tr>
     </table>
+    </div>
+    <br>
+<div>html
+    <div>head
+    </div>
+    <div>title</div>
 </div>
+<div>body
+    <div>blanco
+        <div>h1</div>
+        <div>p</div>
+        <div>p</div>
+    </div>
+    
+</div>
+
+<hr>
+<div class="nota">
+    <p>Nota: sólo el contenido dentro de la sección<code> &lt;body&gt; </code>(el área blanca arriba) se muestra en un navegador.</p></div>
   
 </html>
