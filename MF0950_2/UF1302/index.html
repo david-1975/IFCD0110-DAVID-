@@ -14,7 +14,10 @@
         
         <style> 
         body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 80%;
+        margin: 0 auto;
         }
+        
         h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;
         }
         table, th, td {
@@ -23,13 +26,17 @@
         div{
             /*background-color:#f1f1f1;*/
             /*border: 1px solid #cccccc;*/
-            margin: 20px;
-            padding: 20px;
+            /*margin: 20px;*/
+            /*padding: 20px;*/
                     } 
         .nota{
             background-color:#ffffcc;
             border-left: 6px solid #ffeb3b;
-                    }     
+            margin-top: 10px;
+            padding-bottom: 10%
+            margin-left: 5px;
+            margin-right: 5px;
+                            }     
         hr {
             border: 1px solid #eee;
             
@@ -46,7 +53,29 @@
             border: 1px solid #cccccc;
             font-size: 24px;
             padding: 16px;
-        }                               
+        }            
+        code span {
+            color: mediumblue;
+        }                 
+        code span span {
+            color:brown;
+        }  
+        code span span span {
+            color: crimson;
+        }
+        .code {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            background-color: #ffffff;
+            padding: 8px 12px;
+            border-left: 4px solid #4caf50;
+        }
+        .ejemplo {
+            background-color: #f1f1f1;
+            padding: 8px 16px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        }
         </style>
         <script>    </script>
         <link href="css/estilos.css" rel="stylesheet">
@@ -73,22 +102,29 @@
     </ul>
     <hr>
     <h2>Estructura básica de un documento HTML</h2>
-    <div>
+    <div class="ejemplo">
+        <h3>Ejemplo</h3>
+        <div class="code">
+
         <code>
-            &lt;!DOCTYPE html&gt;<br>
-            &lt;html lang="es-ES"&gt;<br>
-            &lt;head&gt;<br>
-            &lt;title&gt;Page Title&lt; /title &gt;<br>
-            &lt;meta charset="uft-8"&gt;<br>
-            &lt;/head &gt;<br>
-            &lt;body &gt;<br>
+            <span>&lt<span>!DOCTYPE <span>html</span></span>&gt;</span><br>
+            <span>&lt;<span>html <span>lang="es-ES"</span></span>&gt;</span><br>
+            <span>&lt;<span>head</span>&gt;</span><br>
+
+            <span>&lt;<span>title</span>&gt;<span style="color:black">Page Title</span>&lt;<span>/title</span>&gt;</span><br>
+
+            <span>&lt;<span>meta <span>charset="uft-8"</span></span>&gt;</span><br>
+            <span>&lt;<span>/head</span>&gt;</span><br>
+            <span>&lt;<span>body</span>&gt;</span><br><br>
             
-            &lt;h1&gt;Encabezado de la página&lt; /h1 &gt;<br>
-            &lt;p&gt;Primer párrafo de texto.&lt; /p &gt;<br>
+            <span>&lt;<span>h1</span>&gt;<span style="color:black">Encabezado de la página</span>&lt;<span>/h1</span>&gt;</span><br>
+            <span>&lt;<span>p</span>&gt;<span style="color:black">Primer párrafo de texto.</span>&lt;<span>/p</span>&gt;</span><br><br>
             
-            &lt;/body &gt;<br>
-            &lt;/html &gt;<br>
+            <span>&lt;<span>/body</span>&gt;</span><br>
+            <span>&lt;<span>/html</span>&gt;</span><br>
         </code>
+        </div>
+
     </div>
 
         <h3>Explicación de las etiquetas básicas</h3>  
@@ -124,7 +160,7 @@
         </dl>
 
         <div class="nota">
-            <p><b>Consejo:</p> La etiqueta de inicio también se llama la <strong> etiqueta de apertura </strong> y la etiqueta final de la <strong> etiqueta de cierre </strong> .</p>
+            <p>Consejo:La etiqueta de inicio también se llama la <strong> etiqueta de apertura </strong> y la etiqueta final de la <strong> etiqueta de cierre.</strong></p>
         </div>
 </div>
 <div>
