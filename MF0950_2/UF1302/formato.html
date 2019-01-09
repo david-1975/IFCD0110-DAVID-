@@ -8,9 +8,12 @@
         <meta name="title" content="Confección y publicación de páginas web">
         <meta name="author" content="David Valentín">
 
-        <link rel="icon" type="image/png" href="imagen.png">
-        <link rel="icon" type="image/gif" href="imagen.gif">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="imagen.ico">
+        <link rel="icon" type="image/png" href="img/html5.png">
+        <link rel="icon" type="image/gif" href="img/html5.gif">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/html5.ico">
+        
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link ref="icon" href="img/favicon.ico" type="">
         
         <style> 
         body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -100,9 +103,15 @@
     </head>
 
     <body>
-<h1>Formato HTML</h1>
-<p>El formato de texto, es el marcado que se aplica a un texto para añadirle datos de forma.</p>
-<p>Al texto resultante se le conoce como texto formateado, texto con estilos o texto enriquecido.</p>
+<h1>HTML Formato</h1>
+<hr>
+<h2>El formato de texto</h2>
+<p>&nbsp;</p>
+
+<img src="img/html-formatos-de-texto.png" alt="html formatos de texto" width="500" style="float: right" >
+
+<p>El formato de texto, es el marcado que se aplica a un texto para añadirle datos de forma.
+Al texto resultante se le conoce como texto formateado, texto con estilos o texto enriquecido.</p>
 <hr>
 <h2>Encabezados de texto</h2>
 <p>Los motores de búsqueda utilizan los encabezados para indexar la estructura y el contenido de sus páginas web.</p>
@@ -111,8 +120,10 @@
 
 <p>Los encabezamientos <code>&lt;h1&gt;</code>deben ser utilizados para los encabezados principales, seguido por encabezados <code>&lt;h2&gt;</code><code>&lt;h3&gt;</code>,que son menos importante</code></p>
 
-<p class="nota"><b>Nota</b>: Usar encabezados HTML para sólo encabezados. No utilice encabezados para que el texto GRANDE o negrita.</p>
-
+<div class="nota">
+<p><b>Nota</b>: Usar encabezados HTML para sólo encabezados. No utilice encabezados para que el texto GRANDE o negrita.</p>
+</div>
+<br>
 <table>
     <tr>
     <th>Etiqueta</th>
@@ -245,9 +256,12 @@
             </tr>
         </table>
         <br>
-        <p class="nota"><b>Nota</b>: Los navegadores muestran <code>&lt;strong&gt;</code>como <code>&lt;b&gt;</code>, y <code>&lt;em&gt;</code>como <code>&lt;i&gt;</code>. Sin embargo, hay una diferencia en el significado de las siguientes etiquetas: <code>&lt;b&gt;</code>y <code>&lt;i&gt;</code>define el texto en negrita y cursiva, pero <code>&lt;strong&gt;</code>y <code>&lt;em&gt;</code>significa que el texto es "importante".
-
-            <h2><small>Ejemplo de uso</small></h2>
+        <div class="nota">
+        <p><b>Nota</b>: Los navegadores muestran <code>&lt;strong&gt;</code>como <code>&lt;b&gt;</code>, y <code>&lt;em&gt;</code>como <code>&lt;i&gt;</code>. Sin embargo, hay una diferencia en el significado de las siguientes etiquetas: <code>&lt;b&gt;</code>y <code>&lt;i&gt;</code>define el texto en negrita y cursiva, pero <code>&lt;strong&gt;</code>y <code>&lt;em&gt;</code>significa que el texto es <strong>"importante".</strong></p>
+</div>
+<hr>
+<h2>       
+    <h2><small>Ejemplo de uso</small></h2>
             <p><strong><mark>Texto en negrita y resaltado</strong></mark></p>
 <hr>
 <p><strong>Teoría</strong> de la relatividad:<em> E=MC<sup>2</sup></em>
@@ -258,7 +272,46 @@
     <br>
     <strong>W3C</strong> (<i><b>W</b></i>)orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium</i>)</p>
     
-    </body>
+    <h3>Etiquetas que separan el texto</h3>
+    <p>La etiqueta <code>&lt;p&gt;</code>separa el texto, añadiendo automáticamente un espacio (margen) antes y después de cada elemento <code>&lt;p&gt;</code>. El navegador eliminará todos los espacios en blanco y las líneas adicionales cuando se visualiza la etiqueta <code>&lt;p&gt;</code>.</p>
+    <p>La etiqueta <code>&lt;br&gt;</code> es una etiqueta vacía, lo que significa que no tiene niguna etiqueta final. Inserta un salto de línea (una nueva línea) sin comenzar un nuevo párrafo.</p>
+    <p>Un texto dentro de una etiqueta <code>&lt;pre&gt;</code> se muestra en una fuente de ancho fijo (generalmente Courier), y conserva ambos espacios y saltos de línea.</p>
+    <br>
+    <table>
+    	<tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Visualización</th>
+            <th>Utilización</th>
+            </tr>
+            <tr>
+            <td>&lt;p&gt;</td>
+            <td>Define un párrafo de texto</td>
+            <td><p>Esto es un párrafo de texto.</p><p>Esto es un párrafo de texto.</p></td>
+            <td><p>&lt;p&gt;Esto es un párrafo de texto.&lt;/p&gt;</p>&lt;p&gt;Esto es un párrafo de texto.&lt;/p&gt;</p></td>
+            </tr>
+            <tr>
+            <td>&lt;br&gt;</td>
+            <td>Define un salto de línea</td>
+            <td><p>Esto es un salto de línea.</p><p>Esto es un salto de línea.</p></td>
+            <td><p>&lt;br&gt;Esto es un salto de linea.&lt;/br&gt;</p>&lt;br&gt;Esto es un salto de línea.&lt;/br&gt;</p></td>
+            </tr>        
+            <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Define un texto preformateado</td>
+            <td><p><pre>Esto es un texto preformateado.</pre></p><p><pre>Esto es un texto preformateado.</pre></p></td>
+            <td><p>&lt;pre&gt;Esto es un texto preformateado.</p>Esto es un texto preformateado.&lt;/pre&gt;</p></td>
+                    </tr>
+                    
+    </table>
+<div class="nota"><p><strong>Nota</strong>: Utilice el elemento<code>&lt;pre&gt;</code>cuando quiera mostrar el texto inusual, o algún tipo de código informático.</p>
+</div>
+            	
+            </nota>
+    
+    
+    
+</body>
 
 
 </html>
