@@ -178,188 +178,45 @@
 &lt;p&gt;Como &lt;strong&gt;Tim Berners-lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la Web&lt;/cite&gt;: &lt;q&gt;Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habían visto ya la luz. La tarea que me correspondía era hacer que casaran&lt;/q&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;</p></SMALL></blockquote></div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="nota">
-<p><b>Nota</b>: Usar encabezados HTML para sólo encabezados. No utilice encabezados para que el texto GRANDE o negrita.</p>
+	<p><b>Nota: </b>Por defecto, <code>&lt;blockquote&gt;</code> incluye un margen izquierdo cuando se visualiza. Esta característica se úso de forma incorrecta en el pasado para lograr una sangría en el texto. Sin embargo, para ello se debe emplear la propiedad margin-left de CSS.</p>
 </div>
-<br>
+<hr>
+<h2>Elementos que agrupan el texto</h2>
+<p>El elemento <code>&lt;div&gt;</code> se utiliza a menudo como un contenedor para otros elementos HTML. El elemneto <code>&lt;div&gt;</code> tiene atributos, pero no son necesarios, los más comunes son style, classy id, para dar estilos CSS al bloque de contenido.</p>
 
-<br>
-<hr>
-<h2>Etiquetas que dan Formateo de elementos HTML</h2>
-    <p>HTML también define especiales elementos para la definición de texto con un especial significado.</p>
-    <p>HTML utiliza etiquetas como &lt;b&gt;y &lt;i&gt;para el formato de salida, como negrita o cursiva texto.</p>
+<p>El elemento <code>&lt;span&gt;</code> se utiliza como un contenedor para algún texto en línea. Tambien tiene atributos pero tampoco son necesarios, Los más comunes son style, classy id, para dar estilos CSS al bloque de contenido.</p>
 
-    <table>
-            <tr>
-            <th>Etiqueta</th>
-            <th>Descripción</th>
-            <th>Ejemplo</th>
-            <th>Utilización</th>
-            </tr>
-        
-            <tr>
-            <td>&lt;b&gt;</td>
-            <td>Define un texto en negrita</td>
-            <td><b>Este texto está en negrita</b></td>
-            <td>&lt;b&gt;Este texto está en negrita&lt;/b&gt;</td>
-        
-            </tr>
-            <tr>
-                    <td>&lt;i&gt;</td>
-                    <td>Define un texto en cursiva</td>
-                    <td><i>Este texto está en cursiva</i></td>
-                    <td>&lt;i&gt;Este texto está en cursiva&lt;/i&gt;</td></tr>
-        
-            <tr><td>&lt;strong&gt;</td>
-                    <td>Define un texto resaltado</td>
-                    <td><strong>Este texto está resaltado</strong></td>
-                    <td>&lt;strong&gt;Este texto está resaltado&lt;/strong&gt;</td></tr>
-            <tr>
-                    <td>&lt;em&gt;</td>
-                    <td>Define un texto enfatizado</td>
-                    <td><em>Este texto está enfatizado</em></td>
-                    <td>&lt;em&gt;Este texto está enfatizado&lt;/em&gt;</td>
-            </tr>
-            <tr>
-                    <td>&lt;small&gt;</td>
-                    <td>Define un texto más pequeño</td>
-                    <td>Este texto  se muestra<small> más pequeño</small></td>
-                    <td>&lt;small&gt;Esto texto es pequeño&lt;small&gt;</td>
-            </tr>
-            <tr>
-                    <td>&lt;sup&gt;</td>
-                    <td>Define un texto en superíndice</td>
-                    <td>Este texto es <sup> superíndice</sup></td>
-                    <td>&lt;sup&gt;Este texto es superíndice&lt;/sup&gt;</td>
-            </tr>
-            <tr>
-                    <td>&lt;sub&gt;</td>
-                    <td>Define un texto en subíndice</td>
-                    <td>Este texto es <sub> subíndice</sub></td>
-                    <td>&lt;sub&gt;Este texto es subíndice&lt;/sub&gt;</td>
-            </tr>
-            <tr>
-                    <td>&lt;ins&gt;</td>
-                    <td>Define un texto insertado (agregado)</td>
-                    <td>Este texto es un texto<ins> insertado</ins></td>
-                    <td>&lt;ins&gt;Este texto está insertado&lt;/ins&gt;</td>
-            </tr>
-            <tr>
-                    <td>&lt;s&gt;</td>
-                    <td>Define un texto tachado</td>
-                    <td><s> Este texto es un texto tachado</s></td>
-                    <td>&lt;s&gt;Este texto está tachado&lt;/s&gt;</td>
-            </tr>
-            <tr>
-                    <td>&lt;u&gt;</td>
-                    <td>Define un texto subrayado</td>
-                    <td><u> Este texto está subrayado</u></td>
-                    <td>&lt;u&gt;Este texto es un texto subrayado&lt;/u&gt;</td>
-            </tr>
-            <tr>
-                    <td>&lt;del&gt;</td>
-                    <td>Define un texto eliminado o borrado</td>
-                    <td> Este texto está <del>tachado</del> eliminado</td>
-                    <td>&lt;del&gt;Este texto está eliminado&lt;/del&gt;</td>
-            </tr>
-            <tr>
-                    <td>&lt;mark&gt;</td>
-                    <td>Define un texto marcado</td>
-                    <td><mark>Este texto a sido marcado marcado</mark></td>
-                    <td>&lt;mark&gt;Este texto está marcado&lt;/mark&gt;</td>
-            </tr>
-        </table>
-        <br>
-        <div class="nota">
-        <p><b>Nota</b>: Los navegadores muestran <code>&lt;strong&gt;</code>como <code>&lt;b&gt;</code>, y <code>&lt;em&gt;</code>como <code>&lt;i&gt;</code>. Sin embargo, hay una diferencia en el significado de las siguientes etiquetas: <code>&lt;b&gt;</code>y <code>&lt;i&gt;</code>define el texto en negrita y cursiva, pero <code>&lt;strong&gt;</code>y <code>&lt;em&gt;</code>significa que el texto es <strong>"importante".</strong></p>
+<table>
+    <tr>
+    <th>Etiqueta</th>
+    <th>Descripción</th>
+    <th>Ejemplo</th>
+    <th>Utilización</th>
+    </tr>
+
+    <tr><td>&lt;div&gt;</td>
+        <td>Define una división del contenido</td>
+        <td><div style="border: 1px solid blue">Esto es un elemento de bloque.</div></td>
+		<td><div>Esto es un elemento de bloque.</div></td></tr>
+    
+    <tr><td>&lt;span&gt;</td>
+        <td>Define una sección en un documento (en linea)</td>
+        <td>Esto es  un <span style="border:1px solid blue">elemento de bloque</span></td>
+        <td>Esto es un  &lt;span&gt; elemento expandido &lt;/span&gt;</td></tr>
+  </table>
+  <br>
+  <div class="nota">
+	<p><b>Nota: </b>Un elemento de bloque siempre empieza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha tanto como sea posible).</p>
 </div>
-<hr>
-<h2>       
-    <h2><small>Ejemplo de uso</small></h2>
-            <p><strong><mark>Texto en negrita y resaltado</strong></mark></p>
-<hr>
-<p><strong>Teoría</strong> de la relatividad:<em> E=MC<sup>2</sup></em>
 <br>
-<em>Molécula</em>del <strong>agua:</strong> H<sub>2</sub>O</p>
-<hr>
-<p><strong>HTML</strong> (<i><b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguaje</i>
-    <br>
-    <strong>W3C</strong> (<i><b>W</b></i>)orld <b>W</b>ide <b>W</b>eb <b>C</b>onsortium</i>)</p>
-    
-    <h3>Etiquetas que separan el texto</h3>
-    <p>La etiqueta <code>&lt;p&gt;</code>separa el texto, añadiendo automáticamente un espacio (margen) antes y después de cada elemento <code>&lt;p&gt;</code>. El navegador eliminará todos los espacios en blanco y las líneas adicionales cuando se visualiza la etiqueta <code>&lt;p&gt;</code>.</p>
-    <p>La etiqueta <code>&lt;br&gt;</code> es una etiqueta vacía, lo que significa que no tiene niguna etiqueta final. Inserta un salto de línea (una nueva línea) sin comenzar un nuevo párrafo.</p>
-    <p>Un texto dentro de una etiqueta <code>&lt;pre&gt;</code> se muestra en una fuente de ancho fijo (generalmente Courier), y conserva ambos espacios y saltos de línea.</p>
-    <br>
-    <table>
-    	<tr>
-            <th>Etiqueta</th>
-            <th>Descripción</th>
-            <th>Visualización</th>
-            <th>Utilización</th>
-            </tr>
-            <tr>
-            <td>&lt;p&gt;</td>
-            <td>Define un párrafo de texto</td>
-            <td><p>Esto es un párrafo de texto.</p><p>Esto es un párrafo de texto.</p></td>
-            <td><p>&lt;p&gt;Esto es un párrafo de texto.&lt;/p&gt;</p>&lt;p&gt;Esto es un párrafo de texto.&lt;/p&gt;</p></td>
-            </tr>
-            <tr>
-            <td>&lt;br&gt;</td>
-            <td>Define un salto de línea</td>
-            <td><p>Esto es un salto de línea.</p><p>Esto es un salto de línea.</p></td>
-            <td><p>&lt;br&gt;Esto es un salto de linea.&lt;/br&gt;</p>&lt;br&gt;Esto es un salto de línea.&lt;/br&gt;</p></td>
-            </tr>        
-            <tr>
-            <td>&lt;pre&gt;</td>
-            <td>Define un texto preformateado</td>
-            <td><p><pre>Esto es un texto preformateado.</pre></p><p><pre>Esto es un texto preformateado.</pre></p></td>
-            <td><p>&lt;pre&gt;Esto es un texto preformateado.</p>Esto es un texto preformateado.&lt;/pre&gt;</p></td>
-                    </tr>
-                    
-    </table>
-<div class="nota"><p><strong>Nota</strong>: Utilice el elemento<code>&lt;pre&gt;</code>cuando quiera mostrar el texto inusual, o algún tipo de código informático.</p>
-</div>
-            	
-            </nota>
-    
-    
-    
+<div style="overflow: hidden;border:1px solid red; margin:auto; width: 80% ">
+<div style="float: left;width: 28%; border: 1px solid blue; margin:10px;padding:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique convallis velit et cursus. Donec quis mattis lectus. Nam vehicula porttitor odio volutpat accumsan. Proin tellus sapien</div>
+
+<div style="float: left;width: 28%; border: 1px solid blue; margin:10px;padding:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique convallis velit et cursus. Donec quis mattis lectus. Nam vehicula porttitor odio volutpat accumsan. Proin tellus sapien</div>
+
+<div style="float: left;width: 28%; border: 1px solid blue; margin:10px;padding:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique convallis velit et cursus. Donec quis mattis lectus. Nam vehicula porttitor odio volutpat accumsan. Proin tellus sapien</div>
+	</div>
+
 </body>
-
-
 </html>
