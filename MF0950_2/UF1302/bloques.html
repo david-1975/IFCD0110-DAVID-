@@ -8,12 +8,13 @@
         <meta name="title" content="Confección y publicación de páginas web">
         <meta name="author" content="David Valentín">
 
-        <link rel="icon" type="image/png" href="img/html5.png">
-        <link rel="icon" type="image/gif" href="img/html5.gif">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="img/html5.ico">
+       <link rel="icon" type="img/png" href="img/html5.png">
+       <link rel="icon" type="img/gif" href="img/html5.gif">
+       <link rel="icon" type="img/vnd.microsoft.icon" href="img/html5.ico">
+       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+       <link ref="icon" href="favicon.ico" type="image/x-icon">
         
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link ref="icon" href="img/favicon.ico" type="">
+       
         
         <style> 
         body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,22 +89,59 @@
             padding: 8px 12px;
             border-left: 4px solid #4caf50;
 			color: black;
-        }
-			.cite {
+       	 }
+		.cite {
             margin-top: 16px;
             margin-bottom: 16px;
             background-color: #ffffff;
             padding: 8px 12px;
             border-left: 4px solid #2196F3;
 			color:black;
-        }
+       		 }
         .ejemplo {
             background-color: #f1f1f1;
             padding: 8px 16px;
             margin: 20px 0;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-        }
-        </style>
+			}
+			span{
+			padding: 2px 5px;
+			margin: 2px;
+			font-size: 87.5%;
+			color: #212529;
+			background-color: #fff;
+			border-radius: 3px;
+			}
+			kbd{
+			padding: 2px 5px;
+			margin: 2px;
+			font-size: 87.5%;
+			color: #D5D7E7;
+			background-color: #161612;
+			border-radius: 3px;
+			}
+			#divPAdre{
+				overflow:hidden;
+				border:1px solid red;
+				margin: 0 auto; 
+				width:80%;
+			}
+			#divHijo1{
+				float: left;
+				width: 33.33%; 
+				background-color: white;
+			}
+			#divHijo2{
+				float: left;
+				width: 33.33%; 
+				background-color: white;
+			}
+			#divHijo3{
+				float: left;
+				width: 33.33%; 
+				background-color: white;
+			}
+		  </style>
         <script>    </script>
         <link href="css/estilos.css" rel="stylesheet">
         <script src="js/funciones.js" type="text/javascript"></script>
@@ -202,21 +240,118 @@
     
     <tr><td>&lt;span&gt;</td>
         <td>Define una sección en un documento (en linea)</td>
-        <td>Esto es  un <span style="border:1px solid blue">elemento de bloque</span></td>
+        <td>Esto es  un <span style="border:1px solid blue; border-radius: 0;">elemento de bloque</span></td>
         <td>Esto es un  &lt;span&gt; elemento expandido &lt;/span&gt;</td></tr>
   </table>
   <br>
+  
+<div style="background-color: #EDEDED;padding:25px;">
+  <h3>Ejemplo de uso</h3>
+  	<div class="cite">
+  		<p><strong>Elementos DIV - SPAN</strong></p>
+  		<div style="border:1px solid black; margin:10px 15px 10px 15px;">
+  			<div style="background-color:orange; padding:5px;">
+  			<span>HTML</span> <span>lenguaje de marcas de hipertexto</span> <span>se utiliza para el desarrollo de páginas web.</span>
+  			</div>
+  			<div style="background-color:mediumseagreen; padding: 5px;">
+  			<span>CSS</span> <span>hojas de estilo en cascada</span> <span>se utiliza para definir y crear la presentación HTML.</span>
+  			</div>
+  			<div style="background-color:yellow; padding:5px;">
+  			<span>Java Script</span> <span>lenguaje de programación</span> <span>se utiliza para dar dinamismo a las páginas web.</span>
+  			</div>
+  		</div>
+  	</div>	
+  	<div class="code">
+  	  <p><strong>CÃ³digo <abbr title="HyperText Markup Language"></abbr> </strong></p>
+  	  <p>&nbsp;</p>
+  	  <p>&nbsp;</p>
+  	  <p>&nbsp;</p>
+  	  <blockquote>
+			<p style="line-height: 20px;">
+	<p >
+  	&lt;div&gt;&lt;div&gt;&lt;span&gt;HTML&lt;/span&gt; &lt;span&gt;lenguaje de marcas de hipertexto&lt;/span&gt; &lt;span&gt;se utiliza para el desarrollo de páginas web.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;CSS&lt;/span&gt; &lt;span&gt;hojas de estilo en cascada&lt;/span&gt; &lt;span&gt;se utiliza para definir y crear la presentación HTML.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Java Script&lt;/span&gt; &lt;span&gt;lenguaje de programación&lt;/span&gt; &lt;span&gt;se utiliza para dar dinamismo a las páginas web.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+  	</p>
+  	</blockquote>
+  	</p>
+  </div>
+  </div>
+    
   <div class="nota">
-	<p><b>Nota: </b>Un elemento de bloque siempre empieza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha tanto como sea posible).</p>
+	<p><b>Nota: </b>Un elemento de bloque siempre empieza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha tanto como sea posible). Un elemento en línea no se inicia en una nueva línea, sólo ocupa el mismo ancho que sea necesario.</p>
+</div>
+<hr>
+<h2>Etiquetas de código de computadora</h2>
+<ul>
+	<li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador.</li>
+	<li>La etiqueta <code>&lt;kbd&gt;</code> representa comandos de entrada del usuario.</li>
+	<li>la etiqueta <code>&lt;samp&gt;</code>representa la salida de un programa o sistema informático.</li>
+	<li>la etiqueta <code>&lt;var&gt;</code>se utiliza como expresión matemática o variable de la programación.</li>
+</ul>
+<br>
+<table>
+<tr>
+	<th><strong>Etiqueta</strong></th>
+	<th><strong>Descrición</strong></th>
+	<th><strong>Visualización</strong></th>
+	<th><strong>Utilización</strong></th>
+</tr>
+<tr>
+	<tr><td><code>&lt;code&gt;</code></td>
+        <td>Define un código de programación.</td>
+        <td>Usar este código <code>&lt;función (main)&gt;</code></td>
+		<td>Usar este código <code>&lt;code&gt;</code> función (main) &lt;/code&gt;</td>
+		</tr>
+		<tr><td><code>&lt;kbd&gt;</code></td>
+        <td>Define una entrada de teclado.</td>
+        <td>Para guardar <kbd>ctrl</kbd>+<kbd>s</kbd></td>
+		<td>Para guardar &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt;</td>
+		</tr>
+		<tr><td><code>&lt;samp&gt;</code></td>
+        <td>Define la salida de la computadora.</td>
+        <td><samp>Error: página no encontrada</samp></td>
+		<td>Para guardar &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt;</td>
+		</tr>
+		<tr><td><code>&lt;var&gt;</code></td>
+        <td>Define una variable aritmética.</td>
+        <td>Einstein escribió:<var>E=mc2</samp></td>
+		<td>Einstein escribió:&lt;var&gt;E= mc2&lt;/var&gt;</td>
+		</tr>
+</tr>
+</table>
+<div class="nota">
+	<p><b>Nota: </b>Las etiquetas de código de computadora cambian el tipo de letra simunlado código informático.</p>
 </div>
 <br>
-<div style="overflow: hidden;border:1px solid red; margin:auto; width: 80% ">
-<div style="float: left;width: 28%; border: 1px solid blue; margin:10px;padding:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique convallis velit et cursus. Donec quis mattis lectus. Nam vehicula porttitor odio volutpat accumsan. Proin tellus sapien</div>
+<div id="divPadre">
+<div id="divHijo1">
+<p><strong>Errores HTML</strong></p>
+<samp>'Error 404 not found'</samp><br>
+<samp>'Error 400 bat request'</samp><br>
+<samp>'Error 401 Unauthorized'</samp><br>
+<samp>'Error 403 Forbidden'</samp>
+</div>
 
-<div style="float: left;width: 28%; border: 1px solid blue; margin:10px;padding:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique convallis velit et cursus. Donec quis mattis lectus. Nam vehicula porttitor odio volutpat accumsan. Proin tellus sapien</div>
+<div id="divHijo2">
+	<p><strong>Comandos Básicos</strong></p>
+	<kbd>ctrol</kbd>+<kbd>s</kbd> para guardar<br> 
+	<kbd>ctrol</kbd>+<kbd>s</kbd> para copiar<br>
+	<kbd>ctrol</kbd>+<kbd>s</kbd> para pegar<br>
+	<kbd>ctrol</kbd>+<kbd>s</kbd> para cortar
+</div>
 
-<div style="float: left;width: 28%; border: 1px solid blue; margin:10px;padding:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique convallis velit et cursus. Donec quis mattis lectus. Nam vehicula porttitor odio volutpat accumsan. Proin tellus sapien</div>
+<div id="divHijo3">
+	<p><strong>Formulas Históricas</strong></p>
+	<var>a²+b²=c²</var> Pitágoras <br>
+	<var>E= mc²</var> Einstein <br>
+	<var>F= G [(m1 x m2)/r²]</var> Newton <br>
+	<var>iħ (∂/∂t).ψ=Hψ</var>Schrodinger<br>
+</div>
 	</div>
-
+	<hr>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 </body>
 </html>
