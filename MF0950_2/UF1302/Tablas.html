@@ -216,14 +216,14 @@
 <br>
 <hr>
 <h2>El atributo Scope</h2>
-<p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado. El atributo scope especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de columnas o filas. El atributo scope no tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
+<p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado.  El atributo scope no tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
 <br>
 
 <table style="width:95%;border:0;text-align: center">
 	<tr>
 		<td style="width:25%">
 <table>
-			<caption>Encabezado Superior</caption>
+<caption>Encabezado Superior</caption>
 <tr>
 	<th scope="col" style="width:33%">Título</th>
 	<th style="width:33%">Título</th>
@@ -239,8 +239,10 @@
 	<td>&nbsp;</td>
 	<td>&nbsp;</td>
 	</tr> 	
-		</td>
+
   </table>
+		</td>
+		  
 		<td style="width:25%">
 <table>		
 			<caption>Encabezado Izquierdo</caption>
@@ -261,7 +263,7 @@
 	</tr> 	
 		</td>
   </table>
-		<td style="width:25%">
+ 		<td style="width:25%">
 <table>		
 	<caption>Encabezado Izq - Superior</caption>
 <tr>
@@ -279,8 +281,8 @@
 	<td>&nbsp;</td>
 	<td>&nbsp;</td>
 	</tr> 	
-		</td>
 		</table>
+		</td>
 		<td style="width:25%">
 <table>
 	<caption>Sin encabezado</caption>
@@ -302,15 +304,200 @@
 		</td>
 	</tr>
   </table>
-</table>		
-
-
-
-
-
-
-
-
+  </td>
+</table>	
+<hr>
+<h2>El atributo colsan y rowspan</h2>
+<p>El atributo colspan define el número de columnas de una célula debe ocupar. El atributo rowspan especifica el número de filas de una célula debe ocupar.</p>	
+<table style="width:95%;border:0;text-align: center">
+<tr>
+<td style="width:25%">
+<table>
+	<tr>
+		<caption>Encabezado Superior</caption>
+		<th>Título</th>
+		<th>Título</th>
+		<th>Título</th>
+	
+		
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr style="width:33%">
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+	</td>
+	<td style="width:25%">
+<table>
+<caption>Encabezado Izquierda</caption>
+	<tr>
+		<th>Título</td>
+		<td rowspan="3" >Título</td>
+		<td>Título</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+			</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+</table>
+	</td>
+	<td style="width:25%">
+<table>
+<caption>Encabezado izq-sup</caption>
+	<tr>
+		<th>Título</td>
+		<td colspan="3">Título</td>
+		</tr>
+	<tr>
+		<td rowspan="2">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+</table>
+</td><td style="width:25%">
+<table>
+<caption>Sin encabezado</caption>
+	<tr>
+		<td rowspan="3">&nbsp;</td>
+		<td colspan="3"></td>
+		
+  </tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+			
+	<tr>
+			<td colspan="3"></td>
+		</table>
+</td>
+</tr>
+</table>
+<h2>El atributo Colgroup y col</h2>
+<p>La etiqueta &lt;colgroup&gt; especifica un grupo de una o más columnas en una tabla para el formato.</p>
+<p>La etiqueta &lt;col&gt; especifica las propiedades de columna para cada columna dentro de un <a href="https://www.w3schools.com/tags/tag_colgroup.asp">&lt;colgroup&gt;</a> elemento.
+  La etiqueta &lt;col&gt; es útil para la aplicación de estilos para columnas completas, en lugar de repetir los estilos para cada célula, para cada fila.</p>
+<p></p>
+<table style="width:95%;border:0;text-align: center">
+<tr>
+<td style="width:25%">
+<table>
+			<caption>Encabezado Superior</caption>
+			<colgroup>
+				<col span="1" style="background-color: tomato">
+				<col span="1" style="background-color: lightblue">
+				<col span="1" style="background-color: yellow">
+							</colgroup>
+							<tr>
+	<th scope="col" style="width:33%">Título</th>
+	<th style="width:33%">Título</th>
+	<th style="width:33%">Título</th>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr> 	
+		</td>
+  </table>
+</td>
+<td style="width:25%">
+<table>		
+			<caption>Encabezado Izquierdo</caption>
+			<colgroup>
+				<col span="1" style="background-color: tomato">
+				<col span="1" style="background-color: lightblue">
+				<col span="1" style="background-color: lightblue">
+							</colgroup>
+<tr>
+	<th style="width:33%">Título</th>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<th style="width:33%">Título</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+<tr>
+	<th style="width:33%">Título</th>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr> 	
+		</td>
+  </table>
+  </td>
+  <td style="width:25%">
+  <table>		
+	<caption>Encabezado Izq - Superior</caption>
+	<colgroup>
+				<col span="1" style="background-color: tomato">
+				<col span="1" style="background-color: lightblue">
+				<col span="1" style="background-color: lightblue">
+							</colgroup>
+<tr>
+	<th style="width:33%">Título</th>
+	<th style="width:33%;background-color: yellow">Título</th>
+	<th style="width:33%;background-color: yellow">Título</th>
+</tr>
+<tr>
+	<th style="width:33%">Título</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+<tr>
+	<th style="width:33%">Título</th>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr> 	
+		</td>
+		</table>
+		</td>
+		<td style="width:25%">
+<table>
+	<caption>Sin encabezado</caption>
+	<colgroup>
+				<col span="1" style="background-color: tomato">
+				<col span="1" style="background-color: tomato">
+				<col span="1" style="background-color: lightblue">
+							</colgroup>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	</tr>
+		</td>
+	</tr>
+  </table>
+  </td>
+</tr>
+</table>
 
 
 
