@@ -13,25 +13,67 @@
         <link rel="icon" type="image/vnd.microsoft.icon" href="imagen.ico">
         
         <style>
-		div div {
-			margin: auto
-			
+			div {
+				padding-bottom:2px;
+				padding-top: 2px;
 			}
+		divDoble{
+	display:block;
+	overflow: hidden;
+			float: none;}
+		a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+  padding: 5px 10px 	
+}
+
+a:visited {
+  color: navy;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: snow;
+  background-color: transparent;
+  text-decoration: underline;
+}	
+			footer { 
+  display: block;
+}
+footer
+{
+    margin-top: 0px;
+    width:100%;
+    height:100px;
+    background-color:black;
+	padding right: 5%;
+	padding-bottom: 5px;
+}			
 			</style>
     </head>
     <body>
+         <header>
           <p><a href="index.html">
        <img src="img/HTML5_Logo_64.png" alt="logo HTML5" width="64" height="64" title="Inicio de la página">
     </a></p>
       <h2>LENGUAJE DE MARCAS</h2>
-        <h1 id="indice">Índice</h1>
+        <h1 id="indice">Índice</h1></header>
         <hr>
-        <a href="index.html">indice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="listas.html">listas</a> | <a href="tablas.html">tablas</a> | <a href="bloques.html">bloques</a>
+        <nav>
+        <a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="listas.html">Listas</a> | <a href="tablas.html">Tablas</a> | <a href="bloques.html">Bloques</a> | <a href="multimedia.html">Multimedia</a></nav>
         <hr>
         <br>
         <br>
-        
-        <div style=div div "overflow: hidden; "width: 100%"=>
+        <aside>
+        <div style="overflow: hidden; width: 100%">
         <div style="float: left"><a href="introduccion.html">
         <div style="border:1px solid black; width: 200px; float: inherit ">
            	<img src="img/PAGINA1.png" alt="logo HTML" width="200" height="200">
@@ -57,7 +99,7 @@
         <div style="float: left"><a href="tablas.html">
         <div style="border:1px solid black; width: 200px; float: inherit ">
            	<img src="img/PAGINA4.png" alt="logo HTML" width="200" height="200">
-           	<p>Tablas</p>
+       	  <p>Tablas</p>
         </div>
         </div>
         
@@ -67,7 +109,31 @@
            	<p>Bloques</p>
         </div>
         </div>
+        
+                <div style="float: left"><a href="multimedia.html">
+        <div style="border:1px solid black; width: 200px; float: inherit ">
+           	<img src="img/comodo-dragon.jpg" alt="logo HTML" width="200" height="200">
+           	<p>Multimedia</p>
         </div>
+        </div>
+        </div>
+        </aside>
+        
+  <footer>
+  
+  <a href="https://www.facebook.es/">
+  <img src="img/iconos32x32/facebookblanco32.png" alt="facebook.es" width="32" height="32" title="facebook.es">
+  </a><a href="https://www.google.es/"><img src="img/iconos32x32/googleplusblanco32.png" alt="google.es" width="32" height="32" title="google.es" style="float: inherit"></a>
+  <a href="https://www.instagram.es/"><img src="img/iconos32x32/instagramblanco32.png" alt="instagram.es" width="32" height="32" title="instagram.es" style="float: inherit"></a>
+  <a href="http://www.legislacioninternet.com/ejemplo-aviso-legal/" title="Aviso Legal">Aviso Legal</a><a href="http://www.interior.gob.es/politica-de-cookies" title="Politicas de cookies">Politicas de cookies</a>
+  <a href="https://www.amazon.es/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&nodeId=201909010" title="Aviso de Privacidad">Aviso de Privacidad</a>
+  <p style="color: snow"; align="right">creado por: David Valentín</p>
+  
+  </footer>
+         	          
+             
+              
+               
                 
 </body>
 </html>

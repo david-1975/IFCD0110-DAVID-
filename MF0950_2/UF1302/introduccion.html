@@ -76,6 +76,30 @@
             margin: 20px 0;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
         }
+			a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+  padding: 5px 10px 	
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
         </style>
         <script>    </script>
         <link href="css/estilos.css" rel="stylesheet">
@@ -86,9 +110,10 @@
 
 
     </head>
-    <body>
-        <h1 id="inicio">HTML Introducción</h1>
+    <body><header>
+        <h1 id="inicio">HTML Introducción</h1></header>
         <hr>
+        <nav>
         <a href="index.html">indice</a> | <a href="introduccion.html">introducción</a> | <a href="formato.html">formato</a> | <a href="listas.html">listas</a> | <a href="tablas.html">tablas</a> | <a href="bloques.html">bloques</a>
         <hr>
         <ul>
@@ -98,9 +123,9 @@
         <li><a href="#ehtml">Etiquetas HTML</a></li>	
         <li><a href="#nweb">Navegadores web</a></li>
 		<li><a href="#vhtml">Versiones de HTML</a></li>
-		</ul>
+		</ul></nav>
         
-        <hr>
+        <hr><main>
         <h2 id="html">¿Qué es HTML?</h2>
         <p>HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
         
@@ -210,5 +235,7 @@
 <a href="index.html">volver a la página principal</a>                    
 <div class="nota">
     <p>Nota: sólo el contenido dentro de la sección<code> &lt;body&gt; </code>(el área blanca arriba) se muestra en un navegador.</p></div>
-  
-</html>
+    </main>
+    </body>
+  </html>
+	
