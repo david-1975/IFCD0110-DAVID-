@@ -177,6 +177,16 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+footer
+{
+	display: block;
+    margin-top: 0px;
+    width:100%;
+    height:60px;
+    background-color:black;
+	padding right: 30%;
+	padding-bottom: 30px;
+}		
 </style>	
 </style>
 
@@ -190,7 +200,7 @@ a:active {
 
 <body>
 <header>
-<h1>HTML Multimedia</h1></header>
+<h1 id="inicio">HTML Multimedia</h1></header>
 <hr>
 <nav>
  <a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="listas.html">Listas</a> | <a href="tablas.html">Tablas</a> | <a href="bloques.html">Bloques</a> | <a href="multimedia.html">Multimedia</a>
@@ -198,16 +208,16 @@ a:active {
 <hr>
 <aside>
 	<ul>
-		<li>HTML Vídeo</li>
-		<li>HTML Audio</li>
-		<li>Ejemplo de uso Object</li>
-		<li>HTML Iframe</li>
-		<li>Iframe enrutado a web</li>
+		<li><a href="#htmlv">HTML Vídeo</a></li>
+		<li><a href="#htmla">HTML Audio</a></li>
+		<li><a href="#euo">Ejemplo de uso Object</a></li>
+		<li><a href="#htmli">HTML Iframe</a></li>
+		<li><a href="#iew">Iframe enrutado a web</a></li>
 		
 	</ul>
 	</aside>
 <main>
-<h2>HTML Vídeo</h2>
+<h2 id="htmlv">HTML Vídeo</h2>
 <p>Multimedia en la web es: sonido, música, vídeos, películas y animaciones.
    Los archivos multimedia viene en muchos formatos diferentes. Puede ser casi cualquier cosa que puede escuchar o ver. 
    Ejemplos: Imágenes, música, sonido, vídeos, discos, películas, animaciones y mucho más. 
@@ -275,8 +285,9 @@ a:active {
   &lt;source scr=&quot;video/mov_bbb.mp4&quot; type=&quot;video/mp4&quot;&gt;<br>
   &lt;track src=&quot;subtitulo_en.vtt&quot; kind=&quot;subtitulos srclang=&quot;en&quot; label=&quot;English&quot;&gt;videos&lt;/track&gt;<br>
   &lt;/video&gt;</p>
-<br>	
-<h2>HTML Audio</h2>	
+<br>
+<a href="#inicio">subir</a>	
+<h2 id="htmla">HTML Audio</h2>	
 
 <audio controls>
 <source src="audio/intro.ogg" type="audio/ogg">
@@ -293,14 +304,16 @@ a:active {
 &lt;p&gt;Tu navegador no soporta el elemento audio.&lt;/p&gt;<br>
 &lt;/audio&gt;<br>
 <br>
-<h2>Ejemplo de uso Object</h2>
+<a href="#inicio">subir</a>	
+<h2 id="euo">Ejemplo de uso Object</h2>
 <object width="400" height="50" data="swf/bookmark.swf"></object>
 <br>
 <br>
 <h3>Código fuente</h3>
 &lt;object width=&quot;400&quot; height=&quot;50&quot; data=&quot;swf/bookmark.swf&quot;&gt;&lt;/object&gt;<br>
 <br>
-<h2>HTML Iframe</h2>
+<a href="#inicio">subir</a>	
+<h2 id="htmli">HTML Iframe</h2>
 <h3>Iframe enrutado a videos</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s1OxOBPWBeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
@@ -308,12 +321,13 @@ a:active {
 <h3>Código fuente</h3>
 <p>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/s1OxOBPWBeU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</p>
 <br>
-<h3>Iframe enrutado a web</h3>
+<h3 id="iew">Iframe enrutado a web</h3>
 <a href="https://www.marca.com/" target="mi iframe">Marca</a>
 <br>
 <br>
 <iframe name="mi iframe" src="x" width="100%" frameborder="1" height="500px"></iframe>
 <br>
+<a href="#inicio">subir</a>	
 <h3>Iframe enrutado a web prueba</h3>
 <a href="https://twitter.com/twitter/statuses/1085250268403507201" target="Peliculas">Vengadores: Endgame</a>
 <br>
@@ -333,7 +347,19 @@ a:active {
 <blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">Mapping an asteroid requires views from all directions. During Preliminary Survey, I used MapCam to snap this image of Bennu from a distance of about 8 miles (13 km) as I flew toward the asteroid during a pass over its equator. <a href="https://t.co/Hw1Qmc4UyP">https://t.co/Hw1Qmc4UyP</a> <a href="https://t.co/UodU5gcVCJ">pic.twitter.com/UodU5gcVCJ</a></p>&mdash; NASA&#39;s OSIRIS-REx (@OSIRISREx) <a href="https://twitter.com/OSIRISREx/status/1085620739611348992?ref_src=twsrc%5Etfw">16 de enero de 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <br>
+<a href="#inicio">subir</a> | <a href="index.html">volver a la página principal</a> 	
 </main>
+<footer>
+  
+  <a href="https://www.facebook.es/">
+  <img src="img/iconos32x32/facebookblanco32.png" alt="facebook.es" width="32" height="32" title="facebook.es">
+  </a><a href="https://www.google.es/"><img src="img/iconos32x32/googleplusblanco32.png" alt="google.es" width="32" height="32" title="google.es" style="float: inherit"></a>
+  <a href="https://www.instagram.es/"><img src="img/iconos32x32/instagramblanco32.png" alt="instagram.es" width="32" height="32" title="instagram.es" style="float: inherit"></a>
+  <a href="http://www.legislacioninternet.com/ejemplo-aviso-legal/" title="Aviso Legal">Aviso Legal</a><a href="http://www.interior.gob.es/politica-de-cookies" title="Politicas de cookies">Politicas de cookies</a>
+  <a href="https://www.amazon.es/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&nodeId=201909010" title="Aviso de Privacidad">Aviso de Privacidad</a>
+  <p style="color: snow"; align="right">creado por: David Valentín</p>
+  
+  </footer>	
 </body>
 </html>
 

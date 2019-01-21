@@ -6,7 +6,7 @@
 <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
 <meta name="keywords" content="HTML, CSS, JavaScript">
 <meta name="title" content="Confección y publicación de páginas web">
-<meta name="author" content="David">
+<meta name="author" content="David Valentin">
 
 <link rel="icon" type="image/png" href="img/html5.png">
 <link rel="icon" type="image/gif" href="img/html5.gif">
@@ -177,6 +177,16 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+footer
+{
+	display: block;
+    margin-top: 0px;
+    width:100%;
+    height:60px;
+    background-color:black;
+	padding right: 30%;
+	padding-bottom: 30px;
+}		
 </style>
 
 <script>   </script>
@@ -188,16 +198,24 @@ a:active {
 </head>
 
 <body><header>
-<h1>HTML Tablas</h1></header>
+<h1 id="inicio">HTML Tablas</h1></header>
 <hr>
 <nav>
  <a href="index.html">Indice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="listas.html">Listas</a> | <a href="tablas.html">Tablas</a> | <a href="bloques.html">Bloques</a> | <a href="multimedia.html">Multimedia</a></nav>
 <hr>
-<aside></aside>
+        <ul>
+        <li><a href="#eedfc">Etiquetas de estructura de datos  en filas y columnas</a></li>
+        <li><a href="#scope">El atributo scope</a></li>
+        <li><a href="#acr">El atributo colspan y rowspan</a></li>
+        <li><a href="#ecc">La etiqueta colgroup y col</a></li>	
+        <li><a href="#apf">Agrupación por filas</a></li>
+		<li><a href="#leyenda">Leyenda Tabla</a></li>
+		</ul>
+	<br>
+<a href="#inicio">subir al inicio</a>	
 <main>
-<h2>Etiquetas de estructura de datos  en filas y columnas</h2>
+<h2 id="eedfc">Etiquetas de estructura de datos  en filas y columnas</h2>
 <p>Una tabla HTML se define con la <code>&lt;table&gt;</code>etiqueta. Cada fila de la tabla se define con la <code>&lt;tr&gt;</code>etiqueta. Un encabezado de la tabla se define con la <code>&lt;th&gt;</code>etiqueta. Por defecto, encabezados de la tabla están en negrita y centrado. A los datos / celda de la tabla se define con la <code>&lt;td&gt;</code> etiqueta y pueden contener todo tipo de elementos HTML; texto, imágenes, listas, otras tablas, etc...</p>
-
 <table id="table">
   <tr>
 <th>Etiqueta</th>
@@ -246,13 +264,14 @@ a:active {
   </tr>
 </table>
 <br>
+<a href="#inicio">subir al inicio</a>	
 <div class="nota">
   <p><b>Nota: </b>La etiqueta <code>&lt;caption&gt;</code> define un título de la tabla y  debe insertarse inmediatamente después de la <code>&lt;table&gt;</code> etiqueta. Sólo se puede especificar una leyenda (título) por tabla.</p>
 </div>
 <br>
 <hr>
 
-<h2>El atributo scope</h2>
+<h2 id="scope">El atributo scope</h2>
 <p>El atributo <strong>scope</strong> especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de columnas o filas. El atributo scope no tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
 <table style="width: 100%" class="tableDemo">
   <tr>
@@ -343,8 +362,9 @@ a:active {
   </tr>
 </table>
 <br>
+<a href="#inicio">subir al inicio</a>	
 <hr>
-<h2>El atributo colspan y rowspan</h2>
+<h2 id="acr">El atributo colspan y rowspan</h2>
 <p>El atributo <strong>colspan</strong> define el número de columnas de una celda que debe ocupar al espandirse las celdas y el atributo <strong>rowspan</strong> especifica el número de filas de una celda que debe ocupar. Sólo se escifica el atributo en las etiquetas <code>&lt;th&gt;</code> y <code>&lt;td&gt;</code>.</p>
 <table style="width: 100%" class="tableDemo">
   <tr>
@@ -421,8 +441,9 @@ a:active {
   </tr>
 </table>
 <br>
+<a href="#inicio">subir al inicio</a>	
 <hr>
-<h2>La etiqueta colgroup y col</h2>
+<h2 id="ecc">La etiqueta colgroup y col</h2>
 <p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para  la aplicación de estilos CSS para columnas completas, en lugar de repetir los estilos para cada celda, y para cada fila. Para definir propiedades diferentes a una columna dentro de un &lt;colgroup&gt;, utilice la etiqueta &lt;col&gt;  dentro de la etiqueta &lt;colgroup&gt; junto con el atributo span para nombrar cuantas columnas se deben agrupar.</p>
 <style>
 .tableDemo table{
@@ -529,8 +550,9 @@ padding: 8px;
   </tr>
 </table>
 <br>
+<a href="#inicio">subir al inicio</a>	
 <hr>
-<h2>Agrupación por filas</h2>
+<h2 id="apf">Agrupación por filas</h2>
 <p>HTML provee tres elementos que pueden ayudar a los autores a organizar la información presentada en una tabla. Éstos son: thead, para agrupar las filas que presentan información de encabezado; tfoot para contener a las filas que representan un pie o resumen; y tbody, para representar un bloque de filas que consiste en un cuerpo de datos.</p>
 <table style="width: 100%" class="tableDemo">
   <tr>
@@ -658,12 +680,13 @@ padding: 8px;
     </td>
   </tr>
 </table>
-<p>&nbsp;</p>
+<br>
+<a href="#inicio">subir al inicio</a>	
 <div class="nota">
   <p><b>Nota: </b>Las etiquetas <code>&lt;thead&gt;</code>  <code>&lt;tbody&gt;</code>  <code>&lt;tfoot&gt;</code> debe ser utilizado en el siguiente contexto: Como un hijo de un elemento <code>&lt;table&gt;</code>, después de cualquier <code>&lt;caption&gt;</code>, y <code>&lt;colgroup&gt;</code>, abarcando los elemetos   <code>&lt;tr&gt;</code>.</p>
 </div>
-<p>&nbsp;</p>
-<table style="width: 100%" class="tableDemo">
+	<br>
+<table id="leyenda" style="width: 100%" class="tableDemo">
   <tr>
     <td><strong>&lt;table&gt;</strong>
 <table>
@@ -734,6 +757,19 @@ padding: 8px;
   </tr>
 </table>
 </main>
+	<br>
+	<a href="#inicio">subir</a> | <a href="index.html">volver a la página principal</a> 
+<footer>
+  
+  <a href="https://www.facebook.es/">
+  <img src="img/iconos32x32/facebookblanco32.png" alt="facebook.es" width="32" height="32" title="facebook.es">
+  </a><a href="https://www.google.es/"><img src="img/iconos32x32/googleplusblanco32.png" alt="google.es" width="32" height="32" title="google.es" style="float: inherit"></a>
+  <a href="https://www.instagram.es/"><img src="img/iconos32x32/instagramblanco32.png" alt="instagram.es" width="32" height="32" title="instagram.es" style="float: inherit"></a>
+  <a href="http://www.legislacioninternet.com/ejemplo-aviso-legal/" title="Aviso Legal">Aviso Legal</a><a href="http://www.interior.gob.es/politica-de-cookies" title="Politicas de cookies">Politicas de cookies</a>
+  <a href="https://www.amazon.es/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&nodeId=201909010" title="Aviso de Privacidad">Aviso de Privacidad</a>
+  <p style="color: snow"; align="right">creado por: David Valentín</p>
+  
+  </footer>	
 </body>
 </html>
 
