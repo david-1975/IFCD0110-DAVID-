@@ -19,8 +19,8 @@
 			}
 			
 	}
-	#conteh1{
-		color:darkgreen;
+	.conte1{
+		color:green;
 	}
 	.conte2{
 		color:blue;
@@ -28,13 +28,16 @@
 	table{
 		border-collapse: collapse;
 		margin: auto;
+		border: auto;
 		}
-	th{
+	table th, td{
 		border: 1px solid;
 		text-align: center;
 		padding: 8px;
 		}
-	
+	li{
+		margin-left: 0px;
+	}
 	
 	
 	
@@ -46,10 +49,10 @@
 <h1>Navegadores web</h1>
 <hr>
 <div> 
-<table border>
+<table style="background-color: lightblue">
 <tr>
 <th><img src="navegadores.png" alt="navegadores.png" width="200" height="150"></th>	
-<th><h2 id="conteh1">Principales características</h2>
+<th><h2 class="conte1" >Principales características</h2>
 <ul>
 <li>Seguridad y provacidad: Ofrecen seguridad contra software malicioso.</li>
 <li>Velocidad: Cargan rápidametne páginas y aplicaciones web.</li>
@@ -66,33 +69,39 @@
 <h2 class="conte2">Navegadores web más usados</h2>	
 <p>Algunos navegadores vienen incorporados a su sistema operativo como es el caso de Internet Explorer o Microsoft Edge en Windows, Safari en MacOS e iOS, Firefox, Opera en Linux y Chrome en Android. Para hacernos una idea con datos y conocer mejor el porcentaje de usuarios de cada navegador, el ranking final de navegadores más empleados en el mundo es el siguiente:
 </p>
-<table class="tabla" margin="auto" border="auto">
+<table>
 <caption><b>Cuota de mercado 2018</b>
-</caption>	
+</caption>
+<thead style="background-color:lightgoldenrodyellow">	
 <tr>
 <th><img src="chrome.png" alt="chrome.jpg" width="30" height="30"><br>Chrome</th>	
 <th><img src="safari.png" alt="safari.jpg" width="30" height="30"><br>Safari</th>	
 <th><img src="firefox.png" alt="firefox.jpg" width="30" height="30"><br>Firefox</th>	
-<th><img src="explorer.png" alt="explorer.jpg" width="30" height="30"><br>Explorer</th>	
-<th><img src="edge.png" alt="edge.jpg" width="30" height="30">Edge<br></th>	
-<th><img src="opera.png" alt="opera.jpg" width="30" height="30"><br>Opera</th>	
-</tr>	
+<th rowspan="1" scope="col" style="background-color: lightcoral"><img src="explorer.png" alt="explorer.jpg" width="30" height="30"><br>Explorer</th>	
+<th rowspan="1" scope="col" style="background-color: lightcoral"><img src="edge.png" alt="edge.jpg" width="30" height="30">Edge<br></th>	
+<th rowspan="1" scope="col" style="background-color: lightcoral"><img src="opera.png" alt="opera.jpg" width="30" height="30"><br>Opera</th>	
+</tr>
+</thead>
+<tbody style="background-color: lightgreen">	
 <tr>
 <td>58,4%</td>	
 <td>15,3%</td>
 <td>10,1%</td>	
-<td>9,2%</td>	
-<td>4,9%</td>
-<td>2,1%</td>	
-</tr>	
+<td rowspan="1" scope="col" style="background-color: indianred">9,2%</td>	
+<td rowspan="1" scope="col" style="background-color: indianred">4,9%</td>
+<td rowspan="1" scope="col" style="background-color: indianred">2,1%</td>	
+</tr>
+</tbody>
+<tfoot style="background-color: goldenrod">
 <tr>
 <td><a href="descargas/ChromeSetup.exe" alt="https://www.google.com/intl/es_ALL/chrome/">Descargar</a></td>
 <td><a href="descargas/SafariSetup.exe" alt="https://safari.softonic.com/descargar">Descargar</a></td>	
 <td><a href="descargas/Firefox Installer.exe" alt="https://www.mozilla.org/es-ES/firefox/new/">Descargar</a></td>	
-<td><a href="descargas/EIE11_ES-XL_WOL_WIN764.EXE" alt="https://www.microsoft.com/es-es/download/internet-explorer-11-for-windows-7-details.aspx">Descargar</a></td>
-<td><a href="descargas/EIE11_ES-XL_WOL_WIN764.EXE" alt="https://www.microsoft.com/en-us/download/confirmation.aspx?id=48126">Descargar</a></td>
-<td><a href="descargas/OperaSetup.exe" alt="https://www.opera.com/es">Descargar</a></td>
-</tr>	
+<td rowspan="1" scope="col" style="background-color: deeppink"><a href="descargas/EIE11_ES-XL_WOL_WIN764.EXE" alt="https://www.microsoft.com/es-es/download/internet-explorer-11-for-windows-7-details.aspx">Descargar</a></td>
+<td rowspan="1" scope="col" style="background-color: deeppink"><a href="descargas/EIE11_ES-XL_WOL_WIN764.EXE" alt="https://www.microsoft.com/en-us/download/confirmation.aspx?id=48126">Descargar</a></td>
+<td rowspan="1" scope="col" style="background-color: deeppink"><a href="descargas/OperaSetup.exe" alt="https://www.opera.com/es">Descargar</a></td>
+</tr>
+</tfoot>		
 </table>
 </div>	
 <hr>		
@@ -100,11 +109,12 @@
 <h2 class="conte2">Funcionalidades de los navegadores web</h2>	
 <p>Todos los navegadores incluyen la mayoría de las siguientes características: navegación por pestañas, bloqueador de ventanas emergentes, soporte para motores de búsqueda, gestor de descargas, marcadores, corrector ortográfico, y atajos del teclado. Para mantener la privacidad casi todos los navegadores ofrecen maneras sencillas de borrar cookies, cachés web y el historial.
 </p>	
-<table border>
+<table>
 <caption><b>Funcionalidades de los navegadores web</b>
 </caption>	
+<thead style="background-color:lightyellow">	
 <tr>
-<th>FUNCIONES</th>	
+<th rowspan="1" scope="col" style="background-color: lightgray">FUNCIONES</th>	
 <th><img src="chrome.png" alt="chrome.jpg" width="30" height="30"><br>Chrome</th>	
 <th><img src="safari.png" alt="safari.jpg" width="30" height="30"><br>Safari</th>	
 <th><img src="firefox.png" alt="firefox.jpg" width="30" height="30"><br>Firefox</th>
@@ -112,81 +122,225 @@
 <th><img src="edge.png" alt="edge.jpg" width="30" height="30"><br>Edge</th>	
 <th><img src="opera.png" alt="opera.jpg" width="30" height="30"><br>Opera</th>
 </tr>	
+</thead>
+<tbody style="background-color:antiquewhite">	
 <tr>
-<td>Sincronización en la nube</td>	
-<td><img src="icon_check.png" width="20" height="20">SI</td>	
-<td>15,3%</td>
-<td>10,1%</td>	
-<td>9,2%</td>	
-<td>4,9%</td>
-<td>2,1%</td>	
+<td rowspan="1" scope="col" style="background-color: lightpink">Sincronización en la nube</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
 </tr>	
 <tr>
-<td>Gestor de descargas</td>	
-<td>58,4%</td>	
-<td>15,3%</td>
-<td>10,1%</td>	
-<td>9,2%</td>	
-<td>4,9%</td>
-<td>2,1%</td>	
+<td rowspan="1" scope="col" style="background-color: lightpink">Gestor de descargas</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
 </tr>
 <tr>
-<td>Navegación privada</td>	
-<td>58,4%</td>	
-<td>15,3%</td>
-<td>10,1%</td>	
-<td>9,2%</td>	
-<td>4,9%</td>
-<td>2,1%</td>	
+<td rowspan="1" scope="col" style="background-color: lightpink">Navegación privada</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
 </tr>
 <tr>
-<td>Modo de pantalla completa</td>	
-<td>58,4%</td>	
-<td>15,3%</td>
-<td>10,1%</td>	
-<td>9,2%</td>	
-<td>4,9%</td>
-<td>2,1%</td>	
+<td rowspan="1" scope="col" style="background-color: lightpink">Modo de pantalla completa</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
 </tr>
 <tr>
-<td>Pestañas verticales</td>	
-<td>58,4%</td>	
-<td>15,3%</td>
-<td>10,1%</td>	
-<td>9,2%</td>	
-<td>4,9%</td>
-<td>2,1%</td>	
+<td rowspan="1" scope="col" style="background-color: lightpink">Pestañas verticales</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
 </tr>
 <tr>
-<td>Extensiones personalizadas</td>	
-<td>58,4%</td>	
-<td>15,3%</td>
-<td>10,1%</td>	
-<td>9,2%</td>	
-<td>4,9%</td>
-<td>2,1%</td>	
+<td rowspan="1" scope="col" style="background-color: lightpink">Extensiones personalizadas</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
 </tr>
+</tbody>
+<tfoot style="background-color: gainsboro">		
 <tr>
-<td>Valoración</td>	
-<td>58,4%</td>	
-<td>15,3%</td>
-<td>10,1%</td>	
-<td>9,2%</td>	
-<td>4,9%</td>
-<td>2,1%</td>	
-</tr>	
+<td rowspan="1" scope="col" style="background-color: darkgray">Valoración</td>	
+<td><img src="estrella_32x32.png" width="20" height="20"> 6</td>	
+<td><img src="estrella_32x32.png" width="20" height="20"> 3</td>
+<td><img src="estrella_32x32.png" width="20" height="20"> 6</td>	
+<td><img src="estrella_32x32.png" width="20" height="20"> 4</td>	
+<td><img src="estrella_32x32.png" width="20" height="20"> 4</td>
+<td><img src="estrella_32x32.png" width="20" height="20"> 6</td>	
+</tr>
+</tfoot>	
 </table>	
-	
 </div>	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
+<hr>
+<div>
+<h2 class="conte2">Compatibidad de los navegadores web</h2>	
+<p>La compatibilidad entre navegadores se refiere a que una página web se muestre de forma muy similar en todos los navegadores y en todos los sistemas operativos. Aunque los navegadores cada vez cumplen más los estándares que marca la W3C, entre ellos hay diferencias: reglas que no son soportadas, diferentes interpretaciones de una especificación, lo cual se traduce en que las páginas web no siempre se ven igual entre ellos.
+</p>	
+<table>
+<caption><b>Compatibilidad entre sitemas operativos</b>
+</caption>	
+<thead style="background-color:lightyellow">
+<tr>
+<th rowspan="1" scope="col" style="background-color:dimgray">COMPATIBILIDAD</th>	
+<th><img src="chrome.png" alt="chrome.jpg" width="30" height="30"><br>Chrome</th>	
+<th><img src="safari.png" alt="safari.jpg" width="30" height="30"><br>Safari</th>	
+<th><img src="firefox.png" alt="firefox.jpg" width="30" height="30"><br>Firefox</th>
+<th><img src="explorer.png" alt="explorer.jpg" width="30" height="30"><br>Explorer</th>	
+<th><img src="edge.png" alt="edge.jpg" width="30" height="30"><br>Edge</th>	
+<th><img src="opera.png" alt="opera.jpg" width="30" height="30"><br>Opera</th>
+</tr>
+</thead>		
+<tbody style="background-color:antiquewhite">	
+<tr>
+<td rowspan="1" scope="col" style="background-color: darkseagreen">Windows</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+</tr>	
+<tr>
+<td rowspan="1" scope="col" style="background-color: darkseagreen">macOS</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+</tr>
+<tr>
+<td rowspan="1" scope="col" style="background-color: darkseagreen">Linux</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+</tr>
+<tr>
+<td rowspan="1" scope="col" style="background-color: darkseagreen">Android</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+</tr>
+<tr>
+<td rowspan="1" scope="col" style="background-color: darkseagreen">iOS</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+</tr>
+<tr>
+<td rowspan="1" scope="col" style="background-color: darkseagreen">Windows Phone</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>	
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>
+<td><img src="icon_delete.png" width="20" height="20"> NO</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+<td><img src="icon_check.png" width="20" height="20"> SI</td>
+<td><img src="icon_check.png" width="20" height="20"> SI</td>	
+</tr>
+</tbody>	
+<tfoot style="background-color: gainsboro">	
+<tr>
+<td rowspan="1" scope="col" style="background-color: darkgray">Valoración</td>	
+<td><img src="estrella_32x32.png" width="20" height="20"> 5</td>	
+<td><img src="estrella_32x32.png" width="20" height="20"> 3</td>
+<td><img src="estrella_32x32.png" width="20" height="20"> 5</td>	
+<td><img src="estrella_32x32.png" width="20" height="20"> 2</td>	
+<td><img src="estrella_32x32.png" width="20" height="20"> 2</td>
+<td><img src="estrella_32x32.png" width="20" height="20"> 6</td>	
+</tr>
+</tfoot>	
+</table>
+</div>	
+<hr>
+<div>
+<h2 class="conte2">Detalles del software de los navegadores web</h2>	
+<p>Los navegadores de Internet siempre cumplen con el solo objetivo de permitirnos acceder a Internet desde cualquier lugar en que nos encontremos, e independientemente de la plataforma desde la cual los estemos usando. Sin embargo, cada plataforma exige que los navegadores web se comporten o estén desarrollados de una determinada manera.
+</p>	
+<table>
+<caption><b>Detalles del Navegador</b>
+</caption>
+<tr>
+<thead style="background-color:lightyellow">	
+<th rowspan="1" scope="col" style="background-color: lavenderblush">DETALLES DEL SOFTWARE</th>
+<th><img src="chrome.png" alt="chrome.jpg" width="30" height="30"><br>Chrome</th>	
+<th><img src="safari.png" alt="safari.jpg" width="30" height="30"><br>Safari</th>	
+<th><img src="firefox.png" alt="firefox.jpg" width="30" height="30"><br>Firefox</th>
+<th><img src="explorer.png" alt="explorer.jpg" width="30" height="30"><br>Explorer</th>	
+<th><img src="edge.png" alt="edge.jpg" width="30" height="30"><br>Edge</th>	
+<th><img src="opera.png" alt="opera.jpg" width="30" height="30"><br>Opera</th>
+</thead>	
+</tr>
+<tbody style="background-color: azure">
+<tr>
+<td rowspan="1" scope="col" style="background-color: skyblue">Plataforma</td>	
+<td>WebKit</td>	
+<td>WebKit</td>	
+<td>Gecko</td>	
+<td>Trident</td>	
+<td>EdgeHTML</td>
+<td>WebKit</td>		
+</tr>	
+<tr>
+<td rowspan="1" scope="col" style="background-color: skyblue">Motor de JavaScript</td>	
+<td>V8</td>	
+<td>Nitro</td>
+<td>TraceMonkey</td>	
+<td>Chakra</td>	
+<td>Chakra</td>
+<td>Carakan</td>	
+</tr>
+<tr>
+<td rowspan="1" scope="col" style="background-color: skyblue">Código abierto</td>
+<td>SI</td>	
+<td>NO</td>
+<td>SI</td>	
+<td>NO</td>	
+<td>NO</td>
+<td>NO</td>		
+</tr>
+</tbody>		
+<tfoot style="background-color: lavender">
+<tr>
+<td rowspan="1" scope="col" style="background-color: #62699B">Página web</td>
+<td><a href="https://www.google.com/chrome/" title="Chrome">Chrome</a></td>	
+<td><a href="https://support.apple.com/es-es/HT204416" title="Safari">Safari</a></td>
+<td><a href="https://www.mozilla.org/es-ES/firefox/new/" title="Firefox">Firefox</a></td>
+<td><a href="https://www.microsoft.com/es-es/download/internet-explorer.aspx" title="Explorer">Explorer</a></td>	
+<td><a href="https://www.microsoft.com/es-es/windows/microsoft-edge" title="Edge">Edge</a></td>
+<td><a href="https://www.opera.com/es" title="Opera">Opera</a></td>
+</tr>
+</tfoot>	
+</table>	
+</div>
+<hr>	
 </body>
 </html>
