@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+
+ body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 80%;
+        margin: 0 auto;
+        }
+        
+ h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif;
+       }
+ table, th, td {
+            border: 1px solid black;
+        }   
+        /*div {
+            /*background-color:#f1f1f1;*/
+            /*border: 1px solid #cccccc;*/
+            /*margin: 20px;*/
+            /*padding: 20px;*/
+        
+ .nota{
+            background-color:#ffffcc;
+            border-left: 6px solid #ffeb3b;
+            margin-top: 10px;
+            padding-bottom: 10%;
+            margin-left: 5px;
+            margin-right:5px;
+           }     
+ hr {
+            border: 1px solid #eee;
+            
+        }         
+code {
+            color: crimson;
+            background-color: #bebbbb;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-size: 110%;
+        }        
+.etiquetasHTML{
+            background-color: #f1f1f1;
+            border: 1px solid #cccccc;
+            font-size: 24px;
+            padding: 16px;
+        }            
+code span {
+            color: mediumblue;
+        }                 
+code span span {
+            color:brown;
+        }  
+code span span span {
+            color: crimson;
+        }
+.code {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            background-color: #ffffff;
+            padding: 8px 12px;
+            border-left: 4px solid #4caf50;
+        }
+.ejemplo {
+            background-color: #f1f1f1;
+            padding: 8px 16px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        }
+a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+  padding: 5px 10px 	
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+footer
+{
+	display: block;
+    margin-top: 0px;
+    width:100%;
+    height:60px;
+    background-color:black;
+	padding-right: 30%;
+	padding-bottom: 30px;
+}
+
+#divPadre {
+	width:99%;
+	border:1px solid grey;
+	padding:3px;
+	margin:0;
+	background-color:#ddd;
+}    
+
+#divHead{
+	width:90%;
+	border:1px solid grey;
+	padding:3px;
+	margin:20px;
+}
+#divTitle{
+	width:90%;
+	border:1px solid grey;
+	padding:5px;
+	margin:20px;
+}
+#divMeta{
+	width:90%;
+	border:1px solid grey;
+	padding:5px;
+	margin:20px;
+}
+#divBody{
+	width:90%;
+	border:1px solid grey;
+	padding:3px;
+	margin:20px;
+	background-color:#ddd;
+} 
+#divBodyHijo{
+	width:90%;
+	border:1px solid grey;
+	padding:3px;
+	margin:20px;
+	background-color:#ddd;
+}
+#divP{
+	width:90%;
+	border:1px solid grey;
+	padding:5px;
+	margin:20px;
+}
+#divH1{
+	width:90%;
+	border:1px solid grey;
+	padding:5px;
+	margin:20px;
+}
+#divP2{
+	width:90%;
+	border:1px solid grey;
+	padding:5px;
+	margin:20px;
+}
