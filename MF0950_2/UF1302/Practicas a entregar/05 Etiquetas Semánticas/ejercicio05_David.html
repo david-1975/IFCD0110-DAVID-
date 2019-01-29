@@ -30,12 +30,18 @@
 		text-align: center;
 		background-color: lightgray;
 		padding:  5px;
-			}
+	}
 	a:link {
         color: white;
 		background-color: blue; 
         text-decoration: none;
            }
+	.nombre{
+		color: lightcoral;
+	}
+	.titulo{
+		color: darkblue;
+		}
 	section{
 		background-color:rgba(223,161,59,1.00);
 		display: block;
@@ -43,41 +49,20 @@
 		padding: 0;
 		overflow:hidden;
 	}
-	section div{
-		color: black;
-		background-color: white;
-		text-align:left;
-		padding: 0;
-		margin: 0;
-		}
-	.nombre{
-		color: lightcoral;
-	}
-	.titulo{
-		color: darkblue;
-		}
-		iframe{
-		width= 90%; 
-		}
-		footer{
+	footer{
 		background: blue;
 		text-align:center;
 		padding: 10px;
 		}
-	article{
-		margin: 0;
-		padding:0;
-		overflow: hidden;
-	}
-	ul{list-style-image: url("lista-icono.png");}
-</style>	
+	</style>	
+	
 </head>
 
 <body>
 <main>
 <header>
-<h1>Título del Periódico</h1>
-<h2>El mayor magazine digital de España</h2>	
+<h1>¡Que país!</h1>
+<h2>El mejor Periódico digital de España</h2>	
 </header>	
 <nav class="menu">
 <a href="Internacional">Internacional</a>
@@ -91,9 +76,10 @@
 <a href="Deportes">Deportes</a>
 <a href="Televisión">Televisión </a>
 <a href="Vídeo">Vídeo</a>	
-</nav>	
+</nav>		
 <section>
 <h1 style="text-align: center">Técnología</h1>
+<div style="background-color: white;">	
 <div style="float:left; width: 33%; background-color: white;">
 <article style="padding: 3%">
 <img src="galaxy-note_9.jpg" alt="" style="width:100%">
@@ -105,26 +91,27 @@
 </div>
 <div style="float:right; width: 33%; background-color: white;">
 <article style="padding: 3%">	
-<img src="honor-view20.jpg" style="width:100%">
+<img src="honor-view20.jpg" alt="" style="width:100%">
 <h3 class="titulo">Honor View20, un móvil con más píxeles que ninguno</h3>	
-<h4 class="nombre">ANA GÓMEZ <img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"></h4>	
+<h4 class="nombre">ANA GÓMEZ <img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"></h4>	
 <p>La segunda marca de Huawei lanza un teléfono inteligente con la cámara frontal oculta y la trasera de 48 megapíxeles. Se maneja por inteligencia artificial y por un superprocesador, el más potente.
 </p>
 </article>
 </div>
-<div style="margin:auto; width: 33%; background-color: white;">
+<div style="background:white; width:33%; margin: auto;">
 <article style="padding: 3%">
-<img src="pocophone-f1.jpg" style="width:100%">
+<img src="pocophone-f1.jpg" alt="" style="width:100%">
 <h3 class="titulo">Pocophone F1, ¿el mejor móvil en relación calidad-precio?</h3>	
-<h4 class="nombre">ANTONIO SÁNCHEZ <img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"></h4>	
+<h4 class="nombre">ANTONIO SÁNCHEZ <img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"></h4>	
 <p>La segunda marca de la china Xiaomi se lanza al mercado con un terminal caracterizado por especificaciones de gama alta y un precio de gama media que logra eliminando lo superfluo.</p>
 </article>
 </div>	
-</section>
-	
-<section style="background-color: white">
+</div>
+</section>		
+<section>
+<div style="background-color: white; width:100%; margin: auto; overflow: hidden;">
 <div style="float: left; width: 20%; background-color: white;">	
-<img src="logo-vodafone.png" alt="">	
+<img src="logo-vodafone.png" width="129" height="32" alt="logo-vodafone" style="margin:5%"/>	
 <nav><ul> 
 	<li>Más populares</li>
 	<li>Redes sociales</li>
@@ -137,68 +124,55 @@
 	<li>Smartphones</li>
 </ul>
 </nav>
-</div>
-
-<div style="float:left; width: 40%;">
-<article>
+</div>	
+<div style="width: 36%; margin: auto; float:left; background-color: white; padding: 2%;">
+<article style="padding: 5%;">
 <iframe src="https://www.youtube.com/embed/6_YopNlxcYU" width="392" height="220" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
 <h3 class="titulo">Una retina de grafeno para devolver la vista a 230 millones de personas</h3>	
 </article>
-</div>
-	
-<div style="float: left; width:40%;">
-<article>	
+</div>	
+<div style="width: 36%; float:right; background-color: white; padding: 2%;">
+<article style="padding: 5%;">	
 <iframe  src="https://www.youtube.com/embed/IP3rOxqQQAw" width="392" height="220" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h3 class="titulo">El superordenador que fabrica humanos virtuales para probar medicinas</h3>
 </article>
 </div>
-</section>	
+</div>	
+</section>		
 <section>
 <h1 style="text-align: center">Videojuegos</h1>
-<div>	
-<article>	
-<div style="float: left; width: 30%">
-<img src="fornite.jpg" style="width:100%">	
+<div style="background-color: white;">	
+<article>
+<div style="float: left; width: 33%; background-color: white; padding: 1%;">
+<img src="fornite.jpg" alt="" style="width:100%">	
 <h3 class="titulo">Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7</h3>	
-<h4 class="nombre">JOSÉ ORTÍZ <img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"></h4>	
+<h4 class="nombre">JOSÉ ORTÍZ <img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png"  alt="" width="15px" height="15px"></h4>	
 <p>Ya están disponibles los desafíos correspondientes a la Semana 8 de la Temporada 7 del Pase de Batalla de Fortnite Battle Royale. Completadlos con nuestra guía.
-</p>	
+</p><br><br>	
 </div>	
-</article>	
+</article>
 <article>
-<div style="float: left; width: 30%">
-<img src="gta5.jpg" style="width:100%">	
+<div style="float: left; width: 33%; background-color: white; padding: 1%;">
+<img src="gta5.jpg" alt="" style="width:100%">	
 <h3 class="titulo">Cómo completar los desafíos de Fortnite de la Semana 8 de la Temporada 7</h3>	
-<h4 class="nombre">PEDRO ZAMBRANO <img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"><img src="estrella_32x32.png" width="15px" height="15px"></h4>	
+<h4 class="nombre">PEDRO ZAMBRANO <img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"><img src="estrella_32x32.png" alt="" width="15px" height="15px"></h4>	
 <p>Ganar dinero infinito, coches de lujo, salud, munición, armas, tanques, eliminar estrellas… Recopilamos todos los trucos y claves de GTA 5 (Grand Theft Auto V) para todas las plataformas
-</p>		
+</p>
 </div>	
-</article>	
-<article>
-<div>
-<table>
-<caption style="text-align: left"><b>Contenido relacionado</b></caption>
-<tr>
-<td><img src="red_dead_redemption3.jpg" style="float: left" width="40%">
-<h3 class="titulo">Dead Redemption 2, número 1 en USA.</h3><br><hr></td>
-</tr>
-<tr>
-<td><img src="red_dead_redemption2.jpg" style="float: left" width="40%">
-<h3 class="titulo">Todos los trucos de Red Dead Redemption 2.</h3><br><hr></td>
-</tr>
-<tr>
-<td><img src="assassins-creed-odyssey.jpg" style="float: left" width="40%">
-<h3 class="titulo">Assassin's Creed Odyssey, Guía completa</h3><br><hr></td>	
-</tr>
-<tr>
-<td><img src="call-of-duty.jpg" style="float: left" width="40%">
-<h3 class="titulo">Call of Duty: Black Ops 4, Guía de logros y trofeos</h3></td>	
-</tr>	
-</table>	
+</article>
+<aside style="overflow: hidden;">
+<h3>Contenido relacionado</h3>		
+<img src="red_dead_redemption3.jpg" alt="" style="float: left; width:115px; height: 80px; margin-right: 1%;">
+<h4 class="titulo">Red Dead Redemption 2, número 1 en USA.</h4><br><hr>
+<img src="red_dead_redemption2.jpg" alt="" style="float: left; width:115px; height: 80px; margin-right: 1%;">
+<h4 class="titulo">Todos los trucos de Red Dead Redemption 2.</h4><br><hr>
+<img src="assassins-creed-odyssey.jpg" alt="" style="float: left; width:115px; height: 80px; margin-right: 1%;">
+<h4 class="titulo">Assassin's Creed Odyssey, Guía completa</h4><br><hr>
+<img src="call-of-duty.jpg"	alt="" style="float: left; width:115px; height: 80px; margin-right: 1%;">
+<h4 class="titulo">Call of Duty: Black Ops 4, Guía de logros y trofeos</h4><br><br><br>	
+</aside>
 </div>	
-</article>	
-</div>	
-</section>
+</section>	
 <footer>
 <a href="Aviso Legal">Aviso Legal</a> | <a href="Política de privacidad">Política de privacidad</a> | <a href="Política de protección de datos">Política de protección de datos</a> | <a href="Política de Cookies">Política de Cookies</a>
 <details style="display: block">
@@ -206,7 +180,7 @@
 <p>WebMaster ™. Todos los derechos reservados.</p>
 <p>Todo el contenido y gráficos de esta web son propiedad de WebMaster ™</p>	
 </details>	
-</footer>	
-</main>	
+</footer>		
+</main>
 </body>
 </html>
