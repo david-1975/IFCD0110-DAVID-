@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+body{
+	font-family: 'Acme', sans-serif;
+}
 h2 {border-bottom:2px solid red;}
 span.spanNegrita {font-weight: bold;}
 
@@ -280,3 +283,50 @@ footer
 	padding:5px;
 	margin:20px;
 }
+.nav1{
+	background-color: hotpink; /*menu principal*/
+	text-align: center;
+	border-bottom-color: yellow;
+	border-bottom-style: solid;
+	}
+.nav1 a{
+	background-color: darkred; /*hace referencia al link, sin abrir.*/
+	color:whitesmoke;
+	padding: 10px 20px;
+	text-decoration: none;
+	}
+.nav1 a:hover {
+	background-color: red;
+	color: greenyellow;
+}
+
+
+.nav2{
+	background-color: darkgreen; /*segundo menu de navegación*/
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	overflow: auto;
+}
+.nav2 li{
+	background-color: yellow;/*bloque link*/
+	border: 1px solid black;
+	width: auto;
+	float: left;
+	
+	text-align: center;
+	margin: 10px 25px
+}
+.nav2 li a{
+	padding: 10px 15px;
+	color: black;
+	text-decoration-color: none;
+	}
+.nav2 li:hover {
+	background-color: blueviolet;
+	}
+.nav2 li a:hover{
+	color:white;
+}
+
+

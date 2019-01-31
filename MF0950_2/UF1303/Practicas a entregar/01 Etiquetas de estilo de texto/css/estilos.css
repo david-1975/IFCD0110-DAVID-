@@ -1,10 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
+
+
+/*solo con estilos absolutos*/
 body {
 	background-color: lightgoldenrodyellow;
 	margin: 5%;
 	padding: 2px;
 	box-shadow:2px 2px 2px;
+	font-size: 120%;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 h1{
 	text-align: center;
