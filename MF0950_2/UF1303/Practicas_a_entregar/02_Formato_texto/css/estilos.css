@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{box-sizing: border-box;}
+.body {background-image: url("../textura.jpg");}
+.divfolio1{
+	background-color: white;
+	margin: 5%;
+	padding: 3%;
+	background-image: url("../libreta-espiral.gif");
+	background-repeat: repeat-y;
+	box-shadow: 6px 6px 20px #000;
+		}
+.divfolio2{
+	background-color: white;
+	margin: 5%;
+	padding: 3%;
+	background-image: url("../fondos-web-libreta-espiral-005.gif");
+	background-repeat: repeat-y;
+	box-shadow: 6px 6px 20px #000;
+		}
+.divfolio3{
+	background-color: white;
+	margin: 5%;
+	padding: 3%;
+	background-image: url("../fondos-web-libreta-espiral-003.jpg");
+	background-repeat: repeat-y;
+	box-shadow: 6px 6px 20px #000;
+		}
+.divhoja1{
+	background-color: lightgoldenrodyellow;
+	margin: 3%;
+	padding: 3%;
+	border: solid 1px;
+	image-orientation: right;
+	background-position: right top 10px;
+	background-image: url("../chincheta-roja.png");
+	background-repeat: no-repeat;
+	line-height: 2.8em;
+	box-shadow: 6px 6px 20px #000;
+}
+.divhoja2{
+	background-color: lightgreen;
+	margin: 3%;
+	padding: 3%;
+	border: solid 1px;
+	image-orientation: right;
+	background-position: right top 10px;
+	background-image: url("../chincheta-azul.png");
+	background-repeat: no-repeat;
+	line-height: 2.8em;
+	box-shadow: 6px 6px 20px #000;
+}
+.divhoja3{
+	background-color: lightblue;
+	margin: 3%;
+	padding: 3%;
+	border: solid 1px;
+	image-orientation: right;
+	background-position: right top 10px;
+	background-image: url("../chincheta-verde.png");
+	background-repeat: no-repeat;
+	line-height: 2.8em;
+	box-shadow: 6px 6px 20px #000;
+}
+  .h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin: 1%;
+	padding: 1%;
+	background-color: lightgoldenrodyellow;	
+	text-decoration: gunderline solid red; 
+	border-bottom: solid  red 20px;
+	border-bottom-style: groove;
+}
+.h3{
+	border-bottom: solid  red 20px;
+	border-bottom-style: groove;
+	font-variant: small-caps;
+	font-size: 2.5em;
+	}
+.hr {
+	width: 200px;
+	color: lightgrey;
+	border: 1px solid;
+}
+.nav{
+	background-color: lightgoldenrodyellow; /*menu de navegación*/
+	margin : 2px; 
+	padding: 9px;
+	width: auto;
+	overflow: hidden;
+	border: solid 1px SILVER;
+	}
+.navli{
+	border: 1px solid yellow;
+	float: left;
+	padding: 10px;
+	margin: 0%;
+	color: white;
+	background-color: #990000;
+	width: 33%;
+	text-align: center;
+	font-size: 25px;
+	overflow: hidden;
+		}
+.contenedortexto1{
+	border: hidden;
+	background-color:#F7DC6F;
+	padding: 5px;
+	margin: 20px;
+	border-left-style: solid;
+    border-color: #C0392B;
+}
+.contenedortexto2{
+	border: hidden;
+	background-color:lightblue;
+	padding: 5px;
+	margin: 20px;
+	border-left-style: solid;
+    border-color: #0000ff;
+}
+.contenedortexto3{
+	border: hidden;
+	background-color:lightgreen;
+	padding: 5px;
+	margin: 20px;
+	border-left-style: solid;
+    border-color: green;
+}
+.indice1{
+	background-color:#C0392B;
+	margin: 2%;
+	padding: 3px;
+	border: hidden;
+	overflow: hidden;
+	font-size: 40px;
+	text-align: center;
+	width: 200px;
+		}
+.indice2{
+	background-color:#2b3cc0;
+	margin: 2%;
+	padding: 3px;
+	border: hidden;
+	overflow: hidden;
+	font-size: 40px;
+	text-align: center;
+	width: 200px;
+		}
+.indice3{
+	background-color:green;
+	margin: 2%;
+	padding: 3px;
+	border: hidden;
+	overflow: hidden;
+	font-size: 40px;
+	text-align: center;
+	width: 200px;
+		}
+.subir  {
+  color: white; 
+  text-decoration: none;
+}
+
+.ley {
+	background-color:lightgoldenrodyellow;
+	padding: 5px;
+	margin: 30px;
+	border: dashed;
+	text-align: center;
+	font-size: 1.8em;
+	 }
+.boton {text-decoration: none;}
+.letrasupergrande{font-size:40px}
+.letragrande{font-size: 35px}
+.letramedia{font-size: 30px}
+.letrapequena{font-size:25px}
+.colorazul{color:blue}
+.colorrojo{color:red}
+.colorverde{color:green}
+
+
