@@ -2,7 +2,11 @@
 /* CSS Document */
 
 /*----------------------menu 1----------------------------*/
-*{box-sizing: border-box content-box} /*La box-sizing propiedad define cómo se calculan el ancho y la altura de un elemento: deben incluir el relleno y los bordes, o no.*/
+*{box-sizing: border-box;
+  font-family:Tahoma,Geneva, sans-serif;
+  font-size:1em;
+} /*La box-sizing propiedad define cómo se calculan el ancho y la altura de un elemento: deben incluir el relleno y los bordes, o no.*/
+
 
 #menu1 {
 	width: 80%;
@@ -43,40 +47,155 @@
 }
 /*---------------------- menu2  --------------------*/
 
-#menu2{
+#menu2 {
 	width: 80%;
 	margin: 0 auto;
 	border: 1px solid black;
-	padding: 10px;
-	}
-#alineacion{
-	width: 90%;
-	margin: auto;
+	height: auto;
+	overflow: hidden;
 }
-#menu2 ul{
+#menu2 ul {
 	list-style-type: none;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin: 0;
 	padding: 0;
-	background-color: antiquewhite;
-	overflow: hidden;  /*con esto conseguimos que no se desborde el listado*/
-	
+	position: relative;
+	left: 50%;
+	float: left;
 }
 #menu2 ul li{
-	float: left;  /*con esto podemos llevar el listado a la derecha */
-	border: 1px solid red;
-	margin-left: 5px;
-	margin-right: 5px;
-	
-		}
-#menu2 ul li a{
-	padding: 10px;
+	float: left;
+	border: 1px solid blue;
+	margin: 5px 5px;
 	text-align: center;
+	position: relative;
+	right: 50%;
+	background-color: darkred;
+}
+#menu2 ul li a{
 	text-decoration: none;
-	border: 1px solid black;
-	margin-left: 10px;
-	margin-right: 10px;
+	text-align: center;
+	padding: 10px;
 	display: block;
-	width: 60%;
+	width: 100px;
+	color: white;
+	}
+#menu2 ul li a:hover {
+	text-decoration: underline;
+	color: yellow;
+	background-color: darkblue;
+}
+/*--------------------menu3-----------------*/
+#menu3 {
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu3 ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#menu3 ul li{
+	display: inline;
+	margin: 10px;
+	/* width: 150px; aqui no vale*/
 	
+}
+#menu3 ul li a{
+	text-decoration: none;
+	display: inline;
+	padding: 10px 15px 10px 15px;
+}
+.rojo {
+	background-color: darkred;
+	color:white;
+}
+.rojo:hover{
+	opacity:0.8; /*pone el boton opaco para saber donde estas - su función es de menos (0.1) a más intensidad (0.9)*/
+}
+.amarillo {
+	background-color: darkred;
+	color:yellow;
+}
+.amarillo:hover{
+	opacity:0.5;
+}
+.verde {
+	background-color: darkred;
+	color:green;
+}
+.verde:hover{
+	opacity:0.3;
+}
+.azul {
+	background-color: darkred;
+	color:blue;
+}
+.azul:hover{
+	opacity:0.7;
+}
+.naranja {
+	background-color: darkred;
+	color:orange;
+}
+.naranja:hover{
+	opacity:0.1;
+}
+
+/*-----------menu4-----------*/
+#menu4 {
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu4 ul{
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid red;
+	width: 300px;
+	width: auto;
+}
+#menu4 ul li{
+	
+	padding: 0;
+	border: 1px solid blue;
+	display: block;
+	margin: 0 auto;
+	/* width: 150px; aqui no vale*/
+	
+}
+#menu4 ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px 15px 10px 15px;
+}
+
+#padre{
+	overflow: hidden;
+	width: 80%;
+	border: 1px solid black;
+	margin: auto;
+	
+}
+#hijo1{
+	float: left;
+	width: 33.33%;
+	background-color:lightgray;
+	height: auto;
+}
+#hijo2{
+	float: right;
+	width: 33.33%;
+	background-color: lightcoral;
+	height: auto;
+}
+#hijo3{
+	margin: auto;
+	width: 33.33%;
+	background-color: lightyellow;
+	height: auto;
 }
