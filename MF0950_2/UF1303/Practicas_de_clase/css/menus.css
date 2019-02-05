@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------menu 1----------------------------*/
+*{box-sizing: border-box content-box} /*La box-sizing propiedad define cómo se calculan el ancho y la altura de un elemento: deben incluir el relleno y los bordes, o no.*/
+
+#menu1 {
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu1 ul { /*con esta instrucción hacemos que la lista, no tenga margen alto, bajo y padding izquierdo no tenga ancho */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;/*centra el texto*/
+	background-color: antiquewhite;
+	
+}
+#menu1 ul li{
+	display: inline-block;/*(inline) consigues poner el listado en linea (inline-block) pones listado uno encima de otro*/
+    
+}
+#menu1 ul li:hover{
+	background-color: lightgreen;
+	
+}
+#menu1 ul li a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;                    /*   ----separa el texto por los 4 lados*/
+    width: 100px; /*hacemos que todos los botones queden igual de tamaño, si la quitamos cogera el tamaño de el texto*/
+	/*border: 1px solid grey; de momento no lo usamos*/
+	color: green;
+	background-color: ghostwhite;
+	border: 1px solid black;
+}
+#menu1 ul li a:hover{
+	text-decoration: underline;
+	color: red;
+	background-color: ghostwhite;
+}
+/*---------------------- menu2  --------------------*/
+
+#menu2{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+	}
+#alineacion{
+	width: 90%;
+	margin: auto;
+}
+#menu2 ul{
+	list-style-type: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0;
+	background-color: antiquewhite;
+	overflow: hidden;  /*con esto conseguimos que no se desborde el listado*/
+	
+}
+#menu2 ul li{
+	float: left;  /*con esto podemos llevar el listado a la derecha */
+	border: 1px solid red;
+	margin-left: 5px;
+	margin-right: 5px;
+	
+		}
+#menu2 ul li a{
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid black;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: block;
+	width: 60%;
+	
+}
