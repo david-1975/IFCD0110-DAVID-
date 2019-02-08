@@ -309,7 +309,7 @@
 #menu77{
 	width: 80%;
 	margin: 0 auto;	
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	padding: 0;
 		}
 #menu77 ul{
@@ -345,8 +345,8 @@
 #menu8 {
 	width: 80%;
 	margin: 0 auto;
-	border: 1px solid black;
-	padding: 10px;
+	/*border: 1px solid black;*/
+	padding: 0px;
 }
 #menu8 ul{
 	list-style-type: none;
@@ -404,24 +404,29 @@
 	width: 80%;
 	margin: 0 auto;
 	border: 1px solid black;
-	padding: 0px;
-	position: absolute;
+	padding: 10px;
+	
 }
 #menu9 ul{
-	list-style-type: none;
+	list-style-type: none; /*quitar puntos lista*/
 	margin: 0;
 	padding: 0;
 	background-color: #333333;
-	/*overflow: hidden;*/
-	text-align:center;
+	/*overflow: hidden; /*para que flote*/
+	/*text-align:left;*/
+	width: 200px;
+	position: absolute;
 }
 #menu9 ul li{
 	border-right: 1px solid #bbb;
+	float: none; /*solo menu horizontal, si fuera menu vertical si queremos que flote*/
+	position: relative; /* se desplega */
 }
 #menu9 ul li a{
 	color: white;
-	display: inline;
-	text-align: center;
+	/*display: ;*/
+	display: block;
+	text-align: left;
 	padding: 5px;
 	text-decoration: none;
 	font-size: 20px;
@@ -432,23 +437,79 @@
 }
 #menu9 ul li ul{
 	display: none;
-	position: relative;
+	position: absolute;
 	background-color: #f9f9f9;
 	box-shadow: 0px 8px 16px 0px rgb(0,0,0,2);
 	z-index: 1;
+	top: 0;
+	right: -150px; /* para desplazar el submenu a la derecha x ejemplo, tiene que llevar px o % */
 }
-#menu9 ul li:hover ul{
-	display: inline;
+#menu9 ul li:hover > ul{ /* con el signo ">" vale para decirle que todos los hijos hagan esto*/
+	display: block;
 }
 #menu9 ul li ul li{
-	/*float: none;*/
+	position: relative;
 }
 #menu9 ul li ul li a {
 	color: black;
-	/*text-align: left;*/
+	text-align: right;
 }
 
 #menu9 ul li ul li a:hover {
 	background-color: dodgerblue;
 	color:white;
+}
+
+/*menu 10*/
+#menu10 {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu10 ul{
+	list-style: none; /*elimina punto*/
+	padding: 0; /*elimina anchos*/
+	margin: 0; /*margen fuera*/
+	background-color: #333333;
+}
+#menu10 ul li{
+	display: block;
+	border: solid 1px #fff; /*borde menu 1*/
+	width: 150px;
+	position: relative;
+}
+#menu10 ul li a{
+	text-decoration: none;
+	padding: 14px 16px;
+	color: white;
+	text-align: left;
+	display: block;
+	}
+#menu10 ul li a:hover{
+	background-color: red;
+	}
+#menu10 ul li ul{
+	display: none; /*este esta oculto para que no se muestre el menu*/
+	position: absolute;
+	background-color: #f9f9ff9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	left: 150px;
+	top: 0; /*con esta propiedad subes el submenu arriba del todo*/
+}
+#menu10 ul li:hover > ul{ /*con > ul haces que se desplege todos los submenus*/ 
+	display: block;
+}
+/*a partir de aqui sobra, solo es por si quieres cambiar los menus de color */
+#menu10 ul li ul li{
+	display: block;
+	position: relative;
+}
+#menu10 ul li ul li a{
+	color: black;
+	text-align: left;
+	}
+#menu10 ul li ul li a:hover{
+	background-color: yellow;
 }
