@@ -466,6 +466,10 @@
 	margin: 0 auto;
 	border: 1px solid black;
 	padding: 10px;
+	
+}
+h2:after {
+    content: ' \26C5'; /* para hacer dibujitos al lado de texto.*/
 }
 #menu10 ul{
 	list-style: none; /*elimina punto*/
@@ -512,4 +516,64 @@
 	}
 #menu10 ul li ul li a:hover{
 	background-color: yellow;
+}
+/*menu 11*/
+
+#menu11 {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+	
+}
+#menu11 ul{
+	list-style: none; /*elimina punto*/
+	padding: 0; /*elimina anchos*/
+	margin: 0; /*margen fuera*/
+	
+	/*overflow: hidden;*/
+}
+#menu11 ul li{
+	/*display: block;*/
+	float: left;
+	width: 150px;
+	text-align: left;
+	background-color: #333333;
+}
+#menu11 ul li a{
+	text-decoration: none;
+	padding: 14px 16px;
+	color: black;
+	text-align: center;
+	display: block;
+	}
+#menu11 ul li a:hover{
+	background-color: red;
+	}
+#menu11 ul li ul{
+	display: none; /*este esta oculto para que no se muestre el menu*/
+	
+}
+#menu11 ul li:hover > ul{  /*con > ul haces que se desplege todos los submenus*/ 
+	display: block;
+}
+/*a partir de aqui sobra, solo es por si quieres cambiar los menus de color */
+#menu11 ul li ul li{
+	position: relative;
+}
+#menu11 ul li ul li ul{
+	position: absolute;
+	top:0;
+	left: 150px;
+	
+}
+#menu11 ul li ul li a{
+	color: white;
+	display: inline-block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#menu11 ul li ul li a:hover{
+	background-color: red;
 }
