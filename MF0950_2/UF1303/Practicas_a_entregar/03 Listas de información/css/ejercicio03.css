@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{box-sizing: border-box;
+  font-family:Tahoma,Geneva, sans-serif;
+	font-size:1em;
+	padding: 0px; /*con esto corregimos las etiquetas que lleguen marguen y padding. */
+	margin: 0px;
+	
+}
+	
+#cuerpo {
+	background-color:lightgray;
+}	
+
+#cabecera {
+	background-color: blue;
+	height: 216px;
+}
+
+#div_c1 {
+	width: 15%; 
+	float: left;
+	padding: 10px;
+		
+}
+#div_c2 {
+	float: left;
+	width: 85%;
+	padding: 20px;
+}
+
+#cabecera h1 {
+	color: lightgoldenrodyellow;
+	font-size: 40px;
+}
+
+#cabecera h2 {
+	color: lightgoldenrodyellow;
+	font-size: 30px;
+}
+
+#cabecera h3 {
+	text-align: center;
+}
+
+#navegacion {
+	background-color: lightblue;
+	text-align: center;
+	height: 30%;
+	padding: 30px;
+}
+#navegacion ul {
+	list-style-type: none;
+	
+}
+#navegacion li {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+	
+	}
+#navegacion li a{
+	padding: 3px;
+	text-decoration: none;
+	color: black;
+} 
+
+#navegacion li a:hover{
+	padding: 3px;
+	text-decoration: none;
+	color: red;
+} 
+#navegacion li a:active{
+	padding: 3px;
+	text-decoration: none;
+	color: blue;
+} 
+#seccion {
+	background-color: skyblue;
+	padding: 10px;
+	margin: 30px;
+	
+	width: 100%;
+	
+}
+#seccion ul {
+	list-style-type: none;
+}
+#articulo1 {
+	background-color: lightyellow;
+	width: 40%;
+	margin: 10px 20px 10px 20px;
+	float: left;
+	border: 2px solid black;
+}
+#articulo1 li{
+	padding: 30px 20px;
+}
+#articulo2 {
+	background-color: lightyellow;
+	width: 40%;
+	margin: 10px 20px 10px 20px;
+	border: 2px solid black;
+	float: left;
+}
+#articulo2 li{
+	padding: 30px 20px;
+}
