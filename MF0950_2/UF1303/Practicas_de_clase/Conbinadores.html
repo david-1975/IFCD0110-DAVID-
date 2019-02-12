@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Seudo clase</title>
+<style>
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 1.5em;
+	width: 80%;
+	margin: 10px auto;
+	border: 1px solid black;
+	}	
+#div1 p {
+  background-color: yellow;
+}
+#div2 > p {
+  background-color: yellow;
+}	
+#div3 + p {
+  background-color: yellow;
+}
+#div4 ~ p {
+  background-color: yellow;
+}	
+	
+h2 +p {color:red;}	/* con esto pintas todos los h2 del body*/
+
+#div5 p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}	
+#div6 p.intro::first-letter { /*pinta la primera letra en rojo y ampliala a 200%*/
+  color: #ff0000;
+  font-size:200%;
+}  
+#div7 p::first-letter { /*con este estilo conseguimos poner la primera letra de un color + ampliar letra y con el segundo ponemos la letra de otro color + mayusculas sin ampliar tamaño */ 
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+#div7 p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}	
+#div8 h1::before {
+  content: url(smiley.gif);
+}	
+#div9 h1::after {
+  content: url(smiley.gif);
+}	
+#div10 ::selection {
+  color: red;
+  background: yellow;
+}	
+</style>	
+</head>
+
+<body>
+<h1>Combinadores CSS</h1> <!--con esta etiqueta pintamos todas las p que esten dentro del contenedor. -->
+<hr>	
+	
+<h2>Selector Descendiente</h2>
+<p>div p {background-color: yellow;}</p>	
+<div id="div1">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+<hr>
+<!-- ----------------------------------- -->		
+<h2>Selector hijo</h2>	
+<p>div > p {background-color: yellow;}</p> <!--marca las "p" que sean directas del contenedor, esta no es heredero directo del contenedor -->	
+<div id="div2">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> 
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+<hr>
+<!-- ----------------------------------- -->		
+<div id="div3">	
+<h2>Selector de hermanos adyacente</h2>	
+<p>div + p {background-color: yellow;}</p>	
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+</div>	
+<hr>
+<!-- ----------------------------------- -->		
+<div id="div4">	
+<h2>Selector general de hermanos</h2>	
+<p>div ~ p {background-color: yellow;}</p>	
+<p>Paragraph 1.</p>
+
+<div>
+  <code>Some code.</code>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+</div>	
+<hr>
+<!-- ----------------------------------- -->	
+<h1>Pseudo-elementos CSS</h1>
+<hr>
+<div id="div5">	
+<h2>Selector de primera línea</h2>	
+<p>p::first-line {color: #ff0000;font-variant: small-caps;}</p>	
+<div>	
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+</div>	
+</div>	
+<hr>
+<!-- ----------------------------------- -->
+<div id="div6">	
+<h2>Selector de primera letra</h2>	
+<p>p.intro::first-letter {color: #ff0000;  font-size:200%;}</p>	
+<p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p>
+</div>
+<hr>
+<div id="div7">
+<h2>Selector de elementos múltiples</h2>	
+<p>p::first-letter {color: #ff0000; font-size: xx-large; } p::first-line { color: #0000ff; font-variant: small-caps;}</p>	
+<p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+<hr>
+<div id="div8">
+<h2>Selector antes de pseudo-elemento</h2>	
+<p>h1::before {  content: url(smiley.gif);}</p>	
+<h1>This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+<h1>This is a heading</h1>
+<p><b>Note:</b> IE8 supports the content property only if a !DOCTYPE is specified.</p>
+</div>
+<hr>	
+<div id="div9">
+<h2>Selector después de pseudo-elemento</h2>
+<p>h1::after {  content: url(smiley.gif);}</p>	
+<h1>This is a heading</h1>
+<p>The ::after pseudo-element inserts content after the content of an element.</p>
+
+<h1>This is a heading</h1>
+<p><b>Note:</b> IE8 supports the content property only if a !DOCTYPE is specified.</p>
+	
+	</div>	
+</div>
+<hr>	
+<div id="div10">
+<h2> La selección :: pseudo-elemento</h2>
+<p>::selection {  color: red;   background: yellow;}</p>	
+<h1>Select some text on this page:</h1>
+
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+
+<p><strong>Note:</strong> ::selection is not supported in Internet Explorer 8 and earlier versions.</p>
+<p><strong>Note:</strong> Firefox supports an alternative, the ::-moz-selection property.</p>
+
+	</div>	
+</body>
+</html>
