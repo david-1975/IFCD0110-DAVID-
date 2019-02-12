@@ -82,31 +82,45 @@
 #seccion {
 	background-color: skyblue;
 	padding: 10px;
-	margin: 30px;
-	
-	width: 100%;
-	
+	margin: 35px;
+	width: 95%;
 }
 #seccion ul {
 	list-style-type: none;
 }
-#articulo1 {
+#seccion article {
 	background-color: lightyellow;
-	width: 40%;
-	margin: 10px 20px 10px 20px;
-	float: left;
+	width: 45%;
+	margin: 30px;
+	display: inline-block;
 	border: 2px solid black;
 }
-#articulo1 li{
+#seccion li {
 	padding: 30px 20px;
+	
 }
-#articulo2 {
-	background-color: lightyellow;
-	width: 40%;
-	margin: 10px 20px 10px 20px;
-	border: 2px solid black;
-	float: left;
+#seccion li h1 {
+	color: darkblue;
+	padding: 10px 0px;
+	font-size: 1.5em;
 }
-#articulo2 li{
-	padding: 30px 20px;
+#seccion a{
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	background-color: blue;
+}
+#seccion a:hover{
+	color:red;
+}
+#seccion p{
+	padding: 20px 0px;
+}
+#seccion hr{
+	margin: -5% 5% 5% 5%;
+}
+
+#contenedor {
+	background-color: skyblue;
+	width: 100%;
 }
