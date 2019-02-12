@@ -128,10 +128,10 @@
 	list-style-type: none;
 }
 #contenedor1 li{
-	width: 28%;
+	width: 27%;
 	border: 2px solid black;
 	display: inline-block;
-	margin: 30px 40px 30px 40px;
+	margin: 30px 30px 30px 30px;
 	background-color: antiquewhite;
 	padding: 20px;
 	font-size: 1.5em;
@@ -144,10 +144,10 @@
 	width: 20%;
 	border: 2px solid black;
 	display:inline-block; 
-	margin: 30px 40px 30px 40px;
+	margin: 40px 25px 40px 25px;
 	background-color: antiquewhite;
 	padding: 20px;
-	font-size: 1.5em;
+	font-size: 2em;
 	text-align: center;
 } 
 #pie{
@@ -161,18 +161,14 @@
 	border: 2px solid black;
 	display:inline-block;
 	padding: 20px;
-	width: 20%;
-	vertical-align: top;
-	margin: 3% 8% 3% 0%;
+	width: 25%;
+	margin: 40px 30px 40px 30px;
 	text-align: left;
+	color: blue;
 }
 #pie li a{
-	padding: 10px;
 	text-decoration: none;
 	color: black;
-	
+	vertical-align: top;
 }
-#pie caption{
-	color: blue;
-	padding: 20px;
-}
+
