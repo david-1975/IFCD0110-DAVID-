@@ -1,5 +1,5 @@
 git add .    
-git commit -m "fin" 
+git commit -m "fin_clase" 
 git push origin master
 
 

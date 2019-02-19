@@ -8,6 +8,11 @@ https://nodejs.org/es/ (entorno de ejecución para JavaScript)
 Cursos
 https://miriadax.net
 https://miriadax.net/web/gitmooc/inicio
+http://www.falconmasters.com/
+---
+videos:
+FLEX-BOX
+https://www.youtube.com/watch?v=F-KCncXMPk0&feature=youtu.be
 
 -----------------------------------------------------------------------------
 Libros técnicos
