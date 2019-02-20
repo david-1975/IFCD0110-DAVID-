@@ -3,9 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-<link rel="stylesheet" type="text/css" href="css/xx.css">	
-<link rel="icon" href="" type="img/xx.ico">	
+<!--<link rel="stylesheet" type="text/css" href="css/xx.css">-->	
+<!--<link rel="icon" href="" type="img/xx.ico">	-->
 <title>Elementos de Formularios HTML</title>
+<style>
+	body{
+		width:90%;
+		margin: 1% auto;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		font-size: 1em;
+		}
+	</style>	
 </head>
 
 
@@ -14,8 +22,7 @@
 <hr>
 	
 <h2>El elemento &lt;input&gt;</h2>
-<p>El elemento de forma más importante es el &lt;input&gt;elemento.</p>
-<p>El &lt;input&gt;elemento se puede mostrar de varias maneras, dependiendo del type atributo.</p>
+<p>El  elemento &lt;input&gt; se puede mostrar de varias maneras, dependiendo del type atributo.</p>
 <h3>Ejemplo: &lt;input name="Nombre" type="text"&gt;</h3>
 <p>Si type se omite el atributo, el campo de entrada obtiene el tipo predeterminado: "texto".</p>
 <form action="/action_page.php" method="post" name="Formulario1" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="off" novalidate target="_blank">
@@ -49,9 +56,9 @@
     <option value="audi">Audi</option>
   </select>	
 </p>
-<p>Los &lt;option&gt;elementos define una opción que puede seleccionarse.</p>
+<p>Los elementos &lt;option&gt; define una opción que puede seleccionarse.</p>
 <p>De manera predeterminada, se selecciona el primer elemento de la lista desplegable.</p>
-<p>Para definir una opción preseleccionada, añadir el selectedatributo para la opción:</p>
+<p>Para definir una opción preseleccionada, añadir el selected atributo para la opción:</p>
 <h3>Ejemplo &lt;option value="fiat" selected&gt;Fiat&lt;/option&gt;</h3>
 <h3>Valores visibles:</h3>
 <p>Utilice el atributo size para especificar el número de valores visibles:</p>
@@ -110,8 +117,8 @@
 <textarea name="comentario" rows="10" cols="30">  <!--Tamaño de ventana rows= número de lineas a ver, Cols=tamaño de texto a ver -->
 El gato juega en el jardín.
 </textarea>	
-<p>El rowsatributo especifica el número visible de líneas en un área de texto.</p>
-<p>El colsatributo especifica la anchura visible de un área de texto.</p>
+<p>El atributo (rows) especifica el número visible de líneas en un área de texto.</p>
+<p>El atributo (cols) especifica la anchura visible de un área de texto.</p>
 <p>Así es como el código HTML anterior se muestra en un navegador:</p>
 <p>También puede definir el tamaño del área de texto mediante el uso de CSS:</p>
 <h3>Ejemplo:</h3>
@@ -127,10 +134,10 @@ El gato juega en el jardín.
 </textarea>	
 </fieldset>	
 </form> 	
-<h2>El Elemento botón &lt;&gt;</h2>
+<h2>El Elemento &lt;botón&gt;</h2>
 <p>El elemento &lt;button&gt;  define un hacer clic <strong>botón</strong> :</p>
 <body>
-<h2>El botón elemento</h2>
+<h2>Elemento botón. </h2>
 <button type="button" onclick="alert('¡Hola Mundo!')">Pincha aquí!</button>
 <p><strong>Nota:</strong> Siempre especificar el <strong>tipo de</strong> atributo para el elemento de botón. Los diferentes navegadores pueden usar diferentes tipos predeterminados para el elemento de botón.</p>
 <hr>	
@@ -142,10 +149,8 @@ El gato juega en el jardín.
 </ul>
 <p><strong>Nota:</strong> Los navegadores no muestran elementos desconocidos. Nuevos elementos que no son compatibles con los navegadores antiguos no "destruir" a su página web.</p>
 <hr>
-<h2>HTML5 Elemento &lt;lista de datos&gt;</h2>
-<p>El elemento &lt;datalist&gt; especifica una lista de opciones predefinidas para un elemento &lt;input&gt;.</p>
-<p>Los usuarios podrán ver una lista desplegable de las opciones predefinidas, ya que los datos de entrada.</p>
-<p>El lista atributo del elemento &lt;input&gt; debe hacer referencia al idatributo del elemento &lt;datalist&gt;</p>
+<h2>Elemento &lt;datalist&gt;</h2>
+<p>El elemento &lt;datalist&gt; especifica una lista de opciones predefinidas para un elemento &lt;input&gt;.Los usuarios podrán ver una lista desplegable de las opciones predefinidas, ya que los datos de entrada.El atributo del elemento &lt;input&gt; debe hacer referencia al id del atributo del elemento &lt;datalist&gt;</p>
 <h3>Ejemplo</h3>
 <div>&lt;form action="/action_page.php"&gt;<br>
   &lt;input list="browsers"&gt;<br>
@@ -157,10 +162,27 @@ El gato juega en el jardín.
   &lt;option value="Safari"&gt;<br>
   &lt;/datalist&gt; <br>
   &lt;/form&gt;</div>
+<h2>El elemento &lt;datalist&gt;</h2>
+<p>El Elemento &lt;datalist&gt; especifica una lista predefinida con opciones del elemento &lt;input&gt; (eliges un texto del contenedor) La etiqueta &lt;datalist&gt; No es compatible con HTML5 y no es compatible con el naegador Safari.</p>
+
+<form action="/action_page.php" method="get" name="Formulario2" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on" novalidate target="_blank">
+  <fieldset>	
+<legend>Elige un navegador</legend>	
+  <input list="navegadores" name="browser">
+  <datalist id="navegadores">
+    <option value="Internet Explorer"></option>
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+  </datalist>
+  <input type="submit" value="Enviar">
+</fieldset>
+</form>	
+<p>&nbsp;</p>	
 <h2>HTML5 elemento &lt;output&gt;</h2>
-<p>El  elemento &lt;output&gt; representa el resultado de un cálculo (como uno realizado por un script).</p>
-<h3>Ejemplo</h3>
-<p>Realizar un cálculo y mostrar el resultado en un &lt;output&gt;elemento:</p>
+<p>El  elemento &lt;output&gt; representa el resultado de un cálculo (Nota: esta etiqueta no es compatible con HTML5, esta realizado con  un script --tiene poca utilidad).</p>
+<h3>Ejemplo: Realizar un cálculo y mostrar el resultado en un elemento &lt;output&gt;</h3>
 <div>&lt;form action="/action_page.php"<br>
   oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;<br>
   0<br>
@@ -171,7 +193,7 @@ El gato juega en el jardín.
   &lt;output name="x" for="a b"&gt;&lt;/output&gt;<br>
   &lt;br&gt;&lt;br&gt;<br>
   &lt;input type="submit"&gt;<br>
-  &lt;/form&gt;</div>
+&lt;/form&gt;</div>
 <br>
 <form action="/action_page.php"
   oninput="x.value=parseInt(a.value)+parseInt(b.value)">
@@ -185,78 +207,208 @@ El gato juega en el jardín.
   <input type="submit">
 </form>	
 <h2>Elementos de formulario HTML</h2>
+<table>
+  <tbody>
+    <tr>
+      <th width="113">Etiquetas</th>
+      <th width="450">Descripción de las etiquetas</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_form.asp">&lt;form&gt;</a></td>
+      <td>Define un formulario HTML para la entrada del usuario.</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_input.asp">&lt;input&gt;</a></td>
+      <td>Define un control de entrada.</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_textarea.asp">&lt;textarea&gt;</a></td>
+      <td>Define un control de entrada multilínea (textarea)</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_label.asp">&lt;label&gt;</a></td>
+      <td>Define una etiqueta para un elemento &lt;input&gt;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_fieldset.asp">&lt;fieldset&gt;</a></td>
+      <td>Agrupa elementos relacionados en un formulario.</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_legend.asp">&lt;legend&gt;</a></td>
+      <td>Define un título para un elemento &lt;fieldset&gt;</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_select.asp">&lt;select&gt;</a></td>
+      <td>Define una lista desplegable</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_optgroup.asp">&lt;optgroup&gt;</a></td>
+      <td>Define un grupo de opciones relacionadas en una lista desplegable</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_option.asp">&lt;option&gt;</a></td>
+      <td>Define una opción en una lista desplegable</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_button.asp">&lt;button&gt;</a></td>
+      <td>Define un botón pulsable</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_datalist.asp">&lt;datalist&gt;</a></td>
+      <td>Especifica una lista de opciones predefinidas para controles de entrada (HTML5)</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_output.asp">&lt;output&gt;</a></td>
+      <td>Define el resultado de un cálculo. (HTML5)</td>
+    </tr>
+  </tbody>
+</table>
+	<hr>
+<h1>HTML &lt;optgroup&gt; Tag</h1>
+<h2>Definición y Uso</h2>
+<p>La &lt;optgroup&gt; se utiliza para las opciones relacionadas con los grupos en una lista desplegable. Si usted tiene una larga lista de opciones, grupos de opciones relacionadas son más fáciles de manejar para un usuario.</p>
+<h2>atributos</h2>
+<table>
+  <tbody>
+    <tr>
+      <th width="125">Atributos</th>
+      <th width="85">Valor</th>
+      <th width="487">Descripción</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/att_optgroup_disabled.asp">disabled</a></td>
+      <td>disabled</td>
+      <td>Especifica que un grupo de opciones debe estar deshabilitado</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/att_optgroup_label.asp">label</a></td>
+      <td><em>text</em></td>
+      <td>Especifica una etiqueta para un grupo de opciones.</td>
+    </tr>
+  </tbody>
+</table>
+<p>Ejemplo:</p>
+<p>&lt;select&gt;<br>
+    &lt;optgroup label="Swedish Cars"&gt;<br>
+      &lt;option value="volvo"&gt;Volvo&lt;/option&gt;<br>
+      &lt;option value="saab"&gt;Saab&lt;/option&gt;<br>
+    &lt;/optgroup&gt;<br>
+    &lt;optgroup label="German Cars"&gt;<br>
+      &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;<br>
+      &lt;option value="audi"&gt;Audi&lt;/option&gt;<br>
+    &lt;/optgroup&gt;<br>
+&lt;/select&gt;</p>
+<select>
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+<hr>	
+<h1>HTML &lt;label&gt; Tag</h1>
+	
+<h2>Definición y Uso</h2>
+<p>La etiqueta &lt;label&gt; define una etiqueta para un botón &lt;&gt;, &lt;input&gt;, &lt;metro&gt;, &lt;salida&gt;, &lt;progreso&gt;, &lt;seleccionar&gt; o elemento &lt;textarea&gt;. El elemento &lt;label&gt; no hace como algo especial para el usuario. Sin embargo, proporciona una mejora la facilidad de uso para los usuarios de ratón, ya que si el usuario hace clic en el texto dentro del elemento &lt;label&gt;, se alterna el control. El atributo de la etiqueta &lt;label&gt; debería ser igual al atributo id del elemento relacionado para unirse juntos.</p>
+<p><strong>Consejo:</strong> Una etiqueta puede estar unido a un elemento ya sea usando el atributo "for", o colocando el elemento dentro de la &lt;label&gt; elemento.</p>
+<table>
+  <tbody>
+    <tr>
+      <th width="110">Atributo</th>
+      <th width="107">Valor</th>
+      <th width="336">Descripción</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/att_label_for.asp">for</a></td>
+      <td><em>element_id</em></td>
+      <td>Especifica a qué elemento de formulario está enlazada una etiqueta.</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/att_label_form.asp">form</a></td>
+      <td><em>form_id</em></td>
+      <td>Especifica una o más formas a las que pertenece la etiqueta.</td>
+    </tr>
+  </tbody>
+</table>
+<p>Ejemplo:</p>
+<p>&lt;form action="/action_page.php"&gt;<br>
+    &lt;label for="male"&gt;Male&lt;/label&gt;<br>
+    &lt;input type="radio" name="gender" id="male" value="male"&gt;&lt;br&gt;<br>
+    &lt;label for="female"&gt;Female&lt;/label&gt;<br>
+    &lt;input type="radio" name="gender" id="female" value="female"&gt;&lt;br&gt;<br>
+    &lt;label for="other"&gt;Other&lt;/label&gt;<br>
+    &lt;input type="radio" name="gender" id="other" value="other"&gt;&lt;br&gt;&lt;br&gt;<br>
+    &lt;input type="submit" value="Submit"&gt;<br>
+&lt;/form&gt;</p>
+	<form action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<hr>
+	
+<h1>HTML &lt;select&gt; Tag</h1>
+<h2>Definición y Uso</h2>
+<p>El elemento &lt;select&gt; se utiliza para crear una lista desplegable. Las etiquetas <a href="https://www.w3schools.com/tags/tag_option.asp">&lt;option&gt;</a>  dentro del elemento &lt;select&gt; definen las opciones disponibles en la lista.</p>
+<p><strong>Consejo:</strong> El elemento &lt;select&gt; es un control de formulario y se puede utilizar en una forma para recoger la entrada del usuario.</p>
+<br>
+<h2>atributos</h2>
 <p>= Nuevo en HTML5.</p>
 <table>
   <tbody>
     <tr>
-      <th>Tag</th>
-      <th>Description</th>
+      <th width="107">Atributos</th>
+      <th width="75">Valor</th>
+      <th width="586">Descripción</th>
     </tr>
     <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_form.asp">&lt;form&gt;</a></td>
-      <td>Defines an HTML form for user input</td>
+      <td><a href="https://www.w3schools.com/tags/att_select_autofocus.asp">autofocus</a></td>
+      <td>autofocus</td>
+      <td>Especifica que la lista desplegable debe enfocarse automáticamente cuando se carga la página.</td>
     </tr>
     <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_input.asp">&lt;input&gt;</a></td>
-      <td>Defines an input control</td>
+      <td><a href="https://www.w3schools.com/tags/att_select_disabled.asp">disabled</a></td>
+      <td>disabled</td>
+      <td>Especifica que una lista desplegable debe estar deshabilitada</td>
     </tr>
     <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_textarea.asp">&lt;textarea&gt;</a></td>
-      <td>Defines a multiline input control (text area)</td>
+      <td><a href="https://www.w3schools.com/tags/att_select_form.asp">form</a></td>
+      <td><em>form_id</em></td>
+      <td>Define una o más formas a las que pertenece el campo de selección</td>
     </tr>
     <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_label.asp">&lt;label&gt;</a></td>
-      <td>Defines a label for an &lt;input&gt; element</td>
+      <td><a href="https://www.w3schools.com/tags/att_select_multiple.asp">multiple</a></td>
+      <td>multiple</td>
+      <td>Especifica que se pueden seleccionar múltiples opciones a la vez.</td>
     </tr>
     <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_fieldset.asp">&lt;fieldset&gt;</a></td>
-      <td>Groups related elements in a form</td>
+      <td><a href="https://www.w3schools.com/tags/att_select_name.asp">name</a></td>
+      <td><em>name</em></td>
+      <td>Define un nombre para la lista desplegable</td>
     </tr>
     <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_legend.asp">&lt;legend&gt;</a></td>
-      <td>Defines a caption for a &lt;fieldset&gt; element</td>
+      <td><a href="https://www.w3schools.com/tags/att_select_required.asp">required</a></td>
+      <td>required</td>
+      <td>Especifica que el usuario debe seleccionar un valor antes de enviar el formulario</td>
     </tr>
     <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_select.asp">&lt;select&gt;</a></td>
-      <td>Defines a drop-down list</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_optgroup.asp">&lt;optgroup&gt;</a></td>
-      <td>Defines a group of related options in a drop-down list</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_option.asp">&lt;option&gt;</a></td>
-      <td>Defines an option in a drop-down list</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_button.asp">&lt;button&gt;</a></td>
-      <td>Defines a clickable button</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_datalist.asp">&lt;datalist&gt;</a></td>
-      <td>Specifies a list of pre-defined options for input controls</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.w3schools.com/tags/tag_output.asp">&lt;output&gt;</a></td>
-      <td>Defines the result of a calculation</td>
+      <td><a href="https://www.w3schools.com/tags/att_select_size.asp">size</a></td>
+      <td><em>number</em></td>
+      <td>Define el número de opciones visibles en una lista desplegable</td>
     </tr>
   </tbody>
 </table>
-</body>	
-<h2>El elemento datalist</h2>
-<p>El Elemento datalist especifica una lista predefinida con opciones del elemento input.</p>
+	<hr>
 
-<form action="/action_page.php">
-  <input list="browsers" name="browser">
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist>
-  <input type="submit">
-</form>
+</body>	
+
 	
 
 	

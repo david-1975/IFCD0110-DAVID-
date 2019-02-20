@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-<link rel="stylesheet" type="text/css" href="css/xx.css">	
-<link rel="icon" href="" type="img/xx.ico">	
+<!--<link rel="stylesheet" type="text/css" href="css/xx.css">	-->
+<!--<link rel="icon" href="" type="img/xx.ico">	-->
 <title>Formularios HTML</title>
 </head>
 
@@ -13,17 +13,13 @@
 <hr>
 <p>El &lt;form&gt;elemento HTML define un formulario que se utiliza para recopilar información del usuario:</p>
 <p>&lt;form&gt;<br>
-  .<br>
-  <em>form elements</em><br>
-  .<br>
+<em>form elements</em><br>
 &lt;/form&gt;</p>
-<p>Un formulario HTML contiene <strong>elementos de formulario</strong>.</p>
-<p>Los elementos de formulario son diferentes tipos de elementos de entrada, como campos de texto, casillas de verificación, botones de opción, botones de envío y más.</p>
+<p>Un formulario HTML contiene <strong>elementos de formulario</strong>. Los elementos de formulario son diferentes tipos de elementos de entrada, como campos de texto, casillas de verificación, botones de opción, botones de envío y más.</p>
 <hr>
 <h2>El elemento &lt;input&gt;</h2>
-<p>El &lt;input&gt;elemento es el elemento de forma más importante.</p>
-<p>El &lt;input&gt;elemento se puede mostrar de varias maneras, dependiendo del atributo de <strong>tipo</strong> .</p>
-<p>Aquí hay unos ejemplos:</p>
+<p>El &lt;input&gt;elemento es el elemento de forma más importante. El &lt;input&gt;elemento se puede mostrar de varias maneras, dependiendo del atributo de <strong>tipo</strong> .</p>
+<p>Ejemplos:</p>
 <table>
   <tbody>
     <tr>
@@ -45,8 +41,7 @@
   </tbody>
 </table>
 <div>
-  <h3>Entrada de texto</h3>
-  <p>&lt;input type="text"&gt;define un campo de entrada de una línea para la entrada de <strong>texto</strong> :</p>
+  <h3>Entrada de texto  &lt;input type="text"&gt;define un campo de entrada de una línea para la entrada de <strong>texto</strong> :</h3>
 </div>
 <p>&lt;form&gt;<br>
     First name:&lt;br&gt;<br>
@@ -64,7 +59,7 @@
 </form>	
 <hr>	
 <h2>Entrada del botón de radio</h2>
-<p>&lt;input type="radio"&gt;define un <strong>botón de radio</strong> .</p>
+<p>Ejemplo: &lt;input type="radio"&gt;define un <strong>botón de radio</strong> .</p>
 <p>Los botones de radio permiten al usuario seleccionar UNA de un número limitado de opciones:</p>
 <p>&lt;form&gt;<br>
     &lt;input type="radio" name="gender" value="male" checked&gt; Masculino&lt;br&gt;<br>
@@ -81,9 +76,7 @@
 </form> 
 <hr>
 <h2>El botón Enviar</h2>
-<p>&lt;input type="submit"&gt;define un botón para <strong>enviar</strong> los datos del formulario a un <strong>controlador de formularios</strong> .</p>
-<p>El manejador de formularios suele ser una página de servidor con un script para procesar datos de entrada.</p>
-<p>El manejador de formularios se especifica en el atributo de <strong>acción</strong> del formulario :</p>
+<p>&lt;input type="submit"&gt;define un botón para <strong>enviar</strong> los datos del formulario a un <strong>controlador de formularios</strong> . El manejador de formularios suele ser una página de servidor con un script para procesar datos de entrada. El manejador de formularios se especifica en el atributo de <strong>acción</strong> del formulario :</p>
 <p>&lt;form action="/action_page.php"&gt;<br>
     First name:&lt;br&gt;<br>
     &lt;input type="text" name="firstname" value="Mickey"&gt;&lt;br&gt;<br>
@@ -101,12 +94,10 @@
 </form>	
 <hr>
 <h2>El atributo de acción</h2>
-<p>El action atributo define la acción a realizar cuando se envía el formulario.</p>
-<p>Normalmente, los datos del formulario se envían a una página web en el servidor cuando el usuario hace clic en el botón de envío.</p>
-<p>En el ejemplo anterior, los datos del formulario se envían a una página en el servidor llamada "/action_page.php". Esta página contiene un script del lado del servidor que maneja los datos del formulario:</p>
-<p>&lt;form <strong>action="/action_page.php</strong>"&gt;</p>
-<p>&lt;form <strong>action="/mailto:correo@gmail.com</strong>"&gt;</p>
-<p>Si actionse omite el atributo, la acción se establece en la página actual.</p>
+<p>El action atributo define la acción a realizar cuando se envía el formulario. Normalmente, los datos del formulario se envían a una página web en el servidor cuando el usuario hace clic en el botón de envío. En el ejemplo anterior, los datos del formulario se envían a una página en el servidor llamada "/action_page.php". Esta página contiene un script del lado del servidor que maneja los datos del formulario:</p>
+<p>&lt;form <strong>action="/action_page.php</strong>"&gt; (hacia un servidor base de datos)</p>
+<p>&lt;form <strong>action="/mailto:correo@gmail.com</strong>"&gt; (hacia una cuenta de correo)</p>
+<p>Si el atributo &lt;action&gt; se omite, la acción se establece en la página actual.</p>
 <form action="/action_page.php" target="_blank">
   Nombre:<br>
   <input type="text" name="Nombre" value="">
@@ -118,11 +109,8 @@
 </form> 
 <hr>	
 <h2>El atributo de destino</h2>
-<p>El targetatributo especifica si el resultado enviado se abrirá en una nueva pestaña del navegador, un marco o en la ventana actual.</p>
-<p>El valor predeterminado es " _self", lo que significa que el formulario se enviará en la ventana actual.</p>
-<p>Para hacer que el resultado del formulario se abra en una nueva pestaña del navegador, use el valor " _blank":</p>
-<h3>Ejemplo</h3>
-<div>&lt;form action="/action_page.php" <strong>target="_blank"</strong>&gt;</div>
+<p>El atributo &lt;target&gt; especifica si el resultado enviado se abrirá en una nueva pestaña del navegador, un marco o en la ventana actual. El valor predeterminado es " _self", lo que significa que el formulario se enviará en la ventana actual. Para hacer que el resultado del formulario se abra en una nueva pestaña del navegador, use el valor " _blank":</p>
+<h3>Ejemplo: &lt;form action="/action_page.php" <strong>target="_blank"</strong>&gt;</h3>
 <form action="/action_page.php" target="_blank">
   Nombre:<br>
   <input type="text" name="firstname" value="">
@@ -134,14 +122,13 @@
 </form>
 <p>Otros valores legales son " _parent", " _top" o un nombre que representa el nombre de un iframe.</p>
 <hr>
-<h2>El atributo del método</h2>
-<p>El methodatributo especifica el método HTTP ( <strong>GET</strong> o <strong>POST</strong> ) que se utilizará al enviar los datos del formulario:</p>
+<h2>El atributo:  método</h2>
+<p>El atributo &lt;method&gt; especifica el método HTTP ( <strong>GET</strong> o <strong>POST</strong> ) que se utilizará al enviar los datos del formulario:</p>
 <div>
-  <h3>Ejemplo GET-visible al público</h3>
-  <div>&lt;form action="/action_page.php" <strong>method="get"</strong>&gt;</div>
+  <h3>Ejemplo GET: (visible al público) &lt;form action="/action_page.php" <strong>method="get"</strong>&gt;</h3>
   <form action="/action_page.php" target="_blank" method="GET">
-  Nombre:<br>
-  </form>
+    Nombre:<br>
+</form>
 	</div>  
 Ejemplo
 <form action="/action_page.php" method="post">
@@ -153,10 +140,7 @@ Nombre <br>
   <br><br>
   <input type="submit" value="Enviar">
 </form>
-<p><br>
-  Ejemplo
-</p>
-<p>&lt;form action=&quot;/action_page.php&quot; method=&quot;post&quot;&gt; </p>
+<h3>Ejemplo POST: (oculto al público) &lt;form action=&quot;/action_page.php&quot; method=&quot;post&quot;&gt; </h3>
 <form action="/action_page.php" target="_blank" method="POST">
   Nombre:<br>
   <input type="text" name="firstname" value="">
@@ -168,9 +152,7 @@ Nombre <br>
 </form>
 	
 <h2>¿Cuándo usar GET?</h2>
-<p>El método predeterminado al enviar los datos del formulario es GET.</p>
-<p>Sin embargo, cuando se usa GET, los datos del formulario enviado serán <strong>visibles en el campo de dirección de la página</strong> :</p>
-<p>/action_page.php?firstname=Mickey&amp;lastname=Mouse</p>
+<p>El método predeterminado al enviar los datos del formulario es GET. Sin embargo, cuando se usa GET, los datos del formulario enviado serán <strong>visibles en el campo de dirección de la página</strong>  ejemplo: :/action_page.php?firstname=Mickey&amp;lastname=Mouse</p>
 <p><strong>Notas sobre GET:</strong></p>
 <ul>
   <li>Agrega datos de formulario a la URL en pares de nombre / valor</li>
@@ -187,11 +169,8 @@ Nombre <br>
   <li>Los envíos de formularios con POST no se pueden marcar como favoritos</li>
 </ul>
 <hr>
-<h2>El atributo de name</h2>
-<p>Cada campo de entrada debe tener un nameatributo para ser enviado.</p>
-<p>Si namese omite el atributo, los datos de ese campo de entrada no se enviarán en absoluto.</p>
-<p>Este ejemplo solo enviará el campo de entrada "Apellido": (si no existe no se envia dato)</p>
-<br>
+<h2>El atributo de &lt;name&gt;</h2>
+<p>Cada campo de entrada debe tener un nameatributo para ser enviado. Si namese omite el atributo, los datos de ese campo de entrada no se enviarán en absoluto. Este ejemplo solo enviará el campo de entrada "Apellido": (si no existe no se envia dato)</p>
 <form action="/action_page.php">
   Nombre:<br>
   <input type="text" value=""><br>
@@ -201,22 +180,22 @@ Nombre <br>
 </form>	
 <hr>
 <h2>Agrupando datos de formulario con &lt;fieldset&gt;</h2>
-<p>El &lt;fieldset&gt;elemento se utiliza para agrupar datos relacionados en un formulario.</p>
-<p>El &lt;legend&gt;elemento define un título para el &lt;fieldset&gt; elemento.</p>
-<p>Ejemplo:</p>
-<p>&lt;form action="/action_page.php"&gt;<br>
-    &lt;fieldset&gt;<br>
-      &lt;legend&gt;Personal information:&lt;/legend&gt;<br>
-      First name:&lt;br&gt;<br>
-      &lt;input type="text" name="firstname" value="Mickey"&gt;&lt;br&gt;<br>
-      Last name:&lt;br&gt;<br>
-      &lt;input type="text" name="lastname" value="Mouse"&gt;&lt;br&gt;&lt;br&gt;<br>
-      &lt;input type="submit" value="Submit"&gt;<br>
-    &lt;/fieldset&gt;<br>
-&lt;/form&gt;</p>
+<p>El elemento &lt;fieldset&gt; se utiliza para agrupar datos relacionados en un formulario.</p>
+<p>El elemento &lt;legend&gt; define un título para el elemento &lt;fieldset&gt; </p>
+<p>Ejemplo: &lt;form action="/action_page.php"&gt;</p>
+<p><br>
+  &lt;fieldset&gt;<br>
+  &lt;legend&gt;Personal information:&lt;/legend&gt;<br>
+  First name:&lt;br&gt;<br>
+  &lt;input type="text" name="firstname" value="Mickey"&gt;&lt;br&gt;<br>
+  Last name:&lt;br&gt;<br>
+  &lt;input type="text" name="lastname" value="Mouse"&gt;&lt;br&gt;&lt;br&gt;<br>
+  &lt;input type="submit" value="Submit"&gt;<br>
+  &lt;/fieldset&gt;<br>
+  &lt;/form&gt;</p>
 <form action="/action_page.php" method="post">
   <fieldset>
-    <legend>Information personal :(titulo-leyenda)</legend>
+    <legend>Información personal :(titulo-leyenda)</legend>
     Nombre:<br>
     <input type="text" name="Nombre" value=""><br>
     Apellidos:<br>
@@ -224,12 +203,12 @@ Nombre <br>
     <input type="submit" value="Enviar">
   </fieldset>
 </form>	
-<p>Aquí está la lista de todos los &lt;form&gt;atributos:</p>
+<p>Aquí está la lista de todos los atributos &lt;form&gt;</p>
 <table>
   <tbody>
     <tr>
-      <th>Atributo</th>
-      <th>Descripción</th>
+      <th width="161">Atributo</th>
+      <th width="692">Descripción</th>
     </tr>
     <tr>
       <td>accept-charset</td>
@@ -266,8 +245,6 @@ Nombre <br>
   </tbody>
 </table>
 <p>Ejemplo de Uso:</p>
-<p><br>
-</p>
 <form action="/action_page.php" method="post" name="Formulario1" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="off" novalidate target="_blank">
 <fieldset>
 	<legend>Datos Personales</legend>
@@ -276,8 +253,9 @@ Nombre <br>
  		    <br>
 		    <input type="submit" value="Envio">
 </fieldset>		
-</form>	
-	
-	
+</form>
+<hr>
+<h2>atributos Formularios</h2>
+<a href="https://www.w3schools.com/tags/tag_form.asp">Atributos Formualarios</a>
 </body>
 </html>

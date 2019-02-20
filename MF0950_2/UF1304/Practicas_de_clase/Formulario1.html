@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es-ES">	
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<!--<link rel="stylesheet" type="text/css" href="css/xx.css">-->	
+<!--<link rel="icon" href="" type="img/xx.ico">	-->
+<title>Formularios 1 HTML</title>
+<style>
+	body{
+		width:90%;
+		margin: 1% auto;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		font-size: 1em;
+		}
+	</style>
+</head>
+
+<body>
+<form action="/action_page.php" method="get" name="Formulario2" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on" novalidate target="_blank">
+  <fieldset>		
+	 <legend>Formulario</legend>
+	  
+	  <label for="Name">Nombre y apellidos</label><br>
+	  <input type="text" value=""><br>	  
+<label for="Name">Pais</label><br>
+<select>
+	<optgroup label="elige">
+    <option value="elige">-elige-</option>
+  </optgroup>
+  <optgroup label="Europa">
+    <option value="Espana">España</option>
+    <option value="italia">Italia</option>
+  </optgroup>
+<optgroup label="Africa">
+    <option value="marrucecos">Marruecos</option>
+    <option value="congo">El congo</option>
+  </optgroup>
+</select><br>	  
+	  <br>
+	 <label for="Name">Comentario</label><br> 
+ <textarea name="comentario" rows="10" cols="30">  
+</textarea>	  <br>
+ <input type="submit" value="Enviar">
+	  
+	  
+	  
+	  
+	  </fieldset>
+	</form>	
+</body>
+</html>
