@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es-ES">	
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<!--<link rel="stylesheet" type="text/css" href="css/xx.css">	-->
+<!--<link rel="icon" href="" type="img/xx.ico">	-->
+<title>Tipos de Elementos</title>
+</head>
+
+<body>
+<h2>Tipos de entrada HTML</h2>
+<h3>Estos son los diferentes tipos de entrada se pueden utilizar en HTML:</h3>
+<ul>
+  <li>&lt;input type="button"&gt;</li>
+  <li>&lt;input type="checkbox"&gt;</li>
+  <li>&lt;input type="color"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="date"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="datetime-local"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="email"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="file"&gt;</li>
+  <li>&lt;input type="hidden"&gt;</li>
+  <li>&lt;input type="image"&gt;</li>
+  <li>&lt;input type="month"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="password"&gt;</li>
+  <li>&lt;input type="radio"&gt;</li>
+  <li>&lt;input type="range"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="reset"&gt;</li>
+  <li>&lt;input type="search"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="submit"&gt;</li>
+  <li>&lt;input type="tel"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="text"&gt;</li>
+  <li>&lt;input type="time"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="url"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+  <li>&lt;input type="number"&gt;<img src="img/html5-32x32.ico.ico" width="22" height="22" alt="#"></li>
+	
+</ul>
+<hr>	
+<h2>&lt;input type="text"&gt; Tipo de entrada de texto </h2>
+<form action="/action_page.php">
+<fieldset>	
+  <label for="Nombre">Nombre:</label><br>
+  <input type="text" name="nombre" id="nombre"><br>	
+  <label for="Apellidos">Apellidos:</label><br>
+  <input type="text" name="Apellidos" id="Apellidos"><br><br>
+  <input type="submit" value="Enviar"><br>
+</fieldset>		
+</form>	
+
+<hr>	
+  
+
+<h2>&lt;input type="password"&gt; Tipo de entrada password </h2>
+<form action="/action_page.php">
+<label for="usuario">Nombre</label><br>
+<input type="text" name=""><br>
+<label for="password">Contraseña</label><br>
+<input type="text" name=""><br><br>
+<input type="submit" value="Acceder">
+</form>		
+<hr>
+<h2>&lt;input type="checkbox"&gt; Tipo de entrada casilla de verificación, puedes elegir 1 o varias </h2>
+<form action="/action_page.php">
+	<label for="usuario">Nombre</label><br>
+	<input type="checkbox" name="Sistema1" id="Sistema1"	value="Windows">Windows<br>
+	<input type="checkbox" name="Sistema2" id="sistema2" value="Macintosh">Macintosh<br>
+  	<input type="checkbox" name="Sistema3" id="Sistema3"	value="Linux">Linux<br>
+  	<input type="checkbox" name="Sistema4" id="sistema4" value="Android">Android<br>	
+</form>	
+<hr>
+<h2>&lt;input type="radio"&gt; define los botones de radio permiten al usuario seleccionar sólo una de un número limitado de opciones</h2>
+<form action="/action_page.php">
+  <input type="radio" id="genero1" name="genero1" value="hombre" checked> Hombre<br>
+  <input type="radio" id="genero2" name="genero2" value="mujer"> Mujer<br>
+  <input type="radio" id="genero3" name="genero3" value="otros"> Otros <br>
+</form>
+<hr>
+<h2>&lt;input type="submit"&gt; &lt;input type="reset"&gt;&lt;input type="button"&gt; Tipos de botones.</h2>
+<form action="/action_page.php">	
+<fieldset>
+	<legend>Botón de Formulario:</legend>
+	<label for="submit">Introduce tu nombre:</label>
+	<input type="text" name="boton1" id="submit" value="">	
+	<label for="reset">Restablecer</label>
+	<input type="reset" name="boton2" id="reset" valvue="Restablecer">
+	<label for="button">Acceder</label>
+	<input type="button" name="boton3" id="butoon" value="Acceder">
+  </fieldset>
+</form>
+<hr>
+<h2>&lt;input type="color"&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+	<legend>Color</legend>
+		<label for="text">Elige color:</label>
+		<input type="color">
+  </fieldset>
+</form>		
+<h2>&lt;input type="date"&gt; &lt;input type="datetime-local"&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+	<legend>Fechas</legend>
+		<label for="text">Elige Fecha:</label>
+		<input type="date">
+		<label for="text">Fecha local:</label>
+		<input type="datetime-local">
+	
+</fieldset>
+</form>		
+<hr>
+<h2>&lt;input type=&quot;email&quot;&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+	<legend>Correo electronico</legend>
+		<label for="text">e-mail</label>
+		<input type="email">
+</fieldset>
+</form>		
+<hr>
+<hr>
+<h2>&lt;input type=&quot;file&quot;&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+<legend>Buscar archivos</legend>
+		<label for="text">Archivo</label>
+		<input type="file">
+</fieldset>
+</form>		
+<hr>
+<h2>&lt;input type="number"&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+<legend>Buscar archivos en equipo</legend>
+Buscar 
+<input type="number">
+</fieldset>
+</form>		
+<hr>	
+<h2>&lt;input type=&quot;search&quot;&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+<legend>Buscador</legend>
+		<label for="text">Buscar</label>
+	<input type="search" id="busqueda" name="q">
+		<button>Buscar</button>
+</fieldset>
+</form>		
+<hr>	
+<h2>&lt;input type="tel"&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+<legend>Número de teféfono</legend>
+		<label for="text">Núm. Telf</label>
+	<input type="tel">
+</fieldset>
+</form>		
+<hr>
+<h2>&lt;input type="range"&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+<legend>Tipo de Rango</legend>
+		<label for="text">Rango</label>
+	<input type="range">
+</fieldset>
+</form>		
+<hr>	
+<h2>&lt;input type="time"&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+<legend>Escribir Hora</legend>
+		<label for="text">Escribe hora</label>
+	<input type="time">
+</fieldset>
+</form>		
+<hr>	
+<h2>&lt;input type="url"&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+<legend>Escribe URL</legend>
+		<label for="text">URL</label>
+	<input type="url">
+</fieldset>
+</form>		
+<hr>	
+<h2>&lt;input type=&quot;week&quot;&gt; &lt;input type=&quot;month&quot;&gt;</h2>
+<form action="/action_page.php">	
+<fieldset>
+<legend>Fechas</legend>
+		<label for="text">Semana</label>
+		<input type="week">
+		<label for="text">mes</label>
+		<input type="month">
+</fieldset>
+</form>		
+<hr>	
+</body>
+</html>

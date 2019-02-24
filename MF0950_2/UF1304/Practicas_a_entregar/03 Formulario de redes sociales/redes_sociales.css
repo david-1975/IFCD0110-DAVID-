@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing: border-box;
+  font-family:Tahoma,Geneva, sans-serif;
+	font-size:1em;
+	padding: 0px; /*con esto corregimos las etiquetas que lleguen marguen y padding. */
+	margin: 10px 0px;
+}
+.formulario {
+	background-color: lightslategrey;
+	width: 60%;
+	margin: auto;
+	
+}
+.formulario div h1 {
+	font-size: 1.3em;
+}
+.formulario > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+input[type="text"] {
+	padding: 10px;
+	margin: 3% 0%;
+	width: 100%;
+	
+	
+}
+input{
+	border-radius: 10%;
+	/*width: 200%;*/
+	/*padding: 10px;*/
+	/*margin: 1% 5%;*/
+}
+.circulo {
+	
+	/*border: solid 100px white;*/
+	/*border-radius: 100%;*/
+	/*width: 1%;*/
+}
+.circulo hr{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+.circulo p{
+	position: absolute;
+	top: 25%;
+	margin-left: 80px;
+	
+}
+.footer {
+	background-color:  grey;
+	color: white;
+}

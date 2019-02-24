@@ -6,6 +6,7 @@
 	font-size:1em;
 	padding: 0px; /*con esto corregimos las etiquetas que lleguen marguen y padding. */
 	margin: 0px;
+	
 	}
 
 /*----------------------------------*/
@@ -13,11 +14,78 @@
 	background-color: blue;
 	display: flex;                 /*con esto activo el flex*/
 	justify-content: space-between;  /*con este separo 2 div a cada lado*/
+	flex-wrap: wrap;
 }
 .navegador div{
 	display: flex;                  /*con esto activo el flex*/
 	flex-direction: column;			/*creo div en columnas*/
 }
+/*---------------------------------*/
+@media screen and (max-width: 600px){
+
+.navegador div{
+	display: flex;                  /*con esto activo el flex*/
+	flex-direction: column;			/*creo div en columnas*/
+}	
+.navegador  div div {
+	display: flex;					/*con esto activo el flex*/
+	flex-direction: column;			/*con este lo pongo en horizontal*/
+	/*justify-content: flex-end;*/		/*con este desplazo que empieze por la derecha el menu */ 
+	/*margin-right: 20px;*/
+}
+.pie2 {
+	display: flex;
+	padding: 10px;
+}
+.pie2 > div {
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 33%;	
+}
+.encabezado img {
+	position: relative; 
+	border-bottom: solid  yellow 5px;
+	margin-bottom: 40px;
+	
+}	
+.encabezado div{
+	position: absolute;
+	top: 5%;
+	padding: 1px 0px;
+	margin-left: 20%;
+	border-top: 2px solid yellow;
+	background-color:darkblue;
+	opacity: 0.7;
+	display: flex;
+	flex-direction: row;
+}
+.encabezado div img{
+	border-bottom: none;
+}
+.encabezado h2{
+	color: white;
+	font-size: 0.5em;
+	padding: 1px;
+	margin: 1px;
+}
+.encabezado p{
+	color: white;
+	padding: 1px;
+	font-size: 2em;
+}
+.encabezado a{
+	text-decoration: none;
+	color: white;
+	border: 1px solid black;
+	padding: 1px;
+	margin: 1px;
+	background-color: black;
+}
+.encabezado a:hover {
+	color:red;
+}
+}
+/*----------------------------------------*/
 .navegador  div div {
 	display: flex;					/*con esto activo el flex*/
 	flex-direction: row;			/*con este lo pongo en horizontal*/
@@ -28,10 +96,14 @@
 	background-color: darkblue;
 	margin: auto;
 	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .nav2{
 	font-size: 1.3em;
 	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .navegador img{
 	padding: 40px;
@@ -54,15 +126,17 @@
 	position: relative; 
 	border-bottom: solid  yellow 5px;
 	margin-bottom: 40px;
+	
 }
 .encabezado div{
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	padding: 30px 0px;
 	margin-left: 70%;
 	border-top: 5px solid yellow;
 	background-color:darkblue;
 	opacity: 0.7;
+	
 }
 .encabezado div img{
 	border-bottom: none;
@@ -119,14 +193,17 @@ aside p{
 }
 .contenido{
 	display: flex;
-	align-content: space-between;
+	flex-wrap: wrap;
+	
+	padding: 5px;
 }
 
 .contenido > div {
-	margin: 10px;
-	text-align: right;
+	margin: auto;
 	box-shadow: 6px 6px 20px #000;
 	position:relative;
+	width: 390px;
+	text-align: right;
 }
 .contenido p{
 	padding-left: 15px;
@@ -153,10 +230,12 @@ aside p{
 /*------------------------*/
 .contenido2{
 	display: flex;
-	align-content: space-between;
+	flex-wrap: wrap;
+	/*padding: 3px;*/
 }
 .contenido2  div {
-	margin: 10px;
+	margin: auto;
+	width: 280px;
 	text-align: right;
 	box-shadow: 6px 6px 20px #000;
 	position:relative;
@@ -184,11 +263,12 @@ aside p{
 /*------------------------*/
 .contenido3 {
 	display: flex;
-  	justify-content: space-around;
+  	flex-wrap: wrap;
 	
 }
 .contenido3  div {
-	margin: 10px;
+	margin: auto;
+	width: 585px;
 	text-align: right;
 	box-shadow: 6px 6px 20px #000;
 	position:relative;
@@ -246,6 +326,7 @@ aside p{
 	text-size:3em;
 	padding: 30px;
 	position:relative;
+	
 }
 .pie1 h1{
 	position: absolute;
@@ -254,19 +335,23 @@ aside p{
 	left: 35%;
 	background-color: cornflowerblue;
 	padding: 0px 15px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .pie2 {
 	display: flex;
 	padding: 10px;
 }
 .pie2 > div {
-flex-direction: row;
-width: 33%;	
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 33%;	
 }
 .pie3 {
 	display: flex;
 	flex-direction: row;
 	padding: 10px;
+	flex-wrap: wrap;
 }
 .pie3 > div {
 margin: auto;
@@ -275,6 +360,7 @@ margin: auto;
 	display: flex;
 	flex-direction: row;
 	padding: 10px;
+	flex-wrap: wrap;
 }
 .pie4 > div {
 margin: auto;

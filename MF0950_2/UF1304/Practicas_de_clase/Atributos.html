@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="es-ES">	
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<meta http-equiv="Refresh" content="5">	refresca pantalla a los 5 seg -->
+<!--<link rel="stylesheet" type="text/css" href="css/xx.css">	-->
+<!--<link rel="icon" href="" type="img/xx.ico">	-->
+<title>Atributos</title>
+</head>
+
+<body>
+<h1>Atributos de entrada HTML</h1>
+<hr>	
+<h2>El atributo &lt;valor&gt; </h2>
+<p>El atributo &lt;value&gt; especifica el valor inicial para un campo de entrada:</p>
+<p>&lt;form action=""&gt;<br>
+    First name:&lt;br&gt;<br>
+    &lt;input type="text" name="firstname" value="John"&gt;<br>
+&lt;/form&gt;</p>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+	<hr>
+	<h2>El atributo de &lt;readonly&gt;</h2>
+	<p>El atributo &lt;readonly&gt; especifica que el campo de entrada es de sólo lectura (no se puede cambiar):</p>
+	<p>Ejemplo:</p>
+	<p>&lt;form action=""&gt;<br>
+	    First name:&lt;br&gt;<br>
+	    &lt;input type="text" name="firstname" value="John" readonly&gt;<br>
+    &lt;/form&gt;</p>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value ="John" readonly>
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>	
+	<hr>
+	<h2>El atributo &lt;disabled&gt;</h2>
+	<p>El atributo disabled especifica que el campo de entrada se desactiva. Un campo de entrada con discapacidad es inservible y poco se puede hacer clic, y su valor no se enviará al presentar el formulario:</p>
+	<p>Ejemplo:</p>
+	<p>&lt;form action=""&gt;<br>
+	  First name:&lt;br&gt;<br>
+	  &lt;input type="text" name="firstname" value="John" disabled&gt;<br>
+	  &lt;/form&gt;</p>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value ="John" disabled>
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+<hr>
+
+	<h2>El atributo &lt;size&gt;</h2>
+<p>El atributo size especifica el tamaño (en caracteres) para el campo de entrada:</p>
+	<p>&lt;form action=""&gt;<br>
+	    First name:&lt;br&gt;<br>
+	    &lt;input type="text" name="firstname" value="John" size="40"&gt;<br>
+    &lt;/form&gt;</p>
+	<form action="">
+First name:<br>
+<input type="text" name="firstname" value="John" size="40">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+	<hr>
+	
+<h2>&nbsp;</h2>
+	
+
+<h2>El atributo &lt;maxlength&gt;</h2>
+<p>El atributo maxlength especifica la longitud máxima permitida para el campo de entrada:</p>
+<p>Ejemplo:</p>
+<p>&lt;form action=""&gt;<br>
+  First name:&lt;br&gt;<br>
+  &lt;input type="text" name="firstname" maxlength="10"&gt;<br>
+  &lt;/form&gt;</p>
+<form action="">
+First name:<br>
+<input type="text" name="firstname" maxlength="10">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+
+
+<p>Con un atributo maxlength, el campo de entrada no aceptará más que el número de caracteres permitidos. El atributo maxlength no proporciona ninguna retroalimentación. Si desea alertar al usuario, debe escribir código JavaScript.</p>
+<div>
+  <p><strong>Nota: Las</strong> restricciones de entrada no son infalibles, y JavaScript proporciona muchas maneras de agregar la entrada ilegal. Para restringir la entrada de forma segura, se debe verificar por el receptor (el servidor), así!</p>
+</div>
+<hr>
+<h2>Los atributos de HTML5</h2>
+<p>HTML5 añade los siguientes atributos para &lt;input&gt;:</p>
+<ul>
+  <li>autocompletar</li>
+  <li>enfoque automático</li>
+  <li>formar</li>
+  <li>formAction</li>
+  <li>formenctype</li>
+  <li>formmethod</li>
+  <li>formnovalidate</li>
+  <li>formtarget</li>
+  <li>alto y ancho</li>
+  <li>lista</li>
+  <li>min y max</li>
+  <li>múltiple</li>
+  <li>patrón (regexp)</li>
+  <li>marcador de posición</li>
+  <li>necesario</li>
+  <li>paso</li>
+</ul>
+<p>y los siguientes atributos para &lt;form&gt;:</p>
+<ul>
+  <li>autocompletar</li>
+  <li>novalidate</li>
+</ul>
+<hr>
+	
+<h2>El Atributo &lt;autocomplete&gt;</h2>
+<p>El atributo &lt;autocomplete&gt; especifica si un campo de formulario o de entrada debe tener autocompletar encendido o apagado. Cuando autocomplete está activado, el navegador completa automáticamente los valores de entrada basado en valores que el usuario ha introducido antes. <strong>Consejo:</strong> Es posible tener autocompletar "en" para el formulario, y "off" para los campos de entrada específicos, o viceversa. El atributo autocomplete trabaja con &lt;form&gt; y en los siguientes &lt;input&gt; tipos: texto, búsqueda, URL, teléfono, correo electrónico, contraseña, datepickers, rango y color.</p>
+<p>Ejemplo:</p>
+<p>&lt;form action="/action_page.php" autocomplete="on"&gt;<br>
+  First name:&lt;input type="text" name="fname"&gt;&lt;br&gt;<br>
+  Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;<br>
+  E-mail: &lt;input type="email" name="email" autocomplete="off"&gt;&lt;br&gt;<br>
+  &lt;input type="submit"&gt;<br>
+  &lt;/form&gt;</p>
+<form action="/action_page.php" autocomplete="on">
+  First name:<input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+  <input type="submit">
+</form>	
+	<hr>
+<h2>El atributo &lt;novalidate&gt;</h2>
+<p>El atributo &lt;novalidate&gt; es un atributo &lt;form&gt;. Cuando está presente, novalidate especifica que los datos del formulario no deben ser validados cuando se presente.</p>
+<p>Ejemplo:</p>
+<p>&lt;form action="/action_page.php" novalidate&gt;<br>
+  E-mail: &lt;input type="email" name="user_email"&gt;<br>
+  &lt;input type="submit"&gt;<br>
+  &lt;/form&gt;</p>
+<form action="/action_page.php" novalidate>
+E-mail: <input type="email" name="user_email">
+<input type="submit">
+</form>
+<hr>
+<h2>El atributo &lt;autofocus&gt;</h2>
+<p>El atributo &lt;autofocus&gt; especifica que el campo de entrada de forma automática debe obtener el foco cuando se carga la página.</p>
+<p>Ejemplo: First name:&lt;input type="text" name="fname" autofocus&gt;</p>
+<form action="/action_page.php">
+  First name:<input type="text" name="fname" autofocus><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit">
+</form>
+	<hr>
+<h2>La forma &lt;Attribute&gt;</h2>
+<p>El atributo &lt;form&gt; especifica una o más formas de un elemento que pertenece a &lt;input&gt; <strong>Consejo:</strong> Para referirse a más de una forma, usar una lista separada por espacios de forma ids.</p>
+<p>Ejemplo:</p>
+<p>&lt;form action="/action_page.php" id="form1"&gt;<br>
+  First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;<br>
+  &lt;input type="submit" value="Submit"&gt;<br>
+  &lt;/form&gt;<br>
+  <br>
+  Last name: &lt;input type="text" name="lname" form="form1"&gt;</p>
+<form action="/action_page.php" id="form1">
+First name: <input type="text" name="fname"><br>
+<input type="submit" value="Submit">
+</form>
+
+<p>The "Last name" field below is outside the form element, but still part of the form.</p>
+Last name: <input type="text" name="lname" form="form1">
+
+<hr>
+
+<h2>El atributo &lt;formAction&gt;</h2>
+<p>El atributo formaction especifica la dirección URL de un archivo que va a procesar el control de entrada cuando se envía el formulario. El atributo formAction anula el atributo de acción del elemento &lt;form&gt; El atributo formAction se utiliza con type="submit"y type="image".</p>
+<p>Ejemplo:</p>
+<p>&lt;form action="/action_page.php"&gt;<br>
+  First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;<br>
+  Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;<br>
+  &lt;input type="submit" value="Submit"&gt;&lt;br&gt;<br>
+  &lt;input type="submit" formaction="/action_page2.php"<br>
+  value="Submit as admin"&gt;<br>
+  &lt;/form&gt;</p>
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formaction="/action_page2.php"
+  value="Submit as admin">
+</form>	
+<hr>	
+<h2>El atributo &lt;formenctype&gt;</h2>
+<p>El atributo formenctype especifica cómo los datos del formulario deben ser codificados cuando se somete (sólo para las formas con method = "post"). El atributo formenctype anula el atributo enctype el &lt;form&gt;elemento. El formenctypeatributo se utiliza con type="submit"y type="image".</p>
+<p>Ejemplo:</p>
+<p>&lt;form action="/action_page_binary.asp" method="post"&gt;<br>
+  First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;<br>
+  &lt;input type="submit" value="Submit"&gt;<br>
+  &lt;input type="submit" formenctype="multipart/form-data"<br>
+  value="Submit as Multipart/form-data"&gt;<br>
+  &lt;/form&gt;</p>
+<form action="/action_page_binary.asp" method="post">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+</form>
+	<hr>
+<h2>El atributo &lt;formmethod&gt;</h2>
+<p>El atributo formmethod define el método HTTP para enviar form-data a la URL de acción. El atributo formmethod anula el atributo del método del elemento &lt;form&gt;.El atributo formmethod se puede utilizar con type="submit"y type="image".</p>
+<p>Ejemplo: </p>
+<p>&lt;form action="/action_page.php" method="get"&gt;<br>
+  First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;<br>
+  Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;<br>
+  &lt;input type="submit" value="Submit"&gt;<br>
+  &lt;input type="submit" formmethod="post" value="Submit using POST"&gt;<br>
+  &lt;/form&gt;</p>
+<form action="/action_page.php" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+	<hr>
+<h2>El atributo &lt;formnovalidate&gt;</h2>
+    <p>El atributo &lt;formnovalidate&gt; anula el atributo novalidate del elemento &lt;form&gt;.El atributo formnovalidate se puede utilizar con type="submit".</p>
+<p>&lt;form action="/action_page.php"&gt;<br>
+    E-mail: &lt;input type="email" name="userid"&gt;&lt;br&gt;<br>
+    &lt;input type="submit" value="Submit"&gt;&lt;br&gt;<br>
+    &lt;input type="submit" formnovalidate value="Submit without validation"&gt;<br>
+&lt;/form&gt;</p>
+<form action="/action_page.php">
+  E-mail: <input type="email" name="userid"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formnovalidate value="Submit without validation">
+</form>
+	<hr>
+<h2>El atributo &lt;formtarget&gt;</h2>
+    <p>El atributo formtarget especifica un nombre o una palabra clave que indica dónde mostrar la respuesta que se recibe después de enviar el formulario.El atributo formtarget anula el atributo de destino del elemento &lt;form&gt; El atributo formtarget se puede utilizar con type="submit"y type="image".</p>
+    <p>Ejemplo:</p>
+    <p>&lt;form action="/action_page.php"&gt;<br>
+      First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;<br>
+      Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;<br>
+      &lt;input type="submit" value="Submit as normal"&gt;<br>
+      &lt;input type="submit" formtarget="_blank"<br>
+      value="Submit to a new window"&gt;<br>
+      &lt;/form&gt;</p>
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit as normal">
+  <input type="submit" formtarget="_blank"
+  value="Submit to a new window">
+</form>
+<hr>	
+    <h2>Atributos &lt;height&gt; y &lt;width&gt;</h2>
+    <p>Los atributos  heighty-width especifican la altura y la anchura de un &lt;input type="image"&gt;elemento. </p>
+<div>
+      <p>Siempre especificar el tamaño de las imágenes. Si el navegador no sabe el tamaño, la página parpadeará mientras que las imágenes se cargan.</p>
+    </div>
+    <p>Ejemplo:  &lt;input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"&gt;</p>
+    <form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+<p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>
+	<hr>
+<h2>Atributos &lt;datalist&gt;</h2>
+<p>El atributo datalist se refiere a un &lt;datalist&gt;elemento que contiene opciones predefinidas para un elemento &lt;input&gt;.</p>
+<p>Ejemplo:</p>
+<p> &lt;input list="browsers"&gt;<br>
+  &lt;datalist id="browsers"&gt;<br>
+  &lt;option value="Internet Explorer"&gt;<br>
+  &lt;option value="Firefox"&gt;<br>
+  &lt;option value="Chrome"&gt;<br>
+  &lt;option value="Opera"&gt;<br>
+  &lt;option value="Safari"&gt;<br>
+  &lt;/datalist&gt;</p>
+	<form action="/action_page.php" method="get">
+
+<input list="browsers" name="browser">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<input type="submit">
+</form>
+<hr>
+  
+  
+  <h2>Los atributos &lt;min&gt; y &lt;max&gt;</h2>
+  <p>El atributo min y max especifican los valores mínimo y máximo para un elemento &lt;input&gt; El atributo min y max  trabajar con los siguientes tipos de entrada: número, rango, fecha, fecha y hora local, el mes, el tiempo y la semana.</p>
+  <p>
+  <option value="Safari">  
+  Ejemplo:
+  </p>
+  <p>
+    <option value="Safari">Enter a date before 1980-01-01:<br>
+    &lt;input type="date" name="bday" max="1979-12-31"&gt;<br>
+    <br>
+    Enter a date after 2000-01-01:<br>
+    &lt;input type="date" name="bday" min="2000-01-02"&gt;<br>
+    <br>
+    Quantity (between 1 and 5):<br>
+    &lt;input type="number" name="quantity" min="1" max="5"&gt;    
+</p>
+	  Enter a date before 1980-01-01:
+<input type="date" name="bday" max="1979-12-31">
+
+Enter a date after 2000-01-01:
+<input type="date" name="bday" min="2000-01-02">
+
+Quantity (between 1 and 5):
+<input type="number" name="quantity" min="1" max="5">
+	<hr>
+	
+  <h2>El atributo &lt;multiple&gt;</h2>
+  <p>El atributo multiple especifica que el usuario está autorizado para entrar en más de un valor en el elemento &lt;input&gt; El atributo multiple trabaja con los siguientes tipos de entrada: correo electrónico y archivos.</p>
+  <form action="/action_page.php">
+  Select images: <input type="file" name="img" multiple>
+  <input type="submit">
+</form>
+	<hr>
+	 <h2>El atributo &lt;pattern&gt;</h2>
+	 <p>El atributo pattern especifica una expresión regular que el &lt;input&gt; valor del elemento se compara. El atributo pattern trabaja con los siguientes tipos de entrada: texto, búsqueda, URL, teléfono, correo electrónico y contraseña. </p>
+	 <p><strong>Consejo:</strong> Utilice el mundial <a href="https://www.w3schools.com/tags/att_global_title.asp">título</a> de atributos para describir el patrón para ayudar al usuario. <strong>Consejo:</strong> Más información sobre <a href="https://www.w3schools.com/js/js_regexp.asp">expresiones regulares</a> en nuestro tutorial JavaScript.</p>
+	 <p>Ejemplo: Country code: &lt;input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"&gt;</p>
+</datalist>
+<form action="/action_page.php">
+  Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+  <input type="submit">
+</form>
+	<hr>
+<h2>El atributo &lt;placeholder&gt;</h2>
+<p>El atributo placeholder especifica una pista que describe el valor esperado de un campo de entrada (un valor de muestra o una breve descripción del formato).La pista se muestra en el campo de entrada antes de que el usuario introduce un valor.El placeholderatributo trabaja con los siguientes tipos de entrada: texto, búsqueda, URL, teléfono, correo electrónico y contraseña.</p>
+<p>Ejemplo: &lt;input type="text" name="fname" placeholder="First name"&gt;</p>
+<form action="/action_page.php">
+  <input type="text" name="fname" placeholder="First name"><br>
+  <input type="text" name="lname" placeholder="Last name"><br>
+  <input type="submit" value="Submit">
+</form>	
+<hr>	
+<h2>El atributo &lt;required&gt;</h2>
+<p>El atributo required especifica que un campo de entrada debe ser completado antes de enviar el formulario.El atributo required trabaja con los siguientes tipos de entrada: texto, búsqueda, URL, teléfono, correo electrónico, contraseña, selectores de fecha, número, casillas de verificación, de radio y de archivo.</p>
+<p>Ejemplo: Username: &lt;input type="text" name="usrname" required&gt;</p>
+<<form action="/action_page.php">
+  Username: <input type="text" name="usrname" required>
+  <input type="submit">
+</form>
+<hr>
+<h2>El atributo &lt;step&gt;</h2>
+<p>El atributo step especifica los intervalos de números legales para un elemento &lt;input&gt; </p>
+<p>Ejemplo: Si el paso = "3", números legales podrían ser -3, 0, 3, 6, etc.</p>
+<div>
+  <p><strong>Consejo:</strong> El atributo de paso puede ser utilizado junto con el máximo y el mínimo atributos para crear una gama de valores legales.</p>
+</div>
+<p>El stepatributo trabaja con los siguientes tipos de entrada: número, rango, fecha, fecha y hora local, el mes, el tiempo y la semana.</p>
+<p>Ejemplo: &lt;input type="number" name="points" step="3"&gt;</p>
+<form action="/action_page.php">
+  <input type="number" name="points" step="3">
+  <input type="submit">
+</form>
+<hr>
+<h2>Formulario HTML y elementos de entrada</h2>
+<table>
+  <tbody>
+    <tr>
+      <th width="85">Etiqueta</th>
+      <th width="187">Descripción</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_form.asp">&lt;form&gt;</a></td>
+      <td>Define un formulario HTML para la entrada del usuario.</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/tags/tag_input.asp">&lt;input&gt;</a></td>
+      <td>Define un control de entrada.</td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
