@@ -10,6 +10,7 @@ https://miriadax.net
 https://miriadax.net/web/gitmooc/inicio
 http://www.falconmasters.com/
 https://lenguajehtml.com/
+https://www.emezeta.com/
 ---
 videos:
 FLEX-BOX

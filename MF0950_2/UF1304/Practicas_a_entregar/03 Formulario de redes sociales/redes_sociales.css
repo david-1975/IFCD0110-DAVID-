@@ -26,11 +26,12 @@ h1 {
 	
 }
 .formulario > div {
-	margin: 1% 2%;
-
+	margin: 0px;
+	
 }
 .formulario div > div{
-	margin: 30px 0%;
+	margin: 14% 20px 0px 0px;
+	width: 100%;
 	
 }
 .formulario div a{
@@ -38,51 +39,39 @@ h1 {
 	text-decoration: none;
 	border-radius: 5px;
 	font-size: 1.2em;
-	padding: 10px;
+	padding: 8px;
+	
 }
 .formulario div a img {
 	height: 20px;
 }
-form{
-	/*width: 100%;
-	margin: auto;*/
-}
-.formulario2{
-	border-radius: 6%;
-	/*width: 40%;*/
-}
-.formulario2 > div{
-	/*width: 100%;*/
-}
 .facebook {
 	background-color: blue;
-	
 }
 .twitter{
 	background-color: lightblue;
-	
 }
 .google{
 	background-color: tomato;
 }
+form{
+	margin: 30px;
+}
 input[type="text"] {
 	padding: 8px;
-	margin: 10px 5px;
+	margin: 10px 0px ;
 	border-radius: 5px;
 	font-size: 1.2em;
 	width: 100%;
-	
 }
 input[type="submit"]{
 	background-color: lightgreen;
 	padding: 8px;
-	margin: 5px;
+	margin: 10px 0px;
 	color: white;
 	font-size: 1.2em;
 	width: 100%;
 	border-radius: 5px;
-	
-	
 }
 .circulo {
 	border: solid 1px black;
@@ -98,11 +87,9 @@ input[type="submit"]{
 	display: flex;
 	justify-content: space-around;
 	background-color:  grey;
-	
+	padding: 2%;
 }
 .footer a{
 	color: white;
-	padding: 2%;
 	text-decoration: none;
-	
 }

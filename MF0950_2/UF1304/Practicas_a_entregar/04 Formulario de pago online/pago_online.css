@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+    font-family:Tahoma,Geneva, sans-serif;
+	font-size:1em;
+	padding: 0px; /*con esto corregimos las etiquetas que lleguen marguen y padding. */
+	margin:0;
+}
