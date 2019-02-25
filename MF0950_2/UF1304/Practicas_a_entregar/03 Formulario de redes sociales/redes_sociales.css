@@ -1,57 +1,108 @@
 @charset "utf-8";
 /* CSS Document */
-*{box-sizing: border-box;
-  font-family:Tahoma,Geneva, sans-serif;
+*{
+	box-sizing: border-box;
+    font-family:Tahoma,Geneva, sans-serif;
 	font-size:1em;
 	padding: 0px; /*con esto corregimos las etiquetas que lleguen marguen y padding. */
-	margin: 10px 0px;
+	margin:0;
+}
+.principal {
+	background-color: lightsteelblue;
+	width: 50%;
+	margin: 20px auto;
+}
+h1 {
+	text-align: center;
+	padding: 5px;
+	font-size: 1.4em;
 }
 .formulario {
-	background-color: lightslategrey;
-	width: 60%;
-	margin: auto;
+	display: flex;
+	justify-content: center;
+	/*flex-direction: row;*/
+	/*justify-content: space-around;*/
 	
-}
-.formulario div h1 {
-	font-size: 1.3em;
+	
 }
 .formulario > div {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	margin: 1% 2%;
+
+}
+.formulario div > div{
+	margin: 30px 0%;
 	
+}
+.formulario div a{
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	padding: 10px;
+}
+.formulario div a img {
+	height: 20px;
+}
+form{
+	/*width: 100%;
+	margin: auto;*/
+}
+.formulario2{
+	border-radius: 6%;
+	/*width: 40%;*/
+}
+.formulario2 > div{
+	/*width: 100%;*/
+}
+.facebook {
+	background-color: blue;
+	
+}
+.twitter{
+	background-color: lightblue;
+	
+}
+.google{
+	background-color: tomato;
 }
 input[type="text"] {
-	padding: 10px;
-	margin: 3% 0%;
+	padding: 8px;
+	margin: 10px 5px;
+	border-radius: 5px;
+	font-size: 1.2em;
 	width: 100%;
 	
-	
 }
-input{
-	border-radius: 10%;
-	/*width: 200%;*/
-	/*padding: 10px;*/
-	/*margin: 1% 5%;*/
+input[type="submit"]{
+	background-color: lightgreen;
+	padding: 8px;
+	margin: 5px;
+	color: white;
+	font-size: 1.2em;
+	width: 100%;
+	border-radius: 5px;
+	
+	
 }
 .circulo {
-	
-	/*border: solid 100px white;*/
-	/*border-radius: 100%;*/
-	/*width: 1%;*/
-}
-.circulo hr{
-	display: flex;
-	flex-direction: row;
+	border: solid 1px black;
 	position: relative;
 }
 .circulo p{
 	position: absolute;
-	top: 25%;
-	margin-left: 80px;
-	
+	top: 40%;
+	margin-left: -9px;
+	font-size: 2em;
 }
 .footer {
+	display: flex;
+	justify-content: space-around;
 	background-color:  grey;
+	
+}
+.footer a{
 	color: white;
+	padding: 2%;
+	text-decoration: none;
+	
 }
