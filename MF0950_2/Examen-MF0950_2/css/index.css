@@ -44,6 +44,13 @@ header div {
 }
 h1{
 	width: 90%;
+	text-align: left;
+	padding: 10px;
+	font-size: 1.2em;
+	color: #3366AB;
+}
+.primero {
+	width: 90%;
 	text-align: center;
 	padding: 10px;
 	font-size: 1.2em;
@@ -51,6 +58,7 @@ h1{
 }
 hr{
 	border: 1px solid #3366AB;
+	margin: 20px;
 }
 .secion1{
 	width: 90%;
@@ -118,17 +126,51 @@ hr{
 	width: 70%;
 	border: 1px solid black;
 }
-.tabla caption {
-	border: 1px solid black;
-	text-align: center;
-	padding: 10px;
-	width: 100%;
-	color: #3366AB;
-}
 .tabla th, td {
 	border: 1px solid black;
 	text-align: center;
-	padding: 20px; 
+	padding: 20px;
+	color: #3366AB;
+}
+.tabla a{
+	text-decoration: none;
+	
+}
+.tabla a:hover{
+	color:red;
+}
+.formulario{
+	background-color: white;
+	border-radius: 8px;
+	padding: 20px;
+	width: 60%;
+	margin: auto;
+}
+.formulario h2{
+	padding: 10px;
+	font-size: 1.4em;
+}
+.formulario input[type="text"] {
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 6px; 
+	background-color: lightgray;
+}
+.formulario textarea {
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 6px; 
+	background-color: lightgray;
+}
+.formulario input[type="checkbox"]{
+	margin: 20px 0px;
+} 
+.formulario input[type="submit"]{
+	padding: 10px;
+	width: 100px;
+	border-radius: 10%;
+	background-color: blue;
+	color: white;
 }
 
 
@@ -158,3 +200,123 @@ footer a{
 footer a:hover{
 	color:red;
 }
+/*------------------------*/
+.html {
+	background-color: #3366AB;
+	text-align:left;
+	width: 30%;
+	color: white;
+	padding: 10px;
+}
+.secion3{
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+.secion3 h2{
+	padding: 10px;
+	
+}
+.secion3 p{
+	padding: 10px;
+	color:rgba(102,102,102,1);
+	line-height:30px;
+}
+.secion3 article{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5%;
+}
+
+.secion4{
+	width: 95%;
+	margin: auto;
+}
+.secion4 h2{
+	background-color: #3366AB;
+	text-align: left;
+	width: 17%;
+	color: white;
+	padding: 10px;
+}
+.secion4 article{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5%;
+}
+.hijo1{
+	font-size: 1.4em;
+	color:rgba(102,102,102,1);
+}
+.hijo1 > div {
+	border-left: 3px solid blue;
+	padding: 10px;
+}
+.hijo2 ul li{
+	color:#3366AB;
+	line-height:30px;
+	width: 90%;
+	margin: 10px 10px 10px 70px;
+	
+}
+.hijo3 {
+	color:rgba(102,102,102,1);
+	text-align: center;
+	padding: 20px;
+}
+.secion3{
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+/*-----------------------------*/
+.secion5{
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+.secion5 h2{
+	padding: 10px;
+	
+}
+.secion5 p{
+	padding: 10px;
+	color:rgba(102,102,102,1);
+	line-height:30px;
+}
+.secion5 article{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5%;
+}
+.css {
+	background-color: #3366AB;
+	text-align:left;
+	width: 15%;
+	color: white;
+	padding: 10px;
+}
+.secion6{
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+.secion6 h2{
+	padding: 10px;
+	
+}
+.secion6 p{
+	padding: 10px;
+	color:rgba(102,102,102,1);
+	line-height:30px;
+}
+.secion6 article{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5%;
+}
+
