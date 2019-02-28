@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+    font-family:Tahoma,Geneva, sans-serif;
+	font-size:1em;
+	padding: 0px; /*con esto corregimos las etiquetas que lleguen marguen y padding. */
+	margin:0;
+}
+.principal {
+	background-color: lightsteelblue;
+	width: 50%;
+	margin: 20px auto;
+}
+h1 {
+	text-align: center;
+	padding: 5px;
+	font-size: 1.4em;
+}
+.formulario {
+	display: flex;
+	justify-content: center;
+	/*flex-direction: row;*/
+	/*justify-content: space-around;*/
+	
+	
+}
+.formulario > div {
+	margin: 0px;
+	
+}
+.formulario div > div{
+	margin: 14% 20px 0px 0px;
+	width: 100%;
+	
+}
+.formulario div a{
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	padding: 8px;
+	
+}
+.formulario div a img {
+	height: 20px;
+}
+.facebook {
+	background-color: blue;
+}
+.twitter{
+	background-color: lightblue;
+}
+.google{
+	background-color: tomato;
+}
+form{
+	margin: 30px;
+}
+input[type="text"] {
+	padding: 8px;
+	margin: 10px 0px ;
+	border-radius: 5px;
+	font-size: 1.2em;
+	width: 100%;
+}
+input[type="submit"]{
+	background-color: lightgreen;
+	padding: 8px;
+	margin: 10px 0px;
+	color: white;
+	font-size: 1.2em;
+	width: 100%;
+	border-radius: 5px;
+}
+.circulo {
+	border: solid 1px black;
+	position: relative;
+}
+.circulo p{
+	position: absolute;
+	top: 40%;
+	margin-left: -9px;
+	font-size: 2em;
+}
+.footer {
+	display: flex;
+	justify-content: space-around;
+	background-color:  grey;
+	padding: 2%;
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+}

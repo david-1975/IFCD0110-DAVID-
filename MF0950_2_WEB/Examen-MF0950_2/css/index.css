@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+    font-family:Tahoma,Geneva, sans-serif;
+	font-size:1em;
+	padding: 0px; /*con esto corregimos las etiquetas que lleguen marguen y padding. */
+	margin:0;
+}
+body{
+	margin: auto;
+	width: 1024px;
+	background-color: rgb(239,239,239);
+	
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 20px;
+}
+nav li{
+	padding: 10px;
+}
+nav a{
+	background-color: #3366AB;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 8%;
+}
+nav a:hover{
+	color:red;
+}
+header {
+	margin: 15px;
+}
+header div {
+	margin: auto;
+	width: 95%;
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+}
+h1{
+	width: 90%;
+	text-align: left;
+	padding: 10px;
+	font-size: 1.2em;
+	color: #3366AB;
+}
+.primero {
+	width: 90%;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.2em;
+	color: #3366AB;
+}
+hr{
+	border: 1px solid #3366AB;
+	margin: 20px;
+}
+.secion1{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+.secion1 > div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto;
+}
+.secion1 div >div{
+	margin: 10px;
+	text-align: center;
+	padding: 20px;
+	background-color: white;
+	border-radius: 6%;
+	width: 100%;
+}
+.secion1 a{
+	background-color: #3366AB;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 8%;
+	margin: 10px;
+}
+.secion1 a:hover{
+	color:red;
+}
+.secion2{
+	width: 85%;
+	margin: auto;
+}
+.secion2 > div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.secion2 div div{
+	margin: 20px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 4%;
+}
+.secion2 h2{
+	background-color: #3366AB;
+	text-align: center;
+	width: 100%;
+	color: white;
+	padding: 10px;
+}
+.secion2 p{
+	padding: 10px;
+	color:rgba(102,102,102,1);
+	line-height:30px;
+}
+.tabla {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+.tabla table{
+	width: 70%;
+	border: 1px solid black;
+}
+.tabla th, td {
+	border: 1px solid black;
+	text-align: center;
+	padding: 20px;
+	color: #3366AB;
+}
+.tabla a{
+	text-decoration: none;
+	
+}
+.tabla a:hover{
+	color:red;
+}
+.formulario{
+	background-color: white;
+	border-radius: 8px;
+	padding: 20px;
+	width: 60%;
+	margin: auto;
+}
+.formulario h2{
+	padding: 10px;
+	font-size: 1.4em;
+}
+.formulario input[type="text"] {
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 6px; 
+	background-color: lightgray;
+}
+.formulario textarea {
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 6px; 
+	background-color: lightgray;
+}
+.formulario input[type="checkbox"]{
+	margin: 20px 0px;
+} 
+.formulario input[type="submit"]{
+	padding: 10px;
+	width: 100px;
+	border-radius: 10%;
+	background-color: blue;
+	color: white;
+}
+
+
+footer{
+	padding: 10px;
+}
+
+
+footer ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10px;
+	width: 100%;
+	
+}
+footer li{
+	list-style-type: none;
+}
+footer a{
+	color: #3366AB;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 8%;
+	font-size: 1.2em;
+}
+footer a:hover{
+	color:red;
+}
+/*------------------------*/
+.html {
+	background-color: #3366AB;
+	text-align:left;
+	width: 30%;
+	color: white;
+	padding: 10px;
+}
+.secion3{
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+.secion3 h2{
+	padding: 10px;
+	
+}
+.secion3 p{
+	padding: 10px;
+	color:rgba(102,102,102,1);
+	line-height:30px;
+}
+.secion3 article{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5%;
+}
+
+.secion4{
+	width: 95%;
+	margin: auto;
+}
+.secion4 h2{
+	background-color: #3366AB;
+	text-align: left;
+	width: 17%;
+	color: white;
+	padding: 10px;
+}
+.secion4 article{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5%;
+}
+.hijo1{
+	font-size: 1.4em;
+	color:rgba(102,102,102,1);
+}
+.hijo1 > div {
+	border-left: 3px solid blue;
+	padding: 10px;
+}
+.hijo2 ul li{
+	color:#3366AB;
+	line-height:30px;
+	width: 90%;
+	margin: 10px 10px 10px 70px;
+	
+}
+.hijo3 {
+	color:rgba(102,102,102,1);
+	text-align: center;
+	padding: 20px;
+}
+.secion3{
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+/*-----------------------------*/
+.secion5{
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+.secion5 h2{
+	padding: 10px;
+	
+}
+.secion5 p{
+	padding: 10px;
+	color:rgba(102,102,102,1);
+	line-height:30px;
+}
+.secion5 article{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5%;
+}
+.css {
+	background-color: #3366AB;
+	text-align:left;
+	width: 15%;
+	color: white;
+	padding: 10px;
+}
+.secion6{
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+}
+.secion6 h2{
+	padding: 10px;
+	
+}
+.secion6 p{
+	padding: 10px;
+	color:rgba(102,102,102,1);
+	line-height:30px;
+}
+.secion6 article{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5%;
+}
+
