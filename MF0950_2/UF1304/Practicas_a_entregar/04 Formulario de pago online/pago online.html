@@ -15,16 +15,48 @@
 <body>
 <h1>Formulario de Pago</h1>	
 <div>
-<h2>Dirección de Envio</h2>	
-</div>
-	
-	
-<div>
-<h2>Pago</h2>	
-	
-</div>
-<div>
-boton de envio	
+		<form action="/mailto:correo@gmail.com" method="get" name="Formulario de contacto" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on" target="_blank">
+	<div>
+		<div>
+		<h2>Dirección de Envio</h2><br>	
+			
+				<label for="nombre"><img src="user.png" alt="#" width="48px"> Nombre completo</label><br>
+	  			<input type="text" name="nombre" placeholder="Juan José Gómez Martín" required><br>
+				<label for="email"><img src="mail.png" alt="#" width="48px">Email</label><br>
+				<input type="text" name="email" placeholder="correo@dominio.com" required><br>
+				<label for="nombre"><img src="contactcard.png" alt="#" width="48px">Dirección</label><br>
+	  			<input type="text" name="nombre" placeholder="Avda Europa, 15" required><br>
+				<label for="nombre"><img src="building.png" alt="#" width="48px">Ciudad</label><br>
+	  			<input type="text" name="nombre" placeholder="Madrid" required><br>
+				<label for="nombre">Estado</label><br>
+	  			<input type="text" name="nombre" placeholder="ES" required><br>
+				<label for="nombre">Código Postal</label>
+				<input type="number" name="numero" placeholder="28123" required>
+				<input type="checkbox" name="usuario" id="usuario" value="" spellcheck="true" required> Acepta lo términos y <a href="#">condiciones de privacidad</a><br>
+			
+		</div>
+		<div>
+		<h2>Pago</h2>	
+		<h3>Selecciona una tarjeta</h3>	<br>
+  				<input type="radio" id="tarjeta1" name="tarjeta1" value="" checked><img src="visa.png" alt="#" width="48px">
+  				<input type="radio" id="tarjeta2" name="tarjeta2" value=""><img src="mastercard.png" alt="#" width="48px">
+  				<input type="radio" id="tarjeta3" name="tarjeta3" value=""><img src="american-express.png" alt="#" width="48px">
+				<input type="radio" id="tarjeta4" name="tarjeta4" value=""><img src="discover.png" alt="#" width="48px">
+				<label for="nombre">Titular de la tarjeta</label><br>
+	  			<input type="text" name="nombre" placeholder="Juan José Gómez Martín" required><br>
+				<label for="nombre">Número de la tarjeta de crédito</label><br>
+				<input type="number" name="nombre" placeholder="1111-2222-3333-4444">
+				<label for="nombre">Exp Mes</label><br>
+				<input type="text" name="nombre" placeholder="" required><br>
+				<label for="nombre">CVV</label><br>
+				<input type="number" name="nombre" placeholder="352" required><br>
+		</div>
+	</div>
+		<div>
+		<input type="submit" value="Continuar con el pago">	
+		</div>
+	</form>	
 </div>	
+
 </body>
 </html>
