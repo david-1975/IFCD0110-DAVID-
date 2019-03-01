@@ -1,0 +1,161 @@
+@charset  " utf-8 " ;
+/ * Documento CSS * /
+
+  * {
+	caja de tamaño : frontera-box ; / * para mantener el tamaño de las cajas, relleno y margen * /
+	
+	}
+	
+	cuerpo {
+		color de fondo : blanco ;
+		ancho : 70 % ;
+		relleno : 20 px ;
+		margen : 0  auto ; / * centrar la página * /
+		Familia tipográfica : Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana , " sans-serif " ;
+	}
+	main {
+		color de fondo : #EFEFEF ;
+		ancho : 100 % ;
+		Relleno : 0  auto ;
+		margen : 0  auto ;  centrar  la  p á gina 
+		Familia tipográfica : Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana , " sans-serif " ;
+		}
+	img {
+		
+		ancho : 15 px ;
+		margen izquierdo : 10 px ;
+	}
+	h2 {
+		text-align : center ;
+		}
+	.flex1 {
+		pantalla : flexión ; / * Propiedad que define la flexión * /
+		dirección de flexión : fila ;
+		envolver con flexión : nowrap ;
+		posición : relativa ;
+		
+	}
+	.flex1  >  div {
+		ancho : 100 % ;
+	}
+	.linea_o {
+			posición : relativa ;
+	}	
+	.linea_o  p {
+			ancho : 2 px ;
+			borde : 1 px  gris sólido  ;
+			posición : absoluta ;
+			superior : 50 % ;
+			izquierda : 50 % ;
+		}
+	.flex-botonregistro {
+		pantalla : flexión ; / * Propiedad que define la flexión * /
+		dirección de flexión : fila ;
+		envolver con flexión : nowrap ;
+		
+	}
+	.flex-botonregistro  >  div {
+		ancho : 100 % ;
+		justificar-contenido : centro ;
+		alinear-elementos : centro ;
+	}
+	 Pantalla  @media y ( ancho máximo : 600 px ) {
+  		.flex1 {
+			    dirección flexible : columna ;
+				ancho : 100 % ;
+			}
+		.flex-botonregistro {
+				dirección flexible : columna ;
+				ancho : 100 % ;
+			}
+		.linea_o {
+				pantalla : ninguna ;
+			}
+		}
+	.inicia_sesion {
+			tamaño de letra : 0.9 em ;
+			margen izquierdo : 10 px ;
+		}
+	.flex-fb {
+			ancho : auto ;
+			color de fondo : # 3B5998 ;
+			color : blanco ;
+			relleno : 10 px ;
+			margen : 10 px  20 px ;
+			radio del borde : 5 px ;
+			}
+	.enlace-rrss {
+			pantalla : bloque ;		
+			texto-decoración : ninguno ;
+			color : blanco ;
+			}
+	.enlace-rrss : hover {
+			color : amarillo ;
+			}
+	.flex-twitter {
+			ancho : auto ;
+			color de fondo : # 55ACEE ;
+			color : blanco ;
+			relleno : 10 px ;
+			margen : 10 px  20 px ;
+			radio del borde : 5 px ;
+			}
+	.flex-google {
+			ancho : auto ;
+			color de fondo : # DD4B39 ;
+			color : blanco ;
+			relleno : 10 px ;
+			margen : 10 px  20 px  30 px  20 px ;
+			radio del borde : 5 px ;
+			}
+	.flex-botonregistro {
+		  ancho : 100 % ;
+		  relleno : 10 px ;
+		  fondo : gris ;
+		  text-align : center ;
+		  }
+	.registrarse {
+		ancho : 100 % ;
+		texto-decoración : ninguno ;
+		color : blanco ;
+	}
+	.registrarse : flotar {
+		color : amarillo ;
+	}
+	.recordar {
+		ancho : 100 % ;
+		texto-decoración : ninguno ;
+		color : blanco ;
+	}
+	.recordar : hover {
+		color : amarillo ;
+	}
+	forma {
+		margen : 0  15 px ;
+	}
+	entrada [ tipo = texto ] {
+		  ancho : 100 % ;
+		  borde : 1 px  gris sólido  ;
+		  Relleno : 15 px ;
+		  margen : 10 px  0 ;
+		 
+		 }
+	entrada [ tipo = contraseña ] {
+		  ancho : 100 % ;
+		  borde : 1 px  gris sólido  ;
+		  Relleno : 15 px ;
+		 
+		}
+	entrada [ tipo = enviar ] {
+		  pantalla : bloque ;
+		  ancho : 100 % ;
+		  fondo : # 089F0B ;
+		  color : blanco ;
+		  relleno : 10 px ;
+		  margen : 10 px  20 px  34 px  0 px ;
+		  radio del borde : 5 px ;
+		}
+	entrada [ type = submit ] : hover {
+		  fondo : verde oscuro ;
+		  color : amarillo ;
+		  }

@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>	
+	body {
+		font-size: 1.5em;
+		font-family: Verdana," sans-serif";
+	}
+	</style>
+</head>
+
+<body>
+<h2>Las transiciones CSS</h2>
+<p>transiciones CSS le permite cambiar los valores de propiedad sin problemas (de un valor a otro), durante un período determinado.</p>
+<p><strong>Ejemplo:</strong> el ratón sobre el elemento de abajo para ver un efecto de transición CSS:</p>
+<h2>Propiedades CSS Transición</h2>
+<p>La propiedad transtion está formada por las siguientes propiedades:</p>
+<ul>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_transition-property.asp">transition-property</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_transition-duration.asp">transition-duration</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp">transition-timing-function</a></li>
+  <li><a href="https://www.w3schools.com/cssref/css3_pr_transition-delay.asp">transition-delay</a></li>
+</ul>
+<br>
+<p> Sintaxis CSS transition: property duration timing-function delay;</p>
+<form id="form1" name="form1" method="post">
+  <label for="textfield">Buscar:</label>
+  <input type="text" name="textfield" id="textfield">
+</form>
+<style>
+input[type=text] {
+  width: 100px;
+  height: 30px;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 500px;
+}
+</style>
+<hr>
+<h2>Especificar la curva de velocidad de la Transición</h2>
+<p>La transition-timing-functionpropiedad especifica la curva de velocidad del efecto de transición.</p>
+<p>La propiedad-timing-función de transición puede tener los siguientes valores:</p>
+<ul>
+  <li><strong>ease</strong> - especifica un efecto de transición con un comienzo lento, luego rápido, y luego terminar lentamente (esto es por defecto)</li>
+  <li><strong>linear </strong>- especifica un efecto de transición con la misma velocidad de principio a fin</li>
+  <li><strong>ease-in</strong> - especifica un efecto de transición con un comienzo lento</li>
+  <li><strong>ease-out </strong>- especifica un efecto de transición con un extremo lento</li>
+  <li><strong>ease-in-out </strong>- especifica un efecto de transición con un lento comienzo y fin</li>
+  <li><strong>cubic-bezier(n,n,n,n)</strong> - le permite definir sus propios valores de una función cúbica-Bezier</li>
+</ul>
+<style> 
+div {
+  width: 150px;
+  height: 30px;
+  background: red;
+	color:white;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+
+/* For Safari 3.1 to 6.0 */
+#div1 {-webkit-transition-timing-function: linear;}
+#div2 {-webkit-transition-timing-function: ease;}
+#div3 {-webkit-transition-timing-function: ease-in;}
+#div4 {-webkit-transition-timing-function: ease-out;}
+#div5 {-webkit-transition-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div:hover {
+  width: 700px;
+}
+</style>
+<h2>Ejemplo de Uso</h2>
+<div id="div1">linear</div><br>
+<div id="div2">ease</div><br>
+<div id="div3">ease-in</div><br>
+<div id="div4">ease-out</div><br>
+<div id="div5">ease-in-out</div>
+<hr>
+<h2>Retrasar el efecto de transición</h2>
+<p>La transition-delaypropiedad especifica un retardo (en segundos) para el efecto de transición.</p>
+<p>
+  <style> 
+div {
+  width: 150px;
+  height: 30px;
+  background: red;
+	color:white;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+
+/* For Safari 3.1 to 6.0 */
+#div6 {
+	-webkit-transition-timing-function: linear;
+	-webkit-transition-delay: 0.5s;
+	}
+#div7 {
+	-webkit-transition-timing-function: ease;
+	-webkit-transition-delay: 1s;
+	}
+#div8 {
+	-webkit-transition-timing-function: ease-in;
+	-webkit-transition-delay: 1.5s;}
+#div9 {
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: 2s;
+	}
+#div10 {
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 2.5s;
+	}
+
+/* Standard syntax */
+#div6 {transition-timing-function: linear; transition-delay: 0.5s;}
+#div7 {transition-timing-function: ease; transition-delay: 1s;}
+#div8 {transition-timing-function: ease-in; transition-delay: 1.5s;}
+#div9 {transition-timing-function: ease-out; transition-delay: 2s;}
+#div10 {transition-timing-function: ease-in-out; transition-delay: 2.5s;}
+
+div:hover {
+  width: 700px;
+}
+  </style>
+</p>
+<h3>Ejemplo de Uso</h3>
+<div id="div6">comienzo 0.5s</div>
+<br>
+<div id="div7">comienzo 1s</div>
+<br>
+<div id="div8">comienzo 1.5s</div>
+<br>
+<div id="div9">comienzo 2s</div>
+<br>
+<div id="div10">comienzo 2.5s</div>
+<hr>
+<h2>Duración de la transición</h2>
+<p>La transition-durationpropiedad especifica el número de segundos (s) o en milisegundos (ms) un efecto de transición tarda en completar.
+  <style> 
+div {
+  width: 150px;
+  height: 30px;
+  background: red;
+	color:white;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+
+/* For Safari 3.1 to 6.0 */
+#div6 {
+	-webkit-transition-timing-function: linear;
+	-webkit-transition-delay: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	}
+#div7 {
+	-webkit-transition-timing-function: ease;
+	-webkit-transition-delay: 1s;
+	-webkit-transition-duration: 1s;
+	}
+#div8 {
+	-webkit-transition-timing-function: ease-in;
+	-webkit-transition-delay: 1.5s;
+	-webkit-transition-duration: 1.5s;
+	  }
+#div9 {
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: 2s;
+	-webkit-transition-duration: 2s;
+	}
+#div10 {
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 2.5s;
+	-webkit-transition-duration: 2.5s;
+	}
+
+/* Standard syntax */
+#div11 {
+	transition-timing-function: linear; 
+	transition-delay: 0.5s;
+	transition-duration: 0.5s;
+	  }
+#div12 {
+	transition-timing-function: ease; 
+	transition-delay: 1s;
+	transition-duration: 1s;
+	  }
+#div13 {
+	transition-timing-function: ease-in; 
+	transition-delay: 1.5s;
+	transition-duration: 1.5s;
+	  }
+#div14 {
+	transition-timing-function: ease-out; 
+	transition-delay: 2s;
+	transition-duration: 2s;
+	  }
+#div15 {
+	transition-timing-function: ease-in-out; 
+	transition-delay: 2.5s;
+	transition-duration: 2.5s;
+	  }
+
+div:hover {
+  width: 700px;
+}
+  </style>
+</p>
+<h3>Ejemplo de Uso</h3>
+<div id="div11">duración 0.5s</div>
+<br>
+<div id="div12">duración  1s</div>
+<br>
+<div id="div13">duración  1.5s</div>
+<br>
+<div id="div14">duración  2s</div>
+<br>
+<div id="div15">duración  2.5s</div>
+<hr>
+<h2>Propiedad de transición</h2>
+<p>La propiedad transition-property especifica el nombre de la propiedad CSS el efecto de transición es para (el efecto de transición se iniciará cuando cambia la propiedad CSS especificados).</p>
+<style> 
+div {
+  width: 150px;
+  height: 30px;
+  background: red;
+	color:white;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+  border-radius: 0px;
+}
+
+/* For Safari 3.1 to 6.0 */
+#div16 {
+	-webkit-transition-timing-function: linear;
+	-webkit-transition-delay: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	}
+#div17 {
+	-webkit-transition-timing-function: ease;
+	-webkit-transition-delay: 1s;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-property: width, height;
+	}
+#div18 {
+	-webkit-transition-timing-function: ease-in;
+	-webkit-transition-delay: 1.5s;
+	-webkit-transition-duration: 1.5s;
+	  }
+#div19 {
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: 2s;
+	-webkit-transition-duration: 2s;
+	-webkit-transition-property: width, height;
+	}
+#div20 {
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 2.5s;
+	-webkit-transition-duration: 2.5s;
+	-webkit-transition-property: width, height;
+	}
+
+/* Standard syntax */
+#div16 {
+	transition-timing-function: linear; 
+	transition-delay: 0.5s;
+	transition-duration: 0.5s;
+	transition-property: width, height;
+	  }
+#div17 {
+	transition-timing-function: ease; 
+	transition-delay: 1s;
+	transition-duration: 1s;
+	transition-property: width, height;
+	  }
+#div18 {
+	transition-timing-function: ease-in; 
+	transition-delay: 1.5s;
+	transition-duration: 1.5s;
+	transition-property: width, height;
+	  }
+#div19 {
+	transition-timing-function: ease-out; 
+	transition-delay: 2s;
+	transition-duration: 2s;
+	transition-property: width, height;
+	  }
+#div20 {
+	transition-timing-function: ease-in-out; 
+	transition-delay: 2.5s;
+	transition-duration: 2.5s;
+	transition-property: width, height;
+	  }
+
+div:hover {
+  width: 700px;
+	height: 50px;
+}
+  </style>
+<h3>Ejemplo de Uso</h3>
+<div id="div16">Transición width</div>
+<br>
+<div id="div17">Transición width</div>
+<br>
+<div id="div18">Transiciónwidth</div>
+<br>
+<div id="div19">Transiciónwidth</div>
+<br>
+<div id="div20">Transición width </div>
+<hr>
+</body>
+</html>

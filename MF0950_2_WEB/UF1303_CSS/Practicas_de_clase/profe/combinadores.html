@@ -62,7 +62,10 @@ h2 + p {
 .flex-container {
   /* Compatibilidad con el navegador Safari de Apple */ 
   display: -webkit-flex; /* Safari */
-  
+  display: -mz-flex; /* Firefox */
+  display: -ms-flex; /* Explorer */
+  display: -o-flex; /* Opera */
+	
 /* propiedad que define la flexión */
   display: flex; /* inline, block, flex, grid */
   

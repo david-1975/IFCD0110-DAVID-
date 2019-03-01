@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Documento FlexBox</title>
+
+<style>
+.flex-contenedor {
+	display: flex;	/* propiedad que define la flexión */
+	background-color:dodgerblue;
+	}
+.flex-contenedor > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+/* ------------------------------ */ 	
+.flex-contenedor2 {
+	display: flex;	/* propiedad que define la flexión */
+	flex-direction: row;
+	background-color:dodgerblue;
+	}
+.flex-contenedor2 > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+/* ------------------------------ */ 
+.flex-contenedor22 {
+	display: flex;	/* propiedad que define la flexión */
+	flex-direction: column;
+	background-color:dodgerblue;
+	}
+.flex-contenedor22 > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+/* ------------------------------ */ 
+.flex-contenedor3 {
+	display: flex;	/* propiedad que define la flexión */
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color:dodgerblue;
+	}
+.flex-contenedor3 > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+/* ------------------------------ */ 
+.flex-contenedor33 {
+	display: flex;	/* propiedad que define la flexión */
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color:dodgerblue;
+	}
+.flex-contenedor33 > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+/* ------------------------------ */ 
+.flex-contenedor4 {
+	display: flex;	/* propiedad que define la flexión */
+	flex-flow: row wrap; /* columnas envolventes */
+	justify-content: flex-start; /* inicio izquierda */
+	background-color:dodgerblue;
+	}
+	/* space-between, center, space-around, flex-end, flex-star */
+.flex-contenedor4 > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+/* ------------------------------ */ 
+.flex-contenedor44 {
+	display: flex;	/* propiedad que define la flexión */
+	flex-flow: row wrap; /* columnas envolventes */
+	justify-content: center; /* centrado */
+	background-color:dodgerblue;
+	}
+	/* space-between, center, space-around, flex-end, flex-star */
+.flex-contenedor44 > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+/* ------------------------------ */ 
+.flex-contenedor444 {
+	display: flex;	/* propiedad que define la flexión */
+	flex-flow: row wrap; /* columnas envolventes */
+	justify-content: flex-end; /* inicio derecha */
+	background-color:dodgerblue;
+	}
+	/* space-between, center, space-around, flex-end, flex-star */
+.flex-contenedor444 > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+/* ------------------------------ */ 
+.flex-contenedor4444 {
+	display: flex;	/* propiedad que define la flexión */
+	flex-flow: row wrap; /* columnas envolventes */
+	justify-content: space-around; /* espacio alrededor */
+	background-color:dodgerblue;
+	}
+	/* space-between, center, space-around, flex-end, flex-star */
+.flex-contenedor4444 > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+/* ------------------------------ */ 
+.flex-contenedor44444 {
+	display: flex;	/* propiedad que define la flexión */
+	flex-flow: row wrap; /* columnas envolventes */
+	justify-content: space-between; /* espacio entre */
+	background-color:dodgerblue;
+	}
+	/* space-between, center, space-around, flex-end, flex-star */
+.flex-contenedor44444 > div {
+	background-color:lightgray;
+	font-size: 3em;
+	width:100px;
+	padding:10px;
+	text-align: center;
+	margin: 10px;
+	}
+</style>
+
+</head>
+
+<body>
+<h2>Display:Flex</h2>
+<div class="flex-contenedor">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+</div>
+<!-- -------------------------------- -->
+<h2>flex-direction: row</h2>
+<div class="flex-contenedor2">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+</div>
+<h2>flex-direction: column</h2>
+<div class="flex-contenedor22">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+</div>
+<!-- -------------------------------- -->
+<h2>flex-wrap: wrap</h2>
+<div class="flex-contenedor3">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+	<div>10</div>
+</div>
+<!-- -------------------------------- -->
+<h2>flex-wrap: nowrap</h2>
+<div class="flex-contenedor33">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+	<div>10</div>
+</div>
+<!-- -------------------------------- -->
+<h2>justify-content: flex-star</h2>
+<div class="flex-contenedor4">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+</div>
+<h2>justify-content: center</h2>
+<div class="flex-contenedor44">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+</div>
+<h2>justify-content: flex-end</h2>
+<div class="flex-contenedor444">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+</div>
+<h2>justify-content: space-around</h2>
+<div class="flex-contenedor4444">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+</div>
+<h2>justify-content: space-between</h2>
+<div class="flex-contenedor44444">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+</div>
+</body>
+</html>
