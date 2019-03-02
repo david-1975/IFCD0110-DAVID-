@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+  * {
+	box-sizing: border-box; /* para mantener el tamaño de cajas incluyendo padding y margin */
+	
+	}
+	
+	body {
+		background-color: white;
+		width: 70%;
+		padding: 20px;
+		margin: 0 auto; /* centrar la página */
+		font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	}
+	main {
+		background-color:#EFEFEF;
+		width: 100%;
+		padding: 0 auto;
+		margin: 0 auto;  /*centrar la página */
+		
+		}
+	img {
+		
+		width: 15px;
+		margin-left: 10px;
+	}
+	h2 {
+		text-align: center;
+		}
+	.flex1 {
+		display: flex; /* propiedad que define la flexión */
+		flex-direction: row;
+		flex-wrap: nowrap;
+		position: relative;
+		
+	}
+	.flex1 > div {
+		width: 100%;
+	}
+
+
+	.flex-botonregistro {
+		display: flex; /* propiedad que define la flexión */
+		flex-direction: row;
+		flex-wrap: nowrap;
+		
+	}
+	.flex-botonregistro > div {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	@media screen and (max-width: 600px) {
+  		.flex1 {
+			    flex-direction: column;
+				width: 100%;
+			}
+		.flex-botonregistro {
+				flex-direction: column;
+				width: 100%;
+			}
+		.linea_o {
+				display: none;
+			}
+		}
+	.inicia_sesion {
+			font-size: 0.9em;
+			margin-left: 10px;
+		}
+	.flex-fb {
+			width: auto;
+			background-color: #3B5998;
+			color: white;
+			padding: 10px;
+			margin: 10px 20px;
+			border-radius: 5px;
+			}
+	.enlace-rrss {
+			display: block;		
+			text-decoration: none;
+			color:white;
+			}
+	.enlace-rrss:hover {
+			color:yellow;
+			}
+	.flex-twitter {
+			width: auto;
+			background-color: #55ACEE;
+			color: white;
+			padding: 10px;
+			margin: 10px 20px;
+			border-radius: 5px;
+			}
+	.flex-google {
+			width: auto;
+			background-color: #DD4B39;
+			color: white;
+			padding: 10px;
+			margin: 10px 20px 30px 20px;
+			border-radius: 5px;
+			}
+	.flex-botonregistro {
+		  width: 100%;
+		  padding: 10px;
+		  background: gray;
+		  text-align: center;
+		  }
+	.registrarse {
+		width: 100%;
+		text-decoration: none;
+		color: white;
+	}
+	.registrarse:hover {
+		color: yellow;
+	}
+	.recordar {
+		width: 100%;
+		text-decoration: none;
+		color: white;
+	}
+	.recordar:hover {
+		color: yellow;
+	}
+	form {
+		margin: 0 15px;
+	}
+	input[type=text] {
+		  width: 100%;
+		  border: 1px solid gray;
+		  padding: 15px;
+		  margin: 10px 0;
+		 
+		 }
+	input[type=password] {
+		  width: 100%;
+		  border: 1px solid gray;
+		  padding: 15px;
+		 
+		}
+	input[type=submit] {
+		  display: block;
+		  width: 100%;
+		  background: #089F0B;
+		  color: white;
+		  padding: 10px;
+		  margin: 10px 20px 34px 0px;
+		  border-radius: 5px;
+		}
+	input[type=submit]:hover {
+		  background: darkgreen;
+		  color: yellow;
+		  }
+
+	
