@@ -1,0 +1,68 @@
+Herramientas.
+https://github.com  (realizar copias de seguridad)
+https://code.visualstudio.com/  (programa de codigos HTML)
+https://www.adobe.com/es/products/dreamweaver.html (programa de codigos HTML de pago)
+https://www.npmjs.com/package/http-server (servidor de prueba)
+https://nodejs.org/es/ (entorno de ejecución para JavaScript) 
+-----------------------------------------------------------------------------
+Cursos
+https://miriadax.net
+https://miriadax.net/web/gitmooc/inicio
+http://www.falconmasters.com/
+https://lenguajehtml.com/
+https://www.emezeta.com/
+https://www.aprenderaprogramar.com/
+
+https://www.kidoestudio.com/blog/mensaje-politica-de-cookies/  para hacer cookies
+---
+videos:
+FLEX-BOX
+https://www.youtube.com/watch?v=F-KCncXMPk0&feature=youtu.be
+
+-----------------------------------------------------------------------------
+Libros técnicos
+Html-CSS-Java Scrips
+
+https://www.w3schools.com/html/html_intro.asp
+https://developer.mozilla.org/es/docs/Web/HTML
+https://stackoverflow.es/
+
+-----------------------------------------------------------------------------
+Comprobar página web
+
+https://validator.w3.org/
+
+-----------------------------------------------------------------------------
+
+plataforma para aplicaciones que funciona como base para el navegador web 
+
+https://webkit.org/
+
+-----------------------------------------------------------------------------
+página CSS
+
+https://lenguajecss.com/
+https://lenguajecss.com/p/css/propiedades/flexbox
+
+https://cssreference.io/flexbox/
+
+-----------------------------------------------------------------------------
+web que comprueba que navegadores estan viendo tu página.
+
+https://caniuse.com/
+-----------------------------------------------------------------------------
+Librerias
+
+Imagenes
+https://pixabay.com
+
+
+Iconos
+https://fontawesome.com/
+https://emojipedia.org/
+
+Fuentes
+https://fonts.google.com/
+
+Lo más buscado en la web
+https://trends.google.es/trends/?geo=ES
