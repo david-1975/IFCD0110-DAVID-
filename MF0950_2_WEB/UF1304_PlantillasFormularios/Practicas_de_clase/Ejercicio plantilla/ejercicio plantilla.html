@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 130px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Menús con fondo rosa al hover */	
+.w3-pinky,.w3-hover-pinky:hover{color:#fff!important;background-color:rgba(255,48,228,0.43)!important}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="img/2avatar.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-pinky">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p style="color: #F903D2">HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-pinky">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p style="color: #F903D2">SOBRE MÍ</p>
+  </a>
+   <a href="#tarifas" class="w3-bar-item w3-button w3-padding-large w3-hover-pinky">
+    <i class="fas fa-file-invoice-dollar w3-xxlarge"></i>
+    <p style="color: #F903D2">TARIFAS</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-pinky">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p style="color: #F903D2">FOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-pinky">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p style="color: #F903D2">CONTACTO</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:20% !important; color:#F903D2; font-weight: bolder;">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important; color:#F903D2; font-weight: bolder;">SOBRE MÍ</a>
+       <a href="#tarifas" class="w3-bar-item w3-button" style="width:20% !important; color:#F903D2; font-weight: bolder;">TARIFAS</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:20% !important; color:#F903D2; font-weight: bolder;">FOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important; color:#F903D2; font-weight: bolder;">CONTACTO</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small" style="color: #F903D2">Lola López</span></h1>
+    <p style="color: #F903D2">Fotógrafa y diseñadora web</p>
+    <img src="img/2p.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Lola López</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Hola. No me llames Dolores, llámame Lola, la que siempre va sola por Barcelona buscando follón. No me llames Dolores, llámame Lola, la que siempre va sola por Barcelona buscando follón. No me llames Dolores, llámame Lola, la que siempre va sola por Barcelona buscando follón. No me llames Dolores, llámame Lola, la que siempre va sola por Barcelona buscando follón. No me llames Dolores, llámame Lola, la que siempre va sola por Barcelona buscando follón. No me llames Dolores, llámame Lola, la que siempre va sola por Barcelona buscando follón.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Aptitudes</h3>
+    <p class="w3-wide" style="color:white;">Photografía</p>
+    <div class="w3-pinky">
+      <div class="w3-dark-grey" style="height:28px;width:95%" ></div>
+    </div>
+    <p class="w3-wide" style="color:white;">Diseño Web</p>
+    <div class="w3-pinky">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide" style="color:white;">Photoshop</p>
+    <div class="w3-pinky">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10</span><br>
+        Colaboraciones
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">53</span><br>
+        Proyectos
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">82</span><br>
+        Clientes satisfechos
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">40</span><br>
+        Masterclasses impartidas
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download" style="color:deeppink;"></i> Descargar currículum
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey" id="tarifas">Mis tarifas</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Básica</li>
+          <li class="w3-padding-16">Diseño Web</li>
+          <li class="w3-padding-16">Fotografía</li>
+          <li class="w3-padding-16">5 GB de almacenamiento</li>
+          <li class="w3-padding-16">Soporte por e-mail</li>
+          <li class="w3-padding-16">
+            <h2>10 €</h2>
+            <span class="w3-opacity">al mes</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Contratar</button>
+          </li>
+        </ul>
+      </div>
+      
+         <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Avanzada</li>
+          <li class="w3-padding-16">Diseño Web</li>
+          <li class="w3-padding-16">Fotografía</li>
+          <li class="w3-padding-16">20 GB de almacenamiento</li>
+          <li class="w3-padding-16">Soporte por e-mail y teléfono</li>
+          <li class="w3-padding-16">
+            <h2>25 €</h2>
+            <span class="w3-opacity">al mes</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Contratar</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Profesional</li>
+          <li class="w3-padding-16">Diseño Web</li>
+          <li class="w3-padding-16">Fotografía</li>
+          <li class="w3-padding-16">50 GB de almacenamiento</li>
+          <li class="w3-padding-16">Soporte ilimitado</li>
+          <li class="w3-padding-16">
+            <h2>50 €</h2>
+            <span class="w3-opacity">al mes</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Contratar</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Casos reales</h3>  
+    <img src="img/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Narco Antonio</span> CEO de Mighty Schools.</p>
+    <p>Lola López salvó mi matrimonio. Mi ídola se llama Lola López.</p><br>
+    
+    <img src="img/porro.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Juliana Vegas</span> Música en paro.</p>
+    <p>Me hizo la tienda online de derivados del cannabis en una semana y sólo me cobró 3000 €. ¡Una ganga!</p><br>
+    
+    <img src="img/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex</span> CEO de Model Spain S.L.</p>
+    <p>Nadie controla más de padding y flexbox que Lola López.</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Mis fotos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="img/1.jpg" style="width:100%">
+        <!-- <img src="img/3.jpg" style="width:100%"> -->
+        <img src="img/4.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="img/5.jpg" style="width:100%">
+        <img src="img/6.png" style="width:100%">
+        <img src="img/7.jpeg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contacto</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i  class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Madrid, España</p>
+      <p><em class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></em> Teléfono: 426 98 63 22</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+    </div><br>
+    <p>No te cortes. Envíame un mensaje:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Asunto" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mensaje" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane" style="color:deeppink;"></i> ENVIAR MENSAJE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer style="color:deeppink;" class="w3-content w3-padding-64 w3-xlarge">
+    <i class="fab fa-facebook-official w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Plantilla por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>

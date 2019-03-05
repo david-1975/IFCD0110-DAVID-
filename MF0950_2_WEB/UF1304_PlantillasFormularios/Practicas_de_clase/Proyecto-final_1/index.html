@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<title>Casa Rural El Descanso</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-cyan w3-mobile"><i class="fa fa-bed w3-margin-right"></i><img src="img/hotel.png" alt="Casa rural"></a>
+  <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Habitaciones</a>
+  <a href="#about" class="w3-bar-item w3-button w3-mobile">Casa Rural</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contacto</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Reserva</a>
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+  <img class="w3-image" src="img/hotel.jpg" alt="Casa rural" style="min-width:1000px" width="1500" height="800">
+  <div class="w3-display-left w3-padding w3-col l6 m8">
+    <div class="w3-container w3-cyan">
+      <h2><i class="fa fa-bed w3-margin-right"></i>Casa Rural El Descanso</h2>
+    </div>
+    <div class="w3-container w3-white w3-padding-16">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-calendar-o"></i> Entrada</label>
+            <input class="w3-input w3-border" type="date" name="CheckIn" required>            
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-calendar-o"></i> Salida</label>
+<!--            <input class="w3-input w3-border" type="text" placeholder="DD MM AAAA" name="CheckOut" required>-->
+            <input class="w3-input w3-border" type="date" name="CheckOut" required>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:8px -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-male"></i> Adultos</label>
+            <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-child"></i> Niños</label>
+          <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
+          </div>
+        </div>
+        <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Buscar</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px;">
+
+  <div class="w3-container w3-margin-top" id="rooms">
+    <h3>Habitaciones</h3>
+    <p>Prepárate para desconectar y descansar como te mereces. Nuestra casa rural te ofrece un entorno que te permitirá relajarte y disfrutar de la naturaleza.</p>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Entrada</label>
+      <input class="w3-input w3-border" type="date" required>            
+    </div>
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Salida</label>
+      <input class="w3-input w3-border" type="date" required>            
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-male"></i> Adultos</label>
+      <input class="w3-input w3-border" type="number" placeholder="1">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-child"></i> Niños</label>
+      <input class="w3-input w3-border" type="number" placeholder="0">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-search"></i> Buscar</label>
+      <button class="w3-button w3-block w3-black">Buscar</button>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/hab-ind.jpg" alt="Habitación individual" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Habitación individual</h3>
+        <h6 class="w3-opacity">Desde 60€</h6>
+        <p>Cama 120cm</p>
+        <p>15m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Elige habitación</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/hab_doble.jpg" alt="Habitación doble" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Habitación doble</h3>
+        <h6 class="w3-opacity">Desde 120€</h6>
+        <p>Cama 150cm</p>
+        <p>25m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Elige habitación</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="img/hab_doble_lujo.jpg" alt="Habitación doble lujo" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Habitación doble lujo</h3>
+        <h6 class="w3-opacity">Desde 150€</h6>
+        <p>Cama 180cm</p>
+        <p>40m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Elige habitación</button>
+      </div>
+    </div>
+  </div>
+
+   <div class="w3-row-padding" id="about">
+    <div class="w3-col l7 12">
+      <h3>Casa rural</h3>
+      <h6>Casa típica de más de un siglo, de paredes de piedra y techos de madera, de decoración rústica y cuidada al detalle, totalmente acondicionada para facilitar el descanso después de un día en la naturaleza.</h6>
+      <h6>Consta de 4 habitaciones dobles de lujo, 4 habitaciones dobles estándar y 2 habitaciones individuales. Todas las habitaciones tienen baño completo, televisión y wifi.</h6>
+      <h6>Las habitaciones dobles tienen televisión y las doble-lujo constan disponen además de un amplio salón con biblioteca, minibar e incluye la pensión completa.</h6>
+      <h6>Estamos en el corazoón del Parque Nacional de Cabañeros, uno de los quince parques nacionales​ de España en la comunidad autónoma de Castilla-La Mancha. El parque nacional de Cabañeros alberga una de las mejores representaciones españolas de bosque mediterráneo, tanto por su elevado grado de conservación, como por la representatividad de los distintos sistemas ecológicos asociados. Entre sus principales valores naturales están los bosques y matorrales mediterráneos, algunos enclaves relícticos de vegetación atlántica, bosques de ribera, turberas y herbazales, con la flora y fauna asociada a cada unos de estos ecosistemas, entre las que se encuentran algunas especies en peligro de extinción como el águila imperial.</h6>
+      <p>Aceptamos: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+    </div>
+    <div class="w3-col l5 12">
+      <!-- Image of location/map -->
+/*      <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;">*/
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.324951191168!2d-4.652251667440299!3d39.32622267368346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6ae6a69df6ed79%3A0x7d89c054d1830f5d!2sCalle+Real%2C+59%2C+13110+Horcajo+de+los+Montes%2C+Cdad.+Real!5e0!3m2!1ses!2ses!4v1551699506665" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>      
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
+    <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> C/ Real, 59. Horcajo de Los Montes - 13110 (Ciudad Real)</div>
+    <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Teléfono: 926154896 / 609157854</div>
+    <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: eldescansodehorcajo@gmail.com</div>
+  </div>
+
+  <div class="w3-panel w3-amber w3-leftbar w3-padding-32">
+    <h6><i class="fa fa-info w3-purple w3-padding w3-margin-right"></i> Disponemos de otros servicios bajo demanda: rutas a caballo, excursiones en 4x4, visitas guiadas al Parque Nacional de Cabañeros, traslados a la estación de tren / aeropuerto, etc.</h6>
+  </div>
+
+  <div class="w3-container">
+    <h3>Galería</h3>
+    <h6>Fotos del Parque Nacional de Cabañeros, entorno natural donde su ubica la casa rural:</h6>
+  </div>
+  
+  <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="img/PNC7.jpg" alt="Parque Nacional de Cabañeros" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">Parque Nacional de Cabañeros</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="img/PNC3.jpg" alt="Parque Nacional de Cabañeros" style="width:100%">
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="img/PNC9.jpg" alt="Parque Nacional de Cabañeros" style="width:100%">
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="img/PNC2.jpg" alt="Parque Nacional de Cabañeros" style="width:100%">
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="img/PNC4.jpg" alt="Parque Nacional de Cabañeros" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
+    <h2>¿Quieres recibir nuestras ofertas?</h2>
+    <p>Suscríbete a nuestra newsletter.</p>
+    <label>E-mail</label>
+    <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+    <button type="button" class="w3-button w3-red w3-margin-top">Subscribirse</button>
+  </div>
+
+  <div class="w3-container" id="contact">
+    <h2>Contacto</h2>
+    <p>Si quieres hacer una reserva o hacernos una consulta contacta con nosotros.</p>
+    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i>  C/ Real, 59. Horcajo de Los Montes - 13110 (Ciudad Real)<br>
+    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Teléfono: 926154896 / 609157854<br>
+    <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: eldescansodehorcajo@gmail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Tu consulta" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">ENVIAR</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Encuéntranos en las redes sociales</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+
+<!-- Add Google Maps -->
+<!--<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
+
