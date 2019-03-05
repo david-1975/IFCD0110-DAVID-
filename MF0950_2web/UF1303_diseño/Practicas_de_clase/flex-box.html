@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--esta etiqueta es para que los moviles o tablet se configuren-->
+<title>Documento FlexBox</title>
+<style>
+	.flex-contenedor {
+		display: flex; /*propiedad que define la flexión*/
+		background-color: burlywood;
+	}	
+	.flex-contenedor > div{               /*Solo los herederos directos del padre, si hay más y no son directos no valdría.*/
+		background-color: indianred;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  
+	/*------------------------------------------------*/
+.flex-contenedor2 {
+		display: flex; /*propiedad que define la flexión*/
+		flex-direction: row;
+		background-color:peru;
+	}	
+.flex-contenedor2 > div{               
+		background-color: beige;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  	
+/*------------------------------------------------*/	
+.flex-contenedor22 {
+		display: flex; /*propiedad que define la flexión*/
+		flex-direction: column;
+		background-color:lightpink;
+	}	
+.flex-contenedor22 > div{               
+		background-color: beige;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  	
+/*------------------------------------------------*/	
+.flex-contenedor3 {
+		display: flex; /*propiedad que define la flexión*/
+		/*flex-direction: row; no haria falta.*/
+		flex-wrap: wrap;	
+		background-color:lightblue;
+	}	
+.flex-contenedor3 > div{               
+		background-color: beige;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  		
+/*------------------------------------------------*/	
+.flex-contenedor33 {
+		display: flex; /*propiedad que define la flexión*/
+		/*flex-direction: row; no haria falta.*/
+		flex-wrap: nowrap;	
+		background-color:lightblue;
+	}	
+.flex-contenedor33 > div{               
+		background-color: beige;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  		
+/*------------------------------------------------*/	
+.flex-contenedor4 {
+		display: flex; /*propiedad que define la flexión*/
+		/*flex-direction: row; no haria falta.*/
+		justify-content: flex-start;	
+		background-color:goldenrod;
+	}	
+.flex-contenedor4 > div{               
+		background-color: beige;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  		
+/*------------------------------------------------*/	
+.flex-contenedor41 {
+		display: flex; /*propiedad que define la flexión*/
+		/*flex-direction: row; no haria falta.*/
+		justify-content: flex-end;
+		background-color:goldenrod;
+	}	
+.flex-contenedor41 > div{               
+		background-color: beige;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  		
+/*------------------------------------------------*/	
+.flex-contenedor42 {
+		display: flex; /*propiedad que define la flexión*/
+		/*flex-direction: row; no haria falta.*/
+		justify-content: center;
+		background-color:goldenrod;
+	}	
+.flex-contenedor42 > div{               
+		background-color: beige;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  		
+/*------------------------------------------------*/
+.flex-contenedor43 {
+		display: flex; /*propiedad que define la flexión*/
+		/*flex-direction: row; no haria falta.*/
+		justify-content: space-between;
+		background-color:goldenrod;
+	}	
+.flex-contenedor43 > div{               
+		background-color: beige;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  		
+/*------------------------------------------------*/
+.flex-contenedor44 {
+		display: flex; /*propiedad que define la flexión*/
+		/*flex-direction: row; no haria falta.*/
+		justify-content: space-around;
+		background-color:goldenrod;
+	}	
+.flex-contenedor44 > div{               
+		background-color: beige;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+	}  		
+/*------------------------------------------------*/
+.flex-contenedor5 {
+		display: flex;  /*propiedad que define la flexión*/
+		flex-flow: row wrap;     /*flex-direction: row; no haria falta.*/
+		align-content: flex-start;	
+		background-color:burlywood;
+		height: 300px;
+		
+	}	
+.flex-contenedor5 > div{               
+		background-color: indianred;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+		height: 100px;	
+		}  		
+/*------------------------------------------------*/	
+.flex-contenedor6 {
+		display: flex; /*propiedad que define la flexión*/
+		flex-flow: row wrap;/*flex-direction: row; no haria falta.*/
+		align-content: flex-end; 	
+		background-color:burlywood;
+		height: 300px;
+	}	
+.flex-contenedor6 > div{               
+		background-color: indianred;
+		font-size: 3em;
+		width: 120px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+		height: 100px;
+		
+		}  		
+/*------------------------------------------------*/
+.flex-contenedor7 {
+		display: flex; /*propiedad que define la flexión*/
+		flex-flow: row wrap;/*flex-direction: row; no haria falta.*/
+		align-content: center;	
+		background-color:burlywood;
+		height: 300px;
+	}	
+.flex-contenedor7 > div{               
+		background-color: indianred;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+		height: 100px;
+		}  		
+/*------------------------------------------------*/	
+.flex-contenedor8 {
+		display: flex; /*propiedad que define la flexión*/
+		flex-flow: row wrap;/*flex-direction: row; no haria falta.*/
+		align-content: space-between;	
+		background-color:burlywood;
+		height: 300px;
+	}	
+.flex-contenedor8 > div{               
+		background-color: indianred;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+		height: 100px;
+		}  		
+/*------------------------------------------------*/	
+.flex-contenedor9 {
+		display: flex; /*propiedad que define la flexión*/
+		flex-flow: row wrap;/*flex-direction: row; no haria falta.*/
+		align-content: space-around;	
+		background-color:burlywood;
+		height: 300px;
+	}	
+.flex-contenedor9 > div{               
+		background-color: indianred;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+		height: 100px;
+		}  		
+/*------------------------------------------------*/
+.flex-contenedor10 {
+		display: flex; /*propiedad que define la flexión*/
+		flex-flow: row wrap;/*flex-direction: row; no haria falta.*/
+		align-content: stretch;	
+		background-color:burlywood;
+		height: 300px;
+	}	
+.flex-contenedor10 > div{               
+		background-color: indianred;
+		font-size: 3em;
+		width: 100px;
+		text-align: center;
+		margin: 10px;
+		padding: 10px;
+		height: 100px;
+		}  		
+/*------------------------------------------------*/	
+	</style>	
+</head>
+
+<body>
+<h2>Display:flex</h2>	
+<div class="flex-contenedor">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>	
+</div>	
+<hr>
+<h2>flex-direction:row</h2>	
+<div class="flex-contenedor2">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br>
+<h2>flex-direction:column</h2>		
+<div class="flex-contenedor22">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+<br>
+<h2>flex-wrap: wrap</h2>	
+<div class="flex-contenedor3">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>	
+</div>	
+<br>
+<h2>flex-wrap: nowwrap</h2>	
+<div class="flex-contenedor33">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>	
+</div>	
+<br>
+<h2>justify-content: flex-start</h2>	
+<div class="flex-contenedor4">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>		
+<br>
+<h2>justify-content: flex-end</h2>	
+<div class="flex-contenedor41">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>	
+<br>
+<h2>justify-content: center</h2>	
+<div class="flex-contenedor42">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>	
+<br>
+<h2>justify-content: space-between</h2>	
+<div class="flex-contenedor43">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>	
+<br>
+<h2>justify-content: space-around</h2>	
+<div class="flex-contenedor44">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>	
+<br>
+<h2>align-content: flex-start</h2>	
+<div class="flex-contenedor5">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+</div>	
+<br>
+<h2>align-content: flex-end</h2>	
+<div class="flex-contenedor6">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+</div>	
+<br>
+<h2>align-content: center</h2>	
+<div class="flex-contenedor7">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</div>	
+<br>
+<h2>align-content: space-between</h2>	
+<div class="flex-contenedor8">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</div>	
+<br>
+<h2>align-content: space-around</h2>	
+<div class="flex-contenedor9">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</div>	
+<br>
+<h2>align-content: stretch</h2>	
+<div class="flex-contenedor10">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</div>		
+	</body>
+</html>
