@@ -12,6 +12,8 @@ http://www.falconmasters.com/
 https://lenguajehtml.com/
 https://www.emezeta.com/
 https://www.aprenderaprogramar.com/
+http://www.tutorialesprogramacionya.com/javascriptya/
+https://desarrolloweb.com/javascript/
 
 https://www.kidoestudio.com/blog/mensaje-politica-de-cookies/  para hacer cookies
 ---
@@ -66,3 +68,7 @@ https://fonts.google.com/
 
 Lo más buscado en la web
 https://trends.google.es/trends/?geo=ES
+
+Bootstrap 4 (html,css,js)  para crear sitios web y aplicaciones responsivas y fiables. .
+https://www.w3schools.com/bootstrap4/default.asp
+https://getbootstrap.com/docs/4.3/getting-started/introduction/
