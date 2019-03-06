@@ -2,35 +2,96 @@
 <html lang="es-ES">
 <head>
 <meta charset="utf-8">
-	<title>Introducción al JavaScript</title>
-	<link href="css/estilos.css" rel="stylesheet" type="text/css">  <!-- este css esta sacado de esta pagina ya formateada a un estilo https://getbootstrap.com/docs/4.3/utilities/borders/-->
-	<script src="js/funciones.js"></script>
-	<link rel="icon" href="img/html5.ico.ico" type="image/png">
-	<meta name="description" content="JS">
-	<meta name="keywords" content="HTML, CSS, JS">
-	<meta name="author" content="David Valentín Domínguez"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body{
-			width: 80%;
-			margin: 20px auto;
-		}
-	</style>
+<title>Introducción al JavaScript</title>
+<link href="css/estilos.css" type="text/css" rel="stylesheet">
+<script src="js/funciones.js"></script>
+<style>
+/*body {
+		width:80%;
+		margin:20px auto;
+	}*/
+</style>
 </head>
 
 <body class="w-75 m-auto">
-<h1 class="text-primary">¿Qué podemos hacer con JavaScript?</h1>	
+<h1 class="text-primary">¿Qué podemos hacer con JavaScript?</h1>
 <hr>
 <h2>JavaScript puede cambiar el contenido HTML</h2>
-<p>Uno de los muchos métodos JavaScript HTML es <code>getElementById()</code>.</p>
-<p>En este ejemplo se utiliza el método de "encontrar" un elemento HTML (con id = "demo") y cambia el contenido del elemento (<code> innerHTML</code> ) a "Hola JavaScript":</p>
+<p>Uno de los muchos métodos <strong>JavaScript HTML</strong> es <code>getElementById()</code>.</p>
+<p>En este ejemplo se utiliza el método de "encontrar" un elemento HTML (con id = "demo") y cambia el contenido del elemento ( <strong>innerHTML</strong>) a "Hola JavaScript":</p>
 <div class="bg-light">
-Ejemplo de uso	
-	<div class="alert alert-warning border border-left border-success">
-		<samp>document.getElementById("demo").innerHTML = "Hello JavaScript";</samp>	
+Ejemplo de uso
+  <div class="alert alert-warning">&lt;p id=&quot;demo&quot;&gt;JavaScript puede cambiar el contenido HTML&lt;/p&gt;<br>
+    &lt;button type=&quot;button&quot; onClick=&quot;document.getElementById('demo').innerHTML= 'Hola Javascript!'&quot;&gt;Clica Me!&lt;/button&gt;</div>	
+</div>
+<br>
+
+<div class="row bg-info p-4 mb-2" mg>
+
+	<div class="col-4 bg-success rounded p-3 mb-5 ">
+	<p id="demo1">JavaScript puede cambiar el contenido HTML</p>
+<button type="button" onclick="document.getElementById('demo1').innerHTML= 'Hola Javascript!'">Pincha aqui!</button>
+	</div>
 	
+	<div class="col-4 shadow p-3 mb-5 bg-white rounded">
+		<p id="demo2">JavaScript puede cambiar el contenido <strong>HTML</strong></p>
+	<button type="button" onclick="document.getElementById('demo2').innerHTML= 'Hello Javascript!'">Click me!</button>
+	</div>
+	<div class="col-4 bg-warning rounded p-3 mb-5 ">
+		<p id="demo3">JavaScript puede cambiar el contenido HTML</p>
+	<button type="button" onclick="document.getElementById('demo3').innerHTML= 'Bonjour Javascript!'">Clique moi!</button>
 	</div>	
-	
+</div>
+	<hr>
+	<h2>JavaScript puede cambiar los valores de atributos HTML</h2>
+<p>En este ejemplo JavaScript cambia el <strong>valor</strong> de la src (fuente) atributo de un &lt;img&gt;tag:</p>
+<div class="bg-light">
+Ejemplo de uso
+	<div class="alert alert-warning pa">
+	  <p>&lt;button onclick=&quot;document.getElementById('Imagen').src='img/pic_bulbon.gif'&quot;&gt;Encender bombilla&lt;/button&gt;</p>
+	  <p>&lt;img id=&quot;Imagen&quot; src=&quot;img/pic_bulboff.gif&quot; style=&quot;width:100px&quot;&gt;</p>
+	  <p>&lt;button onclick=&quot;document.getElementById('Imagen').src='img/pic_bulboff.gif'&quot;&gt;Apagar bombilla&lt;/button&gt;</p>
+	</div>	
 </div>	
+<div class="shadow p-3 mb-5 bg-white rounded float-left">
+<button onclick="document.getElementById('Imagen').src='img/pic_bulbon.gif'">Encender bombilla</button>
+
+<img id="Imagen" src="img/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('Imagen').src='img/pic_bulboff.gif'">Apagar bombilla</button>
+</div>	
+<div class="shadow p-3 mb-5 bg-white rounded ">
+<button onclick="document.getElementById('Imagen1').src='img/verde.jpg'">Encender bombilla</button>
+
+<img id="Imagen1" src="img/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('Imagen1').src='img/pic_bulboff.gif'">Apagar bombilla</button>
+</div>	
+	
+<div class="shadow p-3 mb-5 bg-white rounded">
+<button onclick="document.getElementBytagname('Imagen5').src='img/pic_bulbon.gif'">Encender bombilla</button>
+<img "Imagen5" src="img/pic_bulboff.gif" style="width:100px">
+<img id="Imagen5" src="img/pic_bulboff.gif" style="width:100px">
+<img id="Imagen5" src="img/pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('Imagen5').src='img/pic_bulboff.gif'">Apagar bombilla</button>
+</div>
+	<hr>
+	<h2>JavaScript puede cambiar los valores de estilo (CSS) HTML</h2>
+<div class="row shadow p-3 mb-5 ">
+	<div class="col-3 shadow p-3 mb-5 ">
+	<p id="texto1">JavaScript puede cambiar el estilo de color</p>
+	<button onclick="document.getElementById('texto1').style.color='red'">Cambia de color</button>
+	 </div>
+	<div class="col-3 shadow p-3 mb-5 ">
+	<p id="texto2">JavaScript puede cambiar el estilo de tamaño</p>
+	<button onclick="document.getElementById('texto2').style.fontSize='35px'">Cambia tamaño</button>
+	</div>	
+	<div class="col-3 shadow p-3 mb-5 btm-primary">	
+	<p id="texto3">JavaScript puede cambiar el estilo</p>
+	<button type="button" class="btn btn-primary" onclick="document.getElementById('texto3').style.color='green'">Cambia de color</button>
+	</div>	
+</div>
+	<hr>
+
 </body>
 </html>

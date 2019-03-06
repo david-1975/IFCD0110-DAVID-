@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Introducción al JavaScript</title>
+<link href="css/estilos.css" type="text/css" rel="stylesheet">
+<script src="js/funciones.js"></script>
+<style>
+/*	body {
+		width:80%;
+		margin:20px auto;
+	}*/
+</style>
+</head>
+
+<body class="w-75 m-auto">
+<h1 class="text-primary">¿Dónde puede ser insertado JavaScript?</h1>
+<hr>
+<ul>
+  <li>El  código JavaScript en <strong>HTML</strong> debe ser insertado entre las etiquetas <code>&lt;script&gt;</code> y <code>&lt;/script&gt;</code>.</li>
+  <li>Los <strong>scripts</strong> pueden ser colocados en la sección <code>&lt;body&gt;</code>, o en el <code>&lt;head&gt;</code>  de una página <strong>HTML</strong>, o en ambos.</li>
+  <li>Los <strong>scripts</strong> también pueden ser colocados en archivos externos com<strong> js/funciones.js</strong></li>
+  <li>El código JavaScript puede ser insertado en línea, en las <strong>etiquetas HTML, </strong>en el <strong>atributo</strong> de evento <strong>onclick.</strong></li>
+</ul>
+
+<div class="row bg-light p-5">
+
+<div class="col-8 p-3 bg-white shadow-lg rounded">
+			<p><strong>Ejemplo de código JavaScript en la sección Head
+		  </strong></p>
+			<p>&lt;head&gt;<br>
+			&lt;script&gt;<br>			
+			function myFunction() {<br>
+		   document.getElementById("demo").innerHTML = "Párrafo Cambiado.";<br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;</p>
+  </div>
+ 
+<div class="col-4 p-3 bg-white shadow-lg rounded">
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Paragraph changed.";
+}
+</script>
+<p><strong>Ejemplo de uso</strong></p>
+<p>La función se invoca (llama) cuando se hace clic en un botón:</p>
+<p id="demo1">A Paragraph.</p>
+<button type="button" onclick="myFunction()">Try it</button></div>
+
+</div>
+	
+<div class="col-12 shadow-lg p-3 mb-5 bg-white rounded" >
+			<p><strong>Ejemplo: JavaScript en el Body </strong></p>
+			<p class="align-content-lg-stretch">&lt;body&gt; <br>
+			  <br>
+			  &lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+			  &lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+			  &lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+			  &lt;script&gt;<br>
+			  function myFunction() {<br>
+ document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/body&gt;</p>
+		</div>
+		
+<div class="col-6 shadow-lg p-3 mb-5 bg-white rounded">
+			<h3>Ejemplo: JavaScript en un documento externo</h3>
+  <p id="demostracion">Pulsa al botón y el texto cambiará</p>
+	<button type="button" onClick="miFuncion()">Púlsame</button>
+		</div>
+		
+<div class="col-8 shadow-lg p-3 mb-5 bg-white rounded">
+			<h3>Ejemplo: JavaScript dentro de una etiqueta HTML </h3>
+			<p>&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById('demo').innerHTML = 'Hello JavaScript!'&quot;&gt;Click Me!&lt;/button&gt;</p>
+</div>
+<div class="col-8 shadow-lg p-3 mb-5 bg-white rounded">
+			<h3>Ejemplo: JavaScript dentro de una etiqueta HTML </h3>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo2">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="document.getElementById('demo2').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+</body>
+</html>
+			
+</div>	
+<br>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
