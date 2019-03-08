@@ -1,6 +1,6 @@
 
 git add .    
-git commit -m "finclases" 
+git commit -m "finclass" 
 git push origin master
 
 pause
