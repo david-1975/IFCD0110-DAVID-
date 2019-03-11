@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Variables JavaScript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+<h1>JavaScript salida</h1>
+<hr>
+<h2>Las posibilidades de visualización de JavaScript</h2>
+<p>JavaScript puede alterar los datos "Display" de diferentes maneras:</p>
+<ul>
+  <li>La escritura en un elemento HTML, usando  <code>innerHTML</code>.</li>
+  <li>La escritura en la salida HTML utilizando <code>document.write()</code>.</li>
+  <li>Escribir en un cuadro de alerta, utilizando  <code>window.alert()</code>.</li>
+  <li>Escribir en la consola del navegador, usando  <code>console.log()</code>.</li>
+</ul>
+<p>&nbsp;</p>
+<div class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+<div class="row">
+<div class="col-md-3 mb-2">
+	<div class="bg-light shadow rounded p-2">
+	<p><strong>Usando innerHtml</strong></p>
+	<p>Para acceder al contenido HTML de un elemento se utiliza innerHTML.</p>
+	<button class="btn btn-primary" onClick="demo1()">Pulsa</button>
+	<p id="demo1"></p>
+	<script>
+		function demo1 () {
+	document.getElementById("demo1").innerHTML = 5 + 6;
+		}
+	</script>
+	</div>
+</div>
+<div class="col-md-3 mb-2">
+	<div class="bg-light shadow rounded p-2">
+	<p><strong>Usando document.write</strong></p>
+	<p>Para propósitos de prueba se utiliza document.write() para mostrar los datos.</p>
+	<button class="btn btn-primary" onClick="demo2()"
+	>Pulsar</button>
+		<p>
+		<script>
+		function demo2 () {
+			document.write(5 + 6);
+		}
+		</script>
+		</p>
+	</div>
+</div>
+<div class="col-md-3 mb-2">
+	<div class="bg-light shadow rounded p-2">
+	<p><strong>Usando window.alert</strong></p>
+	<p>Para propósitos informativo utilizar el método window.alert() para mostrar los datos.</p>
+	<button class="btn btn-primary" onClick="demo3()"
+	>Pulsar</button>
+		<p><script>
+		function demo3 () {		
+		window.alert(5 + 6);
+		}
+		</script>
+		</p>
+	</div>
+</div>
+<div class="col-md-3 mb-2">
+	<div class="bg-light shadow rounded p-2">
+	<p><strong>Usando console.log</strong></p>
+	<p>Para propósitos de depuración utilizar el método console.log() para mostrar los datos.</p>
+	<button class="btn btn-primary" onClick="demo4()"
+	>Pulsar</button>
+	<p>
+		<script>
+		function demo4 () {		
+		console.log(5 + 6);
+		}
+		</script>
+		</p>
+	</div>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

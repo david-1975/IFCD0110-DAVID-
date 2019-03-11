@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Introducción al JavaScript</title>
+<link href="css/estilos.css" type="text/css" rel="stylesheet">
+<script src="js/funciones.js"></script>
+<style>
+/*	body {
+		width:80%;
+		margin:20px auto;
+	}*/
+</style>
+<script>
+function miFuncion1() {
+  document.getElementById("demo1").innerHTML = "Párrafo Cambiado.";
+  document.getElementById('demo1').style.color = "blue";
+}
+</script>
+</head>
+
+<body > <!-- class="w-75 m-auto" -->
+<div class="container">
+<h1 class="text-dark">¿Dónde puede ser insertado JavaScript?</h1>
+<hr>
+	<div class="shadow p-3 mb-3 bg-white rounded">
+		<ul>
+		  <li>El  código JavaScript en <strong>HTML</strong> debe ser insertado entre las etiquetas <code>&lt;script&gt;</code> y <code>&lt;/script&gt;</code>.</li>
+		  <li>Los <strong>scripts</strong> pueden ser colocados en la sección <code>&lt;body&gt;</code>, o en el <code>&lt;head&gt;</code>  de una página <strong>HTML</strong>, o en ambos.</li>
+		  <li>Los <strong>scripts</strong> también pueden ser colocados en archivos externos como<strong> js/funciones.js</strong></li>
+		  <li>El código JavaScript puede ser insertado en línea, en las <strong>etiquetas HTML, </strong>en el <strong>atributo</strong> de evento <strong>onclick.</strong></li>
+		</ul>
+	</div>
+</div>
+
+<div class="container"> <!-- Div Contenedor .container, .container-fluid-->
+<div class="row justify-content-between"> <!-- align-items-center -->
+
+<div class="col-8">
+	<div class="bg-light p-3 shadow bg-white rounded h-100 ml-0">
+		<p class="text-dark"><strong>Ejemplo de código JavaScript en la sección Head
+		</strong></p>
+		<samp>
+		<p><span class="text-primary">&lt;head&gt;</span><br>
+		<span class="text-danger">&lt;script&gt;<br></span>		
+		<span class="text-secondary">function miFuncion1() {<br>
+		document.getElementById("demo1").innerHTML = "Párrafo Cambiado.";<br>
+		document.getElementById('demo1').style.color = &quot;blue&quot;;		  }<br></span>
+			<span class="text-danger">&lt;/script&gt;</span><br>
+			<span class="text-primary">&lt;/head&gt;</span></p>
+    		<p><span class="text-primary">&lt;body&gt;</span><br>
+		
+		<span class="text-secondary"> &lt;p id=&quot;demo1&quot;&gt;Este párarrafo va a ser cambiado.&lt;/p&gt;<br>
+&lt;button type=&quot;button&quot; onClick=&quot;miFuncion1()&quot;&gt;Pulsar&lt;/button&gt;</span><br>
+		<span class="text-primary">&lt;/body&gt;</span>
+			</p>
+	    </samp>
+	</div>
+  </div>
+
+<div class="col-4">
+	<div class="bg-light p-3 shadow bg-white rounded h-100">
+		<p class="text-dark"><strong>Ejemplo de uso</strong></p>
+		<p>Cuando se hace clic en el botón se invoca (llama) a la función <strong>miFuncion1()</strong> situada en la sección <code>&lt;head&gt;</code> entre  etiquetas <code>&lt;script&gt;</code>.</p>
+		<p id="demo1">Este párarrafo va a ser cambiado.</p>
+		<button class="btn btn-primary" type="button" onClick="miFuncion1()">Pulsar</button></div>
+	</div>
+</div>
+</div>  <!-- FIN Div Contenedor -->
+<!-- ------------------------------------------------------------------ -->
+<div class="container mt-3"> <!-- Div Contenedor .container, .container-fluid-->
+<div class="row justify-content-between"> <!-- align-items-center -->
+
+<div class="col-8">
+	<div class="bg-light p-3 shadow bg-white rounded h-100 ml-0">
+		<p class="text-dark"><strong>Ejemplo de código JavaScript en la sección Body
+		</strong></p>
+		<samp>
+		<p><span class="text-primary">&lt;body&gt;</span><br>
+		<span class="text-danger">&lt;script&gt;<br>
+		</span>		
+		<span class="text-secondary">function miFuncion2() {<br>
+		document.getElementById("demo2").innerHTML = "Párrafo Cambiado.";<br>
+		document.getElementById('demo2').style.color = &quot;blue&quot;;		  }<br></span>
+			<span class="text-danger">&lt;/script&gt;</span><br>
+
+		<span class="text-secondary"> &lt;p id=&quot;demo2&quot;&gt;Este párarrafo va a ser cambiado.&lt;/p&gt;<br>
+&lt;button type=&quot;button&quot; onClick=&quot;miFuncion2()&quot;&gt;Pulsar&lt;/button&gt;</span><br>
+		<span class="text-primary">&lt;/body&gt;</span>
+			</p>
+		  </samp>
+	</div>
+  </div>
+<script>
+function miFuncion2() {
+  document.getElementById("demo2").innerHTML = "Párrafo Cambiado.";
+  document.getElementById('demo2').style.color = "blue";
+}
+</script>
+<div class="col-4">
+	<div class="bg-light p-3 shadow bg-white rounded h-100">
+		<p class="text-dark"><strong>Ejemplo de uso</strong></p>
+		<p>Cuando se hace clic en el botón se invoca (llama) a la función <strong>miFuncion2()</strong> situada en la sección <code>&lt;body&gt;</code> entre etiquetas <code>&lt;script&gt;</code>.</p>
+		<p id="demo2">Este párarrafo va a ser cambiado.</p>
+		<button class="btn btn-primary" type="button" onClick="miFuncion2()">Pulsar</button></div>
+	</div>
+</div>
+
+</div>  <!-- FIN Div Contenedor -->
+<!-- ------------------------------------------------------------- -->
+
+<div class="container mt-3"> <!-- Div Contenedor .container, .container-fluid-->
+<div class="row justify-content-between"> <!-- align-items-center -->
+
+<div class="col-8">
+	<div class="bg-light p-3 shadow bg-white rounded h-100 ml-0">
+		<p class="text-dark"><strong>Ejemplo: JavaScript en un documento externo JS
+		</strong></p>
+		<samp>
+		<p><span class="text-primary">&lt;head&gt;</span><br>
+		<span class="text-danger">&lt;script src=&quot;<span class="text-secondary">js/funciones.js</span>&quot;&gt;<br>
+		<span class="text-primary">&lt;/head&gt;</span></span>	</p>
+		<span class="text-primary">&lt;body&gt;</span>
+		<p><span class="text-secondary"> &lt;p id=&quot;demo3&quot;&gt;Este párarrafo va a ser cambiado.&lt;/p&gt;<br>
+&lt;button type=&quot;button&quot; onClick=&quot;miFuncion3()&quot;&gt;Pulsar&lt;/button&gt;</span><br>
+		<span class="text-primary">&lt;/body&gt;</span>
+		</p>
+		</samp>
+	</div>
+</div> <!-- Fin col-8 -->
+
+  
+<div class="col-4">
+	<div class="bg-light p-3 shadow bg-white rounded h-100">
+		<p class="text-dark"><strong>Ejemplo de uso</strong></p>
+		<p>Cuando se hace clic en el botón se invoca (llama) a la función <strong>miFuncion3()</strong> situada en un documento externo de JavaScript.</p>
+		<p id="demo3">Este párarrafo va a ser cambiado.</p>
+		<button class="btn btn-primary" type="button" onClick="miFuncion3()">Pulsar</button>
+	</div>
+</div> <!-- Fin col-4 -->
+
+</div> <!-- Fin ROW -->
+
+</div>  <!-- FIN Div Contenedor -->
+<!-- ------------------------------------------------------------- -->
+
+<div class="container mt-3"> <!-- Div Contenedor .container, .container-fluid-->
+<div class="row justify-content-between"> <!-- align-items-center -->
+
+<div class="col-8">
+	<div class="bg-light p-3 shadow bg-white rounded h-100 ml-0">
+		<p class="text-dark"><strong>Ejemplo: JavaScript en una etiqueta HTML</strong></p>
+		<samp>
+		<span class="text-primary">&lt;body&gt;</span>
+		<span class="text-secondary"><p> &lt;p id=&quot;demo4&quot;&gt;Este párarrafo va a ser cambiado.&lt;/p&gt;<br>
+		  <br>
+&lt;button type=&quot;button&quot; onClick=&quot;<br>
+document.getElementById('demo4').innerHTML = 'Párrafo cambiado.';<br>
+document.getElementById('demo4').style.color = 'blue';<br>
+&quot;&gt;Pulsar&lt;/button&gt;<br>
+		<span class="text-primary">&lt;/body&gt;</span>
+		</p></span>
+		</samp>
+	</div>
+</div> <!-- Fin col-8 -->
+
+  
+<div class="col-4">
+	<div class="bg-light p-3 shadow bg-white rounded h-100">
+		<p class="text-dark"><strong>Ejemplo de uso</strong></p>
+		<p>Cuando se hace clic en el botón se ejecuta la sentencia de JavaScript escrita dentro del atributo onClick d ela etiqueta <strong>HTML</strong>.</p>
+		<p id="demo4">Este párarrafo va a ser cambiado.</p>
+		<button class="btn btn-primary" type="button" onClick="
+document.getElementById('demo4').innerHTML = 'Párrafo cambiado.'; 
+document.getElementById('demo4').style.color = 'blue';
+">Pulsar</button>
+	</div>
+</div> <!-- Fin col-4 -->
+
+</div> <!-- Fin ROW -->
+
+</div>  <!-- FIN Div Contenedor -->
+<!-- ------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
