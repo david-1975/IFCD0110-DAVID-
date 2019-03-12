@@ -69,7 +69,7 @@
 <div class="col-md-3 mb-2">
 	<div class="bg-light shadow rounded p-2">
 	<p><strong>Usando console.log</strong></p>
-	<p>Para propósitos de depuración utilizar el método console.log() para mostrar los datos.</p>
+	<p>Para propósitos de depuración utilizar el método console.log() para mostrar los datos. (F12)</p>
 	<button class="btn btn-primary" onClick="demo4()"
 	>Pulsar</button>
 	<p>
@@ -82,6 +82,97 @@
 	</div>
 </div>
 </div>
+</div>
+
+<div class="container">
+	<div class="row">
+	<div class="col-4">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>confirm()</strong></p> 
+		<p>El método de confirmación () muestra un cuadro de diálogo con un mensaje especificado, junto con un clic en Aceptar y un botón Cancelar.</p>
+		<p><em>confirm(message)</em></p>
+		<button class="btn btn-primary" onClick="confirmar()">Pulsar</button>
+		<script>
+			
+		function confirmar() {
+		var inicial;
+		var pulsarBoton = confirm('¿Aceptar o Cancelar?');
+		if (pulsarBoton == true) {
+			inicial = 'Has pulsado Aceptar';
+		} else { 
+			inicial = 'Has pulsado a Cancelar'; 
+		}
+			alert(inicial);
+			}
+</script>			
+<script>
+function mostarAlerta()
+    {
+    var mensaje;
+    var opcion = confirm("Clicka en Aceptar o Cancelar");
+    if (opcion == true) {
+        mensaje = "Has clickado OK";
+	} else {
+	    mensaje = "Has clickado Cancelar";
+	}
+	document.getElementById("ejemplo").innerHTML = alert(mensaje);
+}</script>
+		
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>alert()</strong></p>
+		<p>El método de alerta () muestra un cuadro de alerta con un mensaje especificado y un botón Aceptar.</p>
+		<p><em>alert(message)</em></p>
+		<button class="btn btn-primary" onClick="fechahora()">Pulsar</button>
+			<script>
+				function fechahora () {
+					var fecha = new Date();
+					var extraerDia = fecha.getDay(); //2 indica que 0 es domingo, 1 lunes y 2 martes.
+					var diaSemana = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+					var extraerDiaMes = fecha.getDate(); // 12 me saldra el dia que es en número.
+					var extraerMes = fecha.getMonth(); //3 el mes-
+					var nombreMes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+					alert(
+						"Hoy es: " + diaSemana[extraerDia] +
+						" día " + extraerDiaMes + " del mes " + nombreMes[extraerMes]);
+				}					
+			</script>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>prompt()</strong></p>
+		<p>El método prompt () muestra un cuadro de diálogo que solicita al visitante una entrada de datos</p>
+		<p><em>prompt(text, defaultText)</em></p>
+		<button class="btn btn-primary" onClick="simbolo()">Pulsar</button>
+		<script> 
+			function simbolo () {
+			var nombre = prompt('Introduce tu nombre');	
+			var apellido = prompt('Introduce tu apellido');
+			window.alert(
+				'Tu nombre es: ' + nombre + 
+				'\n y tu apellido es: ' + apellido);
+			}
+		</script>
+		</div>
+	</div>
+		<div class="col-4 mt-3">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>window.open</strong></p>
+		<p>El método open () abre una nueva ventana del navegador.</p>
+		<p><em>window.open(URL, name, specs, replace)</em></p>
+		<button class="btn btn-primary" onClick="abrirVentana()">Pulsar</button>
+		<script>
+			function abrirVentana() {
+  			var abrirVentana = window.open("", "width=200,height=100");
+  			abrirVentana.document.write("<p> Abrir ventana. Mi ancho mide 200px y mi alto mide 100px </p>");
+}
+</script>
+		</div>
+	</div>
+	</div>
 </div>
 
 </div>
