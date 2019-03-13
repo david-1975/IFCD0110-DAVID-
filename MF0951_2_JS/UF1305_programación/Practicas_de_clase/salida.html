@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
 <h1>JavaScript salida</h1>
 <hr>
 <h2>Las posibilidades de visualización de JavaScript</h2>
@@ -84,7 +84,7 @@
 </div>
 </div>
 
-<div class="container">
+<div class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
 	<div class="row">
 	<div class="col-4">
 		<div class="bg-light shadow rounded p-2">
@@ -158,25 +158,151 @@ function mostarAlerta()
 		</script>
 		</div>
 	</div>
+	</div>
+	</div>
+	<div class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+	<div class="row">
 		<div class="col-4 mt-3">
 		<div class="bg-light shadow rounded p-2">
 		<p><strong>window.open</strong></p>
-		<p>El método open () abre una nueva ventana del navegador.</p>
+		<p>El método <code>open()</code> abre una nueva ventana del navegador.</p>
 		<p><em>window.open(URL, name, specs, replace)</em></p>
 		<button class="btn btn-primary" onClick="abrirVentana()">Pulsar</button>
-		<script>
+			<script>
 			function abrirVentana() {
   			var abrirVentana = window.open("", "width=200,height=100");
   			abrirVentana.document.write("<p> Abrir ventana. Mi ancho mide 200px y mi alto mide 100px </p>");
 }
-</script>
+			</script>
 		</div>
 	</div>
-	</div>
+		
+		<div class="col-4 mt-3">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>window.close</strong></p>
+		<p>El método <code>close()</code> muestra un cuadro de diálogo de alerta con contendio opcional especificado y un botón <b>Aceptar</b></p>
+		<p><em>window.close()</em></p>
+		<button class="btn btn-primary" onClick="abrirventana()">Abrir</button>
+		<button class="btn btn-primary" onClick="cerrarventana()">Cerrar</button>
+		<script>
+			var ventana; // tienes que declarar la variable fuera para que cierre la ventana.
+			function abrirventana() {    // abre la ventana...
+		     ventana = window.open("https://www.lego.es", "_blank", "width=500, height=500");
+			}		
+			function cerrarventana() {    //cierra la ventana...
+  			ventana.close();
+			}
+</script>
+</div>
 </div>
 
-</div>
-</body>
+
+	<div class="col-4 mt-3">
+		<div class="bg-light shadow rounded p-2">
+		<p><strong>window.print;</strong></p>
+		<p>El método <code>print()</code> muestra un cuadro de diálogo que solicita una entrada de datos, junto a un botón <b>Aceptar y Cancelar</b></p>
+		<p><em>window.print();</em></p>
+		<button class="btn btn-primary" onClick="ventana()">Imprimir</button>
+		<script>
+			var ventana; // tienes que declarar la variable fuera para que cierre la ventana.
+			function ventanaabrir() {    // abre la ventana...
+		     ventana = window.print();
+			}		
+</script>
+	
+		</div>
+			
+		
+		
+	</div>	
+	</div>
+	<p><b>Nota:</b>Cuando un cuadro de mensaje aparece el usuario no podrá acceder a otras partes de la página hasta que la caja esté cerrada.</p>
+	</div>
+
+<div class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+<div class="row">
+	<div class="col-4 mt-3">
+	<div class="bg-light shadow rounded p-2">	
+<p><strong>setInterval</strong></p>
+<p>El método <code>setInterval()</code>llama a una función o evalúa una expresión a intervalos especificados (en milisegundos).
+continuará llamando a la función hasta que clearInterval (), o la ventana está cerrada.
+El valor ID devuelto por setInterval () se utiliza como el parámetro para el método clearInterval ().</p>
+		<p><em>setInterval(function, milliseconds, param1, param2, ...)</em></p>	
+	<button class="btn btn-primary" onClick="empezar()">iniciar sin fin</button>
+		
+		<script>
+			var tiempo; // tienes que declarar la variable fuera para que cierre la ventana.
+			function empezar() {    // abre la ventana...
+		     tiempo = setInterval(alerta, 3000);
+			}
+			function alerta() {
+  			alert("no me voy de aqui, hasta que me eches... jajajaja");
+				}
+			
+		</script>
+		
+	</div>
+	</div>
+	
+	
+	<div class="col-4 mt-3">
+	<div class="bg-light shadow rounded p-2">	
+<p><strong>setTimeout</strong></p>
+<p>El método <code>setTimeout()</code>El método setTimeout () llama a una función o evalúa una expresión después de un número especificado de milisegundos.</p>
+		<p><em>setTimeout(function, milliseconds, param1, param2, ...)</em></p>	
+	
+	<button class="btn btn-primary" onClick="terminar()">iniciar con tiempo</button>	
+		<script>
+			var tiempo; // tienes que declarar la variable fuera para que cierre la ventana.
+			function terminar() {
+  			setTimeout(function(){ alert("Me queda poco tiempo"); }, 3000);
+}
+		</script>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+<div class="row">
+	<div class="col-4 mt-3">
+	<div class="bg-light shadow rounded p-2">	
+	<p><strong>btoa() codifica</strong></p><p><strong>atob() descodifica</strong></p>
+	<p>El método <code>btoa ()</code>codifica una cadena en base-64.
+Este método utiliza el "AZ", "az", "0-9", y "=" caracteres "+" "/" para codificar la cadena.
+Consejo: Utilice la atob () método para decodificar una cadena de base-64 codificada.</p>
+	<p>Nota: el método atob () no es compatible con IE9 y versiones anteriores.</p>
+	
+		
+		
+		
+	<p><em>window.atob(encodedStr)</em></p>			
+	
+		<button class="btn btn-primary" onClick="codificar">codificar datos</button>
+		<script>
+			function codificar() {
+				var str = "Este mensaje es secreto";
+				var enc = window.btoa(str);
+  				var dec = window.atob(enc);
+			
+			var res = "codificar: " + enc + "<br>" + "descodificar: " + dec;
+  document.getElementById("demo", "_blank").innerHTML = res;
+				}
+				
+		</script>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	</body>
 </html>
 
 
