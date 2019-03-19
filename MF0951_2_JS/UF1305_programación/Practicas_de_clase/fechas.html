@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos numéricos Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="js/funciones_fechas.js"></script>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+<h1>Métodos Fechas (Date)</h1>
+<hr>
+<h2>El concepto de Fecha</h2>
+<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
+<p><strong>Mar Mar 19 de 2019 12:50:06 GMT + 0100 (Hora Estándar de Europa central)</strong></p>
+<p>Fecha objetos se crean con el new Date()constructor. new Date()crea un nuevo objeto Date con la <strong>fecha y hora actual</strong> :</p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+  <button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 class="border-bottom border-info">Definición  y uso</h3>
+				<p id="demo1"></p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 class="border-bottom border-info">Resultado del uso </h3>
+				<p id="demo2"></p>
+			</div>
+		</div> 
+	</div>
+</div>
+<style>
+	#contenedor {display:none;}
+</style>
+<hr>
+<h2>Métodos numéricos</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">new Date()</a></td>
+      <td>crea un nuevo objeto Date con la fecha y hora actual</td>
+      <td>new Date()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevaFecha()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getFullYear()</a></td>
+      <td>Obtener el año como un número de cuatro dígitos (aaaa)</td>
+      <td><em>Date</em>.getFullYear()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="year()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getMonth()</a></td>
+      <td>Obtener el mes como un número (0-11)</td>
+      <td><em>Date</em>.getMonth()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="mes()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getDate()</a></td>
+      <td>Obtener el día como un número (1-31)</td>
+      <td><em>Date</em>.getDate()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="dia()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getHours()</a></td>
+      <td>Consigue la hora (0-23)</td>
+      <td><em>Date</em>.getHours()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="horas()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getMinutes()</a></td>
+      <td>Consigue el minuto (0-59)</td>
+      <td><em>Date</em>.getMinutes()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="minutos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getSeconds()</a></td>
+      <td>Consigue el segundo (0-59)</td>
+      <td>Date.getSeconds()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="segundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">milisegundos()</a></td>
+      <td>Obtener el milisegundo (0-999)</td>
+      <td><em>Date.milisegundos()</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="milisegundos()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="#">getTime()</a></td>
+      <td>Obtener el tiempo (milisegundos desde el 1 de enero de 1970)</td>
+      <td>Date.getTime()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="segundos()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">getDay()</a></td>
+      <td>Obtener el día de la semana como un número (0-6)</td>
+      <td>Date.getDay()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="milisegundos()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="#">Date.now()</a></td>
+      <td>Conseguir el tiempo ECMAScript 5.</td>
+      <td>Date.now()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="milisegundos()">Ejecutar</button></td>
+    </tr>
+  </tbody>
+</table>
+
+  
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
