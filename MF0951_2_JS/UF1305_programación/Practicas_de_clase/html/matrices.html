@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos matriz Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="../js/funciones-matrices.js"></script>
+<link href="../css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+<h1>Métodos Array (matríz)</h1>
+<hr>
+<h2>El concepto de matrices</h2>
+<p>Por defecto, JavaScript utilizará la zona horaria del navegador y mostrar una fecha como una cadena de texto completo:</p>
+<p><strong>Mar Mar 19 de 2019 12:50:06 GMT + 0100 (Hora Estándar de Europa central)</strong></p>
+<p>Fecha objetos se crean con el new Date()constructor. new Date()crea un nuevo objeto Date con la <strong>fecha y hora actual</strong> :</p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+  <!--<button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>-->
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 id="fechalarga" class="centrar mb-4"></h3>
+				
+				<p class="centrar">
+					<a id="link1" href="#" class="enlace">Enlace1</a>
+					<a id="link2" href="#" class="enlace">Enlace2</a>
+					<a id="link3" href="#" class="enlace">Enlace3</a>
+					<a id="link4" href="#" class="enlace">Enlace4</a>
+					<a id="link5" href="#" class="enlace">Enlace5</a>
+					<a id="link6" href="#" class="enlace">Enlace6</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+	<script>
+		window.onload = reloj(); //ejecuta el reloj según cargas la hoja.	
+	
+</script>	
+<style>
+	.enlace{background-color: #4CAF50;color: white;text-decoration: none;padding:  10px 16px;}
+	
+	.enlace:hover{background-color: green;color: white;text-decoration: none;padding:  10px 16px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);}
+	.centrar{text-align: center;}
+		}
+</style>	
+<style>
+	/*#contenedor {display:none;}*/
+	#contenedor {display: block}
+</style>
+<hr>
+<h2>Métodos numéricos</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th width="10%">Método</th>
+      <th width="58%">Descripción</th>
+      <th width="25%">Síntasix</th>
+      <th width="7%">&nbsp;</th>
+    </tr>
+    <tr>
+      <td height="60"><a href="#">new Array()</a></td>
+      <td><strong>Crea un nuevo objeto de tipo Array con los datos existentes en variables</strong></td>
+      <td>new Date()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="matriz()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">split()</a></td>
+      <td><strong>Se utiliza para dividir una cadena en una matriz de subcadenas, y devuelve la nueva matriz.</strong></td>
+      <td><em>string</em>.split(<em>separator</em>,<em> limit</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="dividir()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_concat_array.asp">concat()</a></td>
+      <td><strong>Une dos o más matrices y devuelve una copia de las matrices unidas</strong></td>
+      <td><em>array1</em>.concat(<em>array2</em>,)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="unir()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_copywithin.asp">copyWithin()</a></td>
+      <td><strong>Copia elementos de matriz dentro de la matriz, hacia y desde las posiciones especificadas</strong></td>
+      <td><em>array</em>.copyWithin(<em>target, start, end</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="copiar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">entries()</a></td>
+      <td><strong>Devuelve un par clave / valor Array Iteration Object</strong></td>
+      <td><em>array</em>.entries()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="devuelve()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">toString()</a></td>
+      <td><strong>Convierte una matriz a una cadena de (separados por comas) valores de la matriz.</strong></td>
+      <td><em>array</em>.toString()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="matriz_cadena()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">join()</a></td>
+      <td><strong>Se une a todos los elementos de la matriz en una cadena.</strong></td>
+      <td><em>array</em>.join(<em>separator</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cadena()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">pop()</a></td>
+      <td><strong>Elimina el último elemento de una matriz</strong></td>
+      <td><em>array</em>.pop()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="cadena()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">push()</a></td>
+      <td><strong>Añade un nuevo elemento a una matriz (al final)</strong></td>
+      <td><em>array</em>.push(<em>item1</em>, <em>item2</em>, ..., <em>itemX</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick=" completar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">shift()</a></td>
+      <td><strong>Elimina el primer elemento de matriz y "desplaza" todos los otros elementos a un índice inferior.</strong></td>
+      <td><em>array</em>.shift()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="eliminar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">unshift()</a></td>
+      <td><strong>Añade un nuevo elemento a una matriz (al principio)</strong></td>
+      <td><em>array</em>.unshift(<em>item1</em>,<em> item2</em>, ..., <em>itemX</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="completarprincipio()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">length()</a></td>
+      <td><strong>Ofrece una forma fácil de añadir un nuevo elemento a una matriz</strong></td>
+      <td><em>array</em>.length</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="nuevoelemento()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">splice()</a></td>
+      <td><strong> Se puede utilizar para añadir nuevos elementos a una matriz</strong></td>
+      <td><em>array</em>.splice(<em>index</em>,<em> howmany</em>,<em> item1</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="añadir()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">delete()</a></td>
+      <td>Los elementos se pueden eliminar mediante el operador de JavaScript</td>
+      <td>delete()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="borrar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">slice()</a></td>
+      <td><strong>Rebana un pedazo de una matriz en una matriz nueva.</strong></td>
+      <td><em>array</em>.slice(<em>start</em>,<em> end</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="rebanar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">sort()</a></td>
+      <td><strong>Método ordena una matriz alfabéticamente</strong></td>
+      <td><em>array</em>.sort(<em>compareFunction</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">reverse()</a></td>
+      <td><strong>Método invierte los elementos de una matriz.</strong></td>
+      <td><em>array</em>.reverse()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="invierte()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">entries()</a></td>
+      <td>&nbsp;</td>
+      <td><em>array</em>.entries()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">every()</a></td>
+      <td>&nbsp;</td>
+      <td><em>array</em>.every(<em>function(currentValue, index, arr), thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">fill()</a></td>
+      <td>&nbsp;</td>
+      <td><em>array</em>.fill(<em>value, start, end</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">filter()</a></td>
+      <td>&nbsp;</td>
+      <td><em>array</em>.filter(<em>function(currentValue, index, arr), thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">find()</a></td>
+      <td>&nbsp;</td>
+      <td><em>array</em>.find(<em>function(currentValue, index, arr),thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">findIndex()</a></td>
+      <td>&nbsp;</td>
+      <td><em>array</em>.findIndex(<em>function(currentValue, index, arr), thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">forEach()</a></td>
+      <td>&nbsp;</td>
+      <td><em>array</em>.forEach(<em>function(currentValue, index, arr), thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">from()</a></td>
+      <td></td>
+      <td>Array.from(<em>object, mapFunction, thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">includes()</a></td>
+      <td></td>
+      <td><em>array</em>.includes(<em>element</em>,<em> start</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">indexOf()</a></td>
+      <td></td>
+      <td><em>array</em>.indexOf(<em>item</em>,<em> start</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">isArray()</a></td>
+      <td></td>
+      <td>Array.isArray<em>(obj</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">keys()</a></td>
+      <td></td>
+      <td><em>array</em>.keys()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">lastIndexOf()</a></td>
+      <td></td>
+      <td><em>array</em>.lastIndexOf(<em>item</em>,<em> start</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">map()</a></td>
+      <td></td>
+      <td><em>array</em>.map(<em>function(currentValue, index, arr), thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">reduce()</a></td>
+      <td></td>
+      <td><em>array</em>.reduce(<em>function(total, currentValue, currentIndex, arr), initialValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">reduceRight()</a></td>
+      <td></td>
+      <td><em>array</em>.reduceRight(<em>function(total, currentValue, currentIndex, arr), initialValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr><tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">some()</a></td>
+      <td></td>
+      <td><em>array</em>.some(<em>function(currentValue, index, arr), thisValue</em>)</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr><tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">valueOf()</a></td>
+      <td></td>
+      <td><em>array</em>.valueOf()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="ordenar()">Ejecutar</button></td>
+    </tr>
+	  
+  </tbody>
+</table>
+
+  
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
