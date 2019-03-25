@@ -1,0 +1,24 @@
+#links de html, css
+
+	https://www.html6.es/
+	https://www.w3schools.com/
+	https://uniwebsidad.com/tutoriales-sobre-dise%C3%B1o?from=librosweb
+	https://codepen.io
+	https://store.pantone.com
+	https://developer.mozilla.org/es/
+
+
+#ofertas de trabajo. 
+	https://www.domestika.org/es/jobs
+	https://betabeers.com/post/
+
+
+# links de descarga
+	https://www.apachefriends.org/es/index.html
+	https://www.sublimetext.com/
+	https://code.visualstudio.com/
+
+#importar iconos
+
+	https://www.flaticon.com/
+	https://fontawesome.com

@@ -82,11 +82,67 @@ switch (new Date().getDay()) {
 	alert ("Hoy es: " + day)
 }
 
-// for  Ejecuta un bloque de código varias veces, cada vez con un valor diferente.
+ //  for  Ejecuta un bloque de código varias veces, cada vez con un valor diferente.
 function bucleFor() {
-	var numero = prompt ("Dame un número para múltiplicar")
-	for (numero x = 1; numero < 5; i++) {
-  	text += "The number is " + i + "<br>";
-		}
-	alert("La tabla de Múltiplicar del: " + numero + " Es" +   )
+	var coches = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+	//var text = parseInt(prompt ("Dime un número del 0 al " + coches.length));  // parseint comvierte los string (cadenas caracteres) en número.
+	//alert (typeof(text));
+	var texto = "";
+	var i;
+	for (i = 0; i < coches.length; i++) {
+    texto += coches[i] + "\n";
+}
+	alert(texto); 
 }	
+// while  Ejecuta un bloque de código, siempre que la condición especificada sea verdadera.
+function mientrasWhile() {
+	var numero = prompt ("Dime un número");
+	var texto = "";
+	var i = 0;
+	while (i < numero) {
+  	texto += "El número es " + i + ";\n" ;
+  	i++;
+	}
+	alert (texto)
+}
+//do while     Ejecuta el bloque de código una vez, antes de comprobar si la condición es verdadera, y se repite el bucle mientras la condición es verdadera.
+
+function hacerMientrasDoWhile() {
+	var numero = prompt ("Dime un número");
+	var texto = ""
+	var i = 0;
+	do {
+  	texto += "El número es: " + i + ";\n";
+  	i++;
+	}
+	while (i < numero);
+	
+	alert (texto)
+}
+
+
+//break   Rompe un bucle, si se produce una condición especificada, y continúa con la siguiente iteración del bucle.
+
+function romperBucle()  {
+	var numero = prompt ("Dime un número para proyectar");
+	var romper = prompt ("Dime un número donde romper");
+	var texto = "";
+	var i;
+	for (i = 0; i < numero; i++) {
+  	if (i === romper) { break; }
+  	texto += "El número es " + i + ";\n";
+	}
+	alert (texto)
+}
+
+//continue   Continua un bucle, si se produce una condición especificada, y continúa con la siguiente iteración del bucle.
+function continuarBucle() {
+	/*var continuar = prompt ("Dime un número donde continuar");*/
+	var texto = "";
+	var i;
+	for (i = 0; i < 10; i++) {
+  	if (i === 3) { continue; }
+  	texto += "The number is " + i + ";\n";
+	}
+	alert (texto)
+}
