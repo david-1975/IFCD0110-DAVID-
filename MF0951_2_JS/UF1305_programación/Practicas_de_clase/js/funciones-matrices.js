@@ -176,7 +176,7 @@ function invierte() {
 	var valor3 = prompt("introduce 3 palabra");
 	var guardaroriginal = new Array(valor1,valor2,valor3);
 	var guardar = new Array(valor1,valor2,valor3);
-	var invierte = guardar.sort();
+	var invierte = guardar.reverse();
 	
 	alert("Originales: " + guardaroriginal + ";\n" + "invierte " + invierte);
 }
