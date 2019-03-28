@@ -14,7 +14,7 @@ Crear una función que tras introducir una fecha de nacimiento en un campo de fo
 <form id="form1" name="form1" method="post">
   <label for="number1">Introduce tu año de naciminento:</label><br>
   <input type="date" name="number1" id="number1">
-  <input name="button1" type="button" id="button1" tabindex="1" onClick="edad ()" value="Enviar"><br>
+  <input name="button1" type="button" id="button1" tabindex="1" onClick="vivido()" value="Enviar"><br>
   <label for="number1" id="etiqueta1"></label>
 </form>
 <br>
@@ -26,10 +26,10 @@ Crear una función que recoja el valor de 3 campos de formulario, día, mes y  a
   <input name="number2" type="number" id="number2" max="31" min="1" size="3">
   <label for="number3">Mes</label>
   <input type="number" name="number3" id="number3" max="12" min="1" size="3">
-  <label for="number5">Año</label>
+  <label for="number4">Año</label>
   <input type="number" name="number4" id="number4" max="2019" min="1900" size="5">
   
-  <input type="button" name="button2" id="button2" value="Enviar" onClick=""><br>
+  <input type="button" name="button2" id="button2" value="Enviar" onClick="formato()"><br>
   <label for="number2" id="etiqueta2"></label>
 </form>
 <br>
@@ -38,7 +38,7 @@ Crear una función que al introducir una fecha en un campo de formulario muestre
 <form id="form3" name="form3" method="post">
   <label for="date3">Introduce tu fecha de naciminento:</label><br>
   <input type="date" name="date3" id="date3">
-  <input type="button" name="button3" id="button3" value="Enviar" onClick=""><br>
+  <input type="button" name="button3" id="button3" value="Enviar" onClick="fechalarga()"><br>
   <label for="date3" id="etiqueta3"></label>
 </form>
 <br>
@@ -48,7 +48,7 @@ Crear una función que tras identificarse una persona con usuario y contraseña 
   <label for="text4">Formulario de acceso:</label><br>
   <input type="text" name="text4" id="text4">
   <input type="password" name="password4" id="password4">
-  <input type="button" name="button4" id="button4" value="Enviar" onClick=""><br>
+  <input type="button" name="button4" id="button4" value="Enviar" onClick="login()"><br>
   <label for="text4" id="etiqueta4"></label>
 </form>
 <br>
@@ -57,7 +57,7 @@ Crear una función que introduciendo la fecha de nacimiento en un campo de formu
 <form id="form5" name="form5" method="post">
 <label for="date5">Introduce tu fecha de nacimiento</label><br>
 <input type="date" name="date5" id="date5">
-<input type="button" name="button5" id="button5" value="Enviar" onClick=""><br>
+<input type="button" name="button5" id="button5" value="Enviar" onClick="diasfaltan()"><br>
 <label for="date5" id="etiqueta5"></label>
 </form>
 </body>
