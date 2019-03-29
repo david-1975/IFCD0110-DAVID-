@@ -65,8 +65,27 @@ function diasfaltan(){
 	var fechaUsuario = new Date(document.getElementById("date5").value);
 	var fechaact = new Date();
 	
+	var minutos = parseInt((fechaact-fechaUsuario)/1000/60);
+	var horas = parseInt(minutos/60);
+	var dias = parseInt(horas/24);
+	var anos = parseInt(dias/365);
 	
-	alert(restaano);
+	var minutosact = fechaact.getDate();
 	
 	
+	
+	if (fechaUsuario > fechaact){
+		var resta = fechaUsuario-fechaact;
+		mensaje= " Tu cumpleaños a sido hace " + dias + " días ";
+	}
+	else {
+		var resta = fechaact-fechaUsuario;
+		
+		mensaje= " Faltan " + dias + " días para tu cumpleaños ";
+	}
+	
+	
+	
+	document.getElementById("etiqueta5").innerHTML = "<br>" +
+		mensaje + "<br>" + "<br>" + "<br>" + "<br>";
 }
