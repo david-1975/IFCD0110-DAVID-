@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Métodos Matrices Javascript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<script src="../js/funciones-matrices.js"></script>
+<link href="../css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+<h1>Métodos Matrices (Array)</h1>
+<hr>
+<h2>El concepto de Array</h2>
+<p>Por defecto, JavaScript utiliza la zona horaria del navegador y muestra la fecha como una cadena de texto:</p>
+<p><strong>Tue Mar 19 2019 12:50:07 GMT+0100 (hora estándar de Europa central)</strong></p>
+<p>Los objetos de fecha se crean con new Date(), que crean una fecha con la fecha y hora actual.</p>
+<p>Los métodos numéricos devuelven un valor nuevo y no cambian la variable original,  y puede utilizarse con cualquier tipo de número (literales, variables o expresiones).  </p>
+<div id="contenedor" class="container rounded p-3 mb-3" style="background-color: rgba(0,0,0,0.075);">
+<button class="btn btn-primary btn-sm" type="button" onClick="cerrar()">Cerrar</button>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-light shadow rounded p-3 h-100">
+				<h3 class="centrar mb-4" id="fechalarga">Definición  y uso</h3>
+				<p class="centrar">
+					<a href="#" id="demo_anio" class="enlace">Año: </a>
+					<a href="#" id="demo_mes" class="enlace">Mes: </a>
+					<a href="#" id="demo_dia" class="enlace">Día: </a>
+					<a href="#" id="demo_hora" class="enlace">Horas: </a>
+					<a href="#" id="demo_minuto" class="enlace">Minutos: </a>
+					<a href="#" id="demo_segundo" class="enlace">Segundos: </a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	#contenedor {display:block;}
+</style>
+<hr>
+<h2>Métodos de fechas</h2>
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Síntasix</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr>
+      <td><a href="#">new Array()</a></td>
+      <td>Crea una nueva matriz.</td>
+      <td><em>new array())</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="matriz()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">concat()</a></td>
+      <td>Concatena dos o más arrays y devuelve una copia de los arrays unidos.</td>
+      <td><em>array1.concat(array2, array3, ..., arrayX)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="concatenar()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">toString()</a></td>
+      <td>Convierte un array en cadena.</td>
+      <td><em>array</em>.toString()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="aString()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">join()</a></td>
+      <td>Convierte un array en cadena, y se le puede indicar el tipo de separador.</td>
+      <td><em>array</em>.join<em>(separator)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="joinArray()">Ejecutar</button></td>    
+    </tr>
+    <tr>
+      <td><a href="#">push()</a></td>
+      <td>Añade nuevos elementos al final de un array y devuelve la longitud.</td>
+      <td><em>array</em>.push<em>(item1, item2, ..., itemX)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="pushArray()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">unshift()</a></td>
+      <td>Añade nuevos elementos al principio de un array y devuelve la longitud.</td>
+      <td><em>array</em>.unshift<em>(item1, item2, ..., itemX)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="unshiftArray()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">splice()</a></td>
+      <td>Añade/elimina elementos a/de un array y devuelve los elementos añadidos/eliminados. Se indica la posición desde donde añadir/eliminar, cuantos añadir/eliminar (0 para no eliminar ninguno), y a continuación los itemas a añadir.</td>
+      <td><em>array</em>.splice<em>(index, howmany, item1, ....., itemX)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="spliceArray('a')">Ejecutar</button>
+      </td>
+    </tr>    
+    <tr>
+      <td><a href="#">pop()</a></td>
+      <td>Elimina el último elemento de un array y devuelve ese elemento.</td>
+      <td><em>array</em>.pop</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="popArray()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">shift()</a></td>
+      <td>Elimina el primer elemento de un array y devuelve ese elemento.</td>
+      <td><em>array</em>.shift</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="shiftArray()">Ejecutar</button></td>
+    </tr>
+    <tr>
+      <td><a href="#">slice()</a></td>
+      <td>Devuelve los elementos seleccionados del array en un nuevo array (en una copia). Desde la posición inicial a la final (final no incluido).</td>
+      <td><em>array</em>.slice<em>(start, end)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="sliceArray()">Ejecutar</button></td>
+    </tr>
+    <tr>
+     <td><a href="#">delete</a></td>
+      <td>Borra un item de un array y deja el hueco.</td>
+      <td><em>delete</em> array[<em>posicion</em>]</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="deleteItemArray()">Ejecutar</button></td>
+    </tr> 
+    <tr>
+     <td><a href="#">sort()</a></td>
+      <td>Ordena alfabéticamente (orden ascendente)los items de un array . Cuando se quiere ordenar numéricamente añadir una función de comparación como por ej: "function(a, b){return a-b}" para orden ascendente, "function(a, b){return b-a}" para orden descendente, "function(a, b){return 0.5 - Math.random()}" para orden aleatorio.</td>
+      <td><em>array</em>.sort<em>(compareFunction)</em>]</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="sortArray('asc')">Ejecutar</button></td>
+    </tr>  
+    <tr>
+     <td><a href="#">reverse()</a></td>
+      <td>Ordena alfabéticamente (orden descendente) los items de un array.</td>
+      <td><em>array</em>.reverse()</td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="sortArray('desc')">Ejecutar</button></td>
+    </tr> 
+    <tr>
+     <td><a href="#">copyWithin()</a></td>
+      <td>Copia elementos dentro de un array desde una posicion inicio a una final.</td>
+      <td><em>array.</em>copyWithin<em>(target, start, end)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="copyinArray()">Ejecutar</button></td>
+    </tr>   
+    <tr>
+     <td><a href="#">fill()</a></td>
+      <td>Rellena los elementos de un array con un valor estático.</td>
+      <td><em>array.</em>fill<em>(value, start, end)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="fillArray()">Ejecutar</button></td>
+    </tr>       
+    <tr>
+     <td><a href="#">every()</a></td>
+      <td>Comprueba si todos los elementos de un array pasan un test (de una función). Ejecuta la función para cada elemento del array. Devuelve true o false.</td>
+      <td><em>array.</em>every<em>(function(currentValue, index, arr), thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="everyArray()">Ejecutar</button></td>
+    </tr>  
+    <tr>
+     <td><a href="#">filter()</a></td>
+      <td>Crea un nuevo array con los elementos que cumplen una condición.</td>
+      <td><em>array.</em>filter<em>(function(currentValue, index, arr), thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="filterArray()">Ejecutar</button></td>
+    </tr> 
+    <tr>
+     <td><a href="#">find()</a></td>
+      <td>Devuelve el valor del primer elemento que cumple una condición.</td>
+      <td><em>array.</em>find<em>(function(currentValue, index, arr), thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="findArray()">Ejecutar</button></td>
+    </tr>  
+    <tr>
+     <td><a href="#">findIndex()</a></td>
+      <td>Devuelve el índice del primer elemento cuyo valor cumple una condición.</td>
+      <td><em>array.</em>findIndex<em>(function(currentValue, index, arr), thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="findIndexArray()">Ejecutar</button></td>
+    </tr>      
+    <tr>
+     <td><a href="#">from()</a></td>
+      <td>Crea un array desde cualquier objeto con propiedad length o iterable.</td>
+      <td><em>array.</em>from<em>(object, mapFunction, thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="fromArray()">Ejecutar</button></td>
+    </tr>     
+    <tr>
+     <td><a href="#">includes()</a></td>
+      <td>Busca si un elemento está incluido en el array. Devuelve true o false.</td>
+      <td><em>array.</em>includes<em>(element, start)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="includeArray()">Ejecutar</button></td>
+    </tr>    
+    <tr>
+     <td><a href="#">indexOf()</a></td>
+      <td>Busca un elemento en el array y devuelve su posición.</td>
+      <td><em>array.</em>indexOf<em>(element, start)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="indexOfArray()">Ejecutar</button></td>
+    </tr>      
+    <tr>
+     <td><a href="#">lastIndexOf()</a></td>
+      <td>Busca un elemento en el array desde el final y devuelve su posición.</td>
+      <td><em>array.</em>lastIndexOf<em>(element, start)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="lastIndexOfArray()">Ejecutar</button></td>
+    </tr>   
+    <tr>
+     <td><a href="#">isArray()</a></td>
+      <td>Determina si un objeto es un array. Devuelve true o false.</td>
+      <td>array.isArray<em>(obj)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="isArrayArray()">Ejecutar</button></td>
+    </tr>    
+    <tr>
+     <td><a href="#">forEach()</a></td>
+      <td>Llama a una función para cada elemento.</td>
+      <td><em>array.</em>forEach<em>(function(currentValue, index, arr), thisValue)</em></td>
+      <td><button class="btn btn-primary btn-sm" type="button" onClick="forEachArray()">Ejecutar</button></td>
+    </tr>                                                                      
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<table>
+  <tbody>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_concat_array.asp">concat()</a></td>
+      <td>Joins two or more arrays, and returns a copy of the joined arrays</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_copywithin.asp">copyWithin()</a></td>
+      <td>Copies array elements within the array, to and from specified positions</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_entries.asp">entries()</a></td>
+      <td>Returns a key/value pair Array Iteration Object</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_every.asp">every()</a></td>
+      <td>Checks if every element in an array pass a test</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_fill.asp">fill()</a></td>
+      <td>Fill the elements in an array with a static value</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_filter.asp">filter()</a></td>
+      <td>Creates a new array with every element in an array that pass a test</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_find.asp">find()</a></td>
+      <td>Returns the value of the first element in an array that pass a test</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_findindex.asp">findIndex()</a></td>
+      <td>Returns the index of the first element in an array that pass a test</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_foreach.asp">forEach()</a></td>
+      <td>Calls a function for each array element</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_from.asp">from()</a></td>
+      <td>Creates an array from an object</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_includes_array.asp">includes()</a></td>
+      <td>Check if an array contains the specified element</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_indexof_array.asp">indexOf()</a></td>
+      <td>Search the array for an element and returns its position</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_isarray.asp">isArray()</a></td>
+      <td>Checks whether an object is an array</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_join.asp">join()</a></td>
+      <td>Joins all elements of an array into a string</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_keys.asp">keys()</a></td>
+      <td>Returns a Array Iteration Object, containing the keys of the original array</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_lastindexof_array.asp">lastIndexOf()</a></td>
+      <td>Search the array for an element, starting at the end, and returns its position</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_map.asp">map()</a></td>
+      <td>Creates a new array with the result of calling a function for each array element</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_pop.asp">pop()</a></td>
+      <td>Removes the last element of an array, and returns that element</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_push.asp">push()</a></td>
+      <td>Adds new elements to the end of an array, and returns the new length</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_reduce.asp">reduce()</a></td>
+      <td>Reduce the values of an array to a single value (going left-to-right)</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_reduceright.asp">reduceRight()</a></td>
+      <td>Reduce the values of an array to a single value (going right-to-left)</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_reverse.asp">reverse()</a></td>
+      <td>Reverses the order of the elements in an array</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_shift.asp">shift()</a></td>
+      <td>Removes the first element of an array, and returns that element</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_slice_array.asp">slice()</a></td>
+      <td>Selects a part of an array, and returns the new array</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_some.asp">some()</a></td>
+      <td>Checks if any of the elements in an array pass a test</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_sort.asp">sort()</a></td>
+      <td>Sorts the elements of an array</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_splice.asp">splice()</a></td>
+      <td>Adds/Removes elements from an array</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_tostring_array.asp">toString()</a></td>
+      <td>Converts an array to a string, and returns the result</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_unshift.asp">unshift()</a></td>
+      <td>Adds new elements to the beginning of an array, and returns the new length</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.w3schools.com/jsref/jsref_valueof_array.asp">valueOf()</a></td>
+      <td>Returns the primitive value of an array</td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

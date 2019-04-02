@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<title>Introducción Javascript</title>
+	<link href="../css/estilos.css" rel="stylesheet" type="text/css">
+	<script src="../js/funciones.js"></script>
+<!--	<link rel="icon" href="../img/img.ico" type="image/png">-->
+	<meta name="description" content="Introducción JS"> 
+	<meta name="author" content="Antonia Garcia"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<style>
+		body {
+/*			width: 80%;*/
+			margin: 10px auto;
+		}
+	</style>
+</head>
+<body class="w-75 m-auto">
+<h1 class="display-4 text-primary">¿Que podemos hacer con Javascript?</h1>
+<hr>
+<h2>JavaScript puede cambiar el contenido HTML</h2>
+<p>Uno de los métodos de JavaScript HTML es <code>getElementById()</code></p>
+<p>Este ejemplo usa el método para encontrar un elemento HTML element (con id="demo") y cambia el contenido del elemento (innerHTML) a "Hola JavaScript":</p>
+<div class="bg-light">
+	<h4>Ejemplo de uso</h4>
+	<div class="alert alert-warning">
+		<p>&lt;p id="demo"&gt;JavaScript puede cambiar el contenido HTML.&lt;/p&gt;</p>
+		<p>&lt;button type="button" onclick="document.getElementById('demo').innerHTML = 'Hola JavaScript!'"&gt;Click!&lt;/button&gt;</p>
+	</div>
+</div>
+<div>
+	<p><b>Ejemplos de Javascript</b></p>
+	<div class="row">
+		<div class="col shadow p-3 m-1 bg-white rounded">
+			<p id="demo1">JavaScript puede cambiar el contenido HTML.</p>
+			<button type="button" onclick="document.getElementById('demo1').innerHTML = 'Hola JavaScript!'">Click!</button>
+		</div>
+		<div class="col shadow p-3 m-1 bg-white rounded">
+			<p id="demo2">JavaScript puede cambiar el contenido HTML.</p>
+			<button type="button" onclick="document.getElementById('demo2').innerHTML = 'Texto cambiado'">Click!</button>
+		</div>
+		<div class="col shadow p-3 m-1 bg-white rounded">
+			<p id="demo3">JavaScript puede cambiar el contenido HTML.</p>
+			<button type="button" onclick="document.getElementById('demo3').innerHTML = 'Sorpresa!!!!'">Click!</button>		
+		</div>
+	</div>
+</div>
+<hr>
+<h2>JavaScript puede cambiar los valores de los atributos HTML</h2>
+<p>En el ejemplo JavaScript cambia el valor de la fuente (atributo src) de de una etiqueta &lt;img&gt;:</p>
+<div class="bg-light">
+	<h4>Ejemplo de uso</h4>
+	<div class="alert alert-warning">
+		<p>&lt;button onclick=&quot;document.getElementById('myImage').src='pic_bulbon.gif'&quot;&gt;Turn on the light&lt;/button&gt;</p>
+		<p>&lt;img id=&quot;myImage&quot; src=&quot;pic_bulboff.gif&quot; style=&quot;width:100px&quot;&gt;</p>
+		<p>&lt;button onclick=&quot;document.getElementById('myImage').src='pic_bulboff.gif'&quot;&gt;Turn off the light&lt;/button&gt;</p>
+	</div>
+</div>
+<div>
+	<button onclick="document.getElementById('myImage').src='../img/pic_bulbon.gif'" class="mr-4">Enciende</button>
+	<img id="myImage" src="../img/pic_bulboff.gif" style="width:100px">
+	<button onclick="document.getElementById('myImage').src='../img/pic_bulboff.gif'" class="ml-4">Apaga</button>
+</div>
+<hr>
+<h2>JavaScript puede cambiar los estilos CSS</h2>
+<p>Cambiar estilos de elementos HTML, es una variante de cambiar los atributos HTML:</p>
+<div class="bg-light">
+  <h4>Ejemplo de uso</h4>
+	<div class="alert alert-warning">
+		<p>&lt;p id=&quot;demo&quot;&gt;JavaScript can change the style of an HTML element.&lt;/p&gt;</p>
+		<p>&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById('demo').style.fontSize='2rem' ; document.getElementById('demo4').style.color='red'&quot;&gt;Click Me!&lt;/button&gt;</p>
+	</div>
+</div>
+<div class="shadow p-3 m-1 bg-white rounded">
+	<p id="demo4">JavaScript puede cambiar el estilo de un elemento.</p>
+	<button type="button" class="btn-danger" onclick="document.getElementById('demo4').style.fontSize='2rem'; document.getElementById('demo4').style.color='red'">Cambia a rojo y 2rem!</button>
+  <button type="button" class="btn-success" onclick="document.getElementById('demo4').style.fontSize='0.5rem'; document.getElementById('demo4').style.color='green'">Cambia a verde y 0.5rem!</button>
+  <button type="button" class="btn-primary" onclick="document.getElementById('demo4').style.fontSize='1.3rem'; document.getElementById('demo4').style.color='blue'">Cambia a azul y 1rem!</button>	
+  <button type="button" onclick="document.getElementById('demo4').style.fontSize='1rem'; document.getElementById('demo4').style.color='black'">Inicial!</button>	
+</div>
+<div class="shadow p-3 m-1 bg-white rounded">
+	<p id="demo5">JavaScript puede ocultar elementos HTML, cambiando el estilo (document.getElementById('demo5').style.display='none').</p>
+	<button type="button" class="btn-primary" onclick="document.getElementById('demo5').style.display='none'">Desaparece!</button>
+	<button type="button" onclick="document.getElementById('demo5').style.display='block'">Aparece!</button>	
+</div>
+<hr>
+<h2>La etiqueta &lt;script&gt;</h2>
+<p>En HTML, el código JavaScript se puede insertar entre etiquetas <code>&lt;script&gt;</code> y <code>&lt;/script&gt;</code>.</p>
+<p>Se pueden poner cualquier número de scripts en un documento HTML.</p>
+<p>Los scripts se pueden poner en el <code>&lt;body&gt;</code>, o en el <code>&lt;head&gt;</code> o en ambos.</p>
+<p>Poniendo los scripts al final del &lt;body&gt; mejora la velocidad de display, porque la compilación del script ralentiza el display.</p>
+<p>Los scripts también se pueden poner en ficheros externos con extensión <code><b>.js</b></code>. Poner el nombre del fichero script en el atributo "src" de una etiqueta &lt;script&gt;, dela siguiente forma:&lt;script src="myScript.js"&gt; &lt;/script&gt;</p>
+<p>Se puede poner la referencia a script externos tanto en el &lt;head&gt; como en el &lt;body&gt;.</p>
+<p>Los scripts externos no pueden contener etiquteas &lt;script&gt;.</p>
+<p>El código Javascript se puede insertar en línea, en las etiquetas HTML, dentro del atributo de evento, por ejemplo en el  onClick</p>
+<div class="row bg-light">
+	<div class="col-12 shadow p-3 m-1 bg-white rounded">
+		<p><b>Ejemplo de JS en el head</b></p>
+		<p>&lt;!DOCTYPE html&gt;<br>
+		&lt;html&gt;</p>
+		<p>&lt;head&gt;<br>
+		&lt;script&gt;<br>
+		function myFunction() {<br>
+		document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+		}<br>
+		&lt;/script&gt;<br>
+		&lt;/head&gt;<br>
+	  &lt;body&gt;</p>
+		<p>&lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+		&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+	  &lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;</p>
+		<p>&lt;/body&gt;<br>
+	  &lt;/html&gt;</p>
+	</div>
+	<div class="col-12 shadow p-3 m-1 bg-white rounded">
+	  <p><strong>Ejemplo de JS en el body </strong>
+
+	  </p>
+	  <p>&lt;!DOCTYPE html&gt;<br>
+		&lt;html&gt;<br>
+		&lt;body&gt; <br>
+		<br>
+		&lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+		&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+		&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+		<br>
+		&lt;script&gt;<br>
+		function myFunction() {<br>
+		document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+		}<br>
+		&lt;/script&gt;<br>
+		<br>
+		&lt;/body&gt;<br>
+	  &lt;/html&gt;</p>
+	</div>
+	<div class="col-12 shadow p-3 m-1 bg-white rounded">
+	  <p><strong>Ejemplo de JS en un documento externo </strong></p>
+		<p>&lt;!DOCTYPE html&gt;<br>
+		&lt;html&gt;<br>
+		&lt;body&gt;</p>
+		<p>&lt;h2&gt;External JavaScript&lt;/h2&gt;</p>
+		<p>&lt;p id=&quot;demo&quot;&gt;A Paragraph.&lt;/p&gt;</p>
+		<p>&lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;Try it&lt;/button&gt;</p>
+		<p>&lt;p&gt;(myFunction is stored in an external file called &quot;myScript.js&quot;)&lt;/p&gt;</p>
+		<p>&lt;script src=&quot;myScript.js&quot;&gt;&lt;/script&gt;</p>
+	  <p>&lt;/body&gt;<br>
+	  &lt;/html&gt;</p>
+	</div>
+	<div class="col-12 shadow p-3 m-1 bg-white rounded">
+	  <p><strong>Ejemplo de JS en una etiqueta en línea </strong></p>
+	  
+	  <p>&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;</p>
+	</div>
+</div>
+<hr>
+<h2>Posibilidades de Display de JavaScript</h2>
+<p>JavaScript puede sacar datos de diferentes formas:</p>
+<ul>
+  <li>Escribiendo en un elemento HTML, usando <code>innerHTML</code>.</li>
+  <li>Escribiendo en el output de HTML usando <code>document.write()</code>.</li>
+  <li>Escribiendo en una caja de alerta, usando <code>window.alert()</code>.</li>
+  <li>Escribiendo en la consola del navegador, usando <code>console.log()</code>.</li>
+</ul>
+<h3>Usando <code>innerHTML</code></h3>
+<p>Para acceder al elemento HTML, JavaScript puede utilizar el método <code>document.getElementById(id)</code></p>
+<p>El atributo <code>id</code> define el elemento HTML. La propiedad <code>innerHTML</code> define el contenido HTML:</p>
+<div class="col-12 shadow p-3 m-1 bg-white rounded">&lt;!DOCTYPE html&gt;<br>
+  &lt;html&gt;<br>
+  &lt;body&gt;<br>
+  <br>
+  &lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+  &lt;p&gt;My First Paragraph&lt;/p&gt;<br>
+  <br>
+  &lt;p id="demo"&gt;&lt;/p&gt;<br>
+  <br>
+  &lt;script&gt;<br>
+document.getElementById("demo").innerHTML = 5 + 6;<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+	
+</div>
+<br>
+
+
+
+
+</body>
+</html>

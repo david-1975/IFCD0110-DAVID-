@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Variables JavaScript</title>
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="description" content="Aprende Javascript con ejemplos pr&aacute;cticos">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link href="../css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+<h1>JavaScript Salida</h1>
+<hr>
+<h2>Posibilidades de visualización de JavaScript</h2>
+<p>JavaScript puede sacar datos de diferentes formas:</p>
+<ul>
+  <li>Escribiendo en un elemento HTML, usando <code>innerHTML</code>.</li>
+  <li>Escribiendo en el output de HTML usando <code>document.write()</code>.</li>
+  <li>Escribiendo en una caja de alerta, usando <code>window.alert()</code>.</li>
+  <li>Escribiendo en la consola del navegador, usando <code>console.log()</code>.</li>
+</ul>
+<br>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-3 mb-2">
+		<div class="bg-light shadow rounded p-2">
+			<p>Usando <code>innerHTML</code></p>
+			<p>Define el contenido HTML</p>
+			<button onClick="fdemo1()" class="btn btn-primary">Pulsa</button><br>
+			<p id="demo1"></p>
+			<script>
+				function fdemo1 () {
+					document.getElementById("demo1").innerHTML = "La suma de 5 + 6 es igual a " + (5+6);	
+				}
+			</script>
+		</div>
+	</div>	
+	<div class="col-md-3 mb-2">
+		<div class="bg-light shadow rounded p-2">
+			<p>Usando <code>document.write()</code></p>
+			<p>Se usa para pruebas</p>
+			<button onClick="fdemo2()" class="btn btn-primary">Pulsa</button><br>	
+	    	<p></p>
+	    	<script>
+				function fdemo2 () {
+					document.write("La suma de 5 + 6 es igual a "+ (5+6));	
+				}				
+			</script>
+		</div>
+	</div>
+	<div class="col-md-3 mb-2">
+		<div class="bg-light shadow rounded p-2">
+			<p>Usando <code>window.alert()</code></p>
+			<p>Caja de alerta para sacar datos</p>
+			<button onClick="fdemo3()" class="btn btn-primary">Pulsa</button><br>		
+	    	<p></p>    	
+	    	<script>
+				function fdemo3 () {				
+					window.alert("La suma de 5 + 6 es igual a " + (5+6));
+				}
+			</script>			
+		</div>
+	</div>
+	<div class="col-md-3 mb-2">
+		<div class="bg-light shadow rounded p-2">
+			<p>Usando <code>console.log()</code></p>
+			<p>Se usa para depurar código</p>
+			<button onClick="fdemo4()" class="btn btn-primary">Pulsa</button><br>		
+	    	<p></p>					
+			<script>
+				function fdemo4 () {
+					console.log("La suma de 5 + 6 es igual a " + (5+6));	
+				}
+			</script>			
+		</div>
+	</div>
+</div>	
+</div>
+<hr>
+<div class="container">
+<h2>Cuadros de diálogos de ventana</h2>
+<p>JavaScript puede mostar cuadros de diálogos a través del elemento window del DOM:</p>
+<br>
+<div class="row">
+	<div class="col-md-4 mb-2">
+		<div class="bg-light shadow rounded p-2 h-100">
+			<p><b>confirm()</b></p>
+			<p>El método confirm() muestra una caja de diálogo con un mensaje especifico, con un botón OK y Cancel. Se utiliza a menudo para que el usuario verifique algo.</p>
+			<p>Devuelve true si el usuario pulsa "OK", en caso contrario devuelve false.</p>
+			<p><em>confirm(mensaje)</em></p>
+			<button onClick="confirmar()" class="btn btn-primary">Pulsar</button>
+			<script>
+				function confirmar() {
+					var boton = confirm('Acepta o cancela');
+					if (boton == true) {
+						boton = "Has pulsado Aceptar"
+					} else if (boton==false) {
+						boton = "Has pulsado Cancelar"
+					}
+					alert (boton);
+				}
+			</script>
+		</div>
+	</div>
+	<div class="col-md-4 mb-2">
+		<div class="bg-light shadow rounded p-2 h-100">
+			<p><b>alert()</b></p>
+			<p>El método alert() muestra una caja de diálogo con un mensaje especifico y un botón de OK.</p>
+			<p>Se usa para asegurar que el usuario está informado de algo</p>
+			<p><em>alert(mensaje)</em></p>
+<!--			<button onClick="alert('Este mensaje\nes para el usuario')" class="btn btn-primary">Pulsar</button>-->
+			<button onClick="fechaHora()" class="btn btn-primary">Pulsar</button>
+			<script>
+				function fechaHora () {
+					var fecha = new Date();
+					var diaSemana = ["domingo", "lunes","martes","miercoles","jueves","viernes","sabado"]
+					var mesAnio = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+					var salida = "Año: " + fecha.getFullYear()+ "\nMes: " + mesAnio[fecha.getMonth()] + "\nDía de mes: " + fecha.getDate() + "\nDía de la semana: " + diaSemana[fecha.getDay()] + "\nHora: " + fecha.getHours()+ ":" + fecha.getMinutes();
+					alert (salida);
+				}
+			</script>
+		</div>
+	</div>
+	<div class="col-md-4 mb-2">
+		<div class="bg-light shadow rounded p-2 h-100">
+			<p><b>prompt()</b></p>
+			<p>El método prompt() muestra una caja de diálogo al usuario para que incorpore una entrada de datos.</p>
+			<p>Devuelve el valor de la entrada si el usuario pulsa "OK". Si el usuario pulsa "cancel" devuelve null.</p>
+			<p><em>prompt(texto, defaultText)</em></p>
+			<button onClick="fprompt()" class="btn btn-primary">Pulsar</button>
+			<script>
+				function fprompt() {			
+					var x = prompt('Introduce tu nombre:');
+					var y = prompt('Introduce tu apellido:');
+					var salida = null;
+					if (x!=null && y!=null) {salida="Tu nombre y apellido es " + x + " " + y ;} 
+					else if (x!=null) {salida = "Tu nombre es " + x;}
+					else if (y!=null) {salida = "Tu apellido es " + y;}
+					window.alert (salida);
+				}
+			</script>
+		</div>
+	</div>
+</div>
+
+
+</div>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 mb-2">
+			<div class="bg-light shadow rounded p-2">
+				<p><b>open()</b></p>
+				<p>El método open(), abre una nueva ventana de navegador.</p>		
+				<p><em>window.open(URL, name, specs, replace)</em></p>
+				<button onClick="f_open()" class="btn btn-primary">Abrir ventana</button>
+				<script>
+					function f_open() {					
+					var ventana = window.open ("https://www.w3schools.com/jsref/met_win_open.asp", "miVentanaW3s", "width=500,height=100");											
+					var contenido ="<p>Este es un ejemplo del metodo open() para abrir una ventana del navegador desde una función</p> ";
+					ventana.document.write (contenido);
+					}
+				</script>
+			</div>
+		</div>
+		<div class="col-md-4 mb-2">
+			<div class="bg-light shadow rounded p-2">
+				<p><b>close()</b></p>
+				<p>El método close(), cierra una nueva ventana de navegador.</p>		
+				<p><em>window.close()</em></p>
+				<button onclick="f_open()" class="btn btn-primary">Abrir</button>
+				<button onclick="f_close()" class="btn btn-primary">Cerrar</button>
+				<script>
+					var ventana;
+					function f_open () {
+						ventana = window.open ("https://www.w3schools.com/jsref/met_win_open.asp", "miVentanaW3s", "width=500,height=100");}
+					function f_close() {					
+						ventana.close();}
+				</script>
+			</div>
+		</div>		
+		<div class="col-md-4 mb-2">
+			<div class="bg-light shadow rounded p-2">
+				<p><b>print()</b></p>
+				<p>El método printe(), imprime el contenido de la ventana.</p>		
+				<p><em>window.print()</em></p>
+				<button onclick="f_print()" class="btn btn-primary">Imprimir</button>
+				<script>
+					function f_print () {
+						var ventana;
+						ventana = window.print ();}
+				</script>
+			</div>
+		</div>				
+	</div>
+</div>
+<hr>
+<table class="table table-striped">
+	<tr>
+		<th>Método</th>
+		<th>Uso</th>
+		<th>Sintaxis</th>
+		<th>Ejemplo</th>		
+	</tr>
+	<tr>
+		<td>open()</td>
+		<td>Abre una nueva ventana.</td>
+		<td><em>window.open()</em></td>
+		<td><button onClick="f_open()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>	
+	<tr>
+		<td>blur()</td>
+		<td>Quita el foco de la ventana actual</td>
+		<td><em>window.blur()</em></td>
+		<td><button onClick="f_blur()" class="btn btn-primary">Pulsa</button></td>
+	</tr>
+	<tr>
+		<td>focus()</td>
+		<td>Pone el foco en la ventana actual</td>
+		<td><em>window.focus()</em></td>
+		<td><button onClick="f_focus()" class="btn btn-primary">Pulsa</button></td>		
+	</tr>
+	<tr>
+		<td>moveBy()</td>
+		<td>Mueve una ventana un nº de pixels, relativo a las coordenadas actuales.</td>
+		<td><em>window.moveBy(x, y)</em></td>
+		<td><button onClick="f_moveby()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>
+	<tr>
+		<td>moveTo()</td>
+		<td>Mueve la ventana a las coordenadas que se especifiquen.</td>
+		<td><em>window.moveTo(x, y)</em></td>
+		<td><button onClick="f_moveto()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>
+	<tr>
+		<td>resizeBy()</td>
+		<td>Cambia el tamaño de la ventana una cantidad relativa a su tamaño actual.</td>
+		<td><em>resizeBy(width, height)</em></td>
+		<td><button onClick="f_resizeby()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>		
+	<tr>
+		<td>resizeTo()</td>
+		<td>Cambia el tamaño al ancho y alto especificado</td>
+		<td><em>window.resizeTo(width, height)</em></td>
+		<td><button onClick="f_resizeto()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>	
+	<tr>
+		<td>setInterval()</td>
+		<td>Llama a una función o evalúa una expresión un tiempo determinado (en milisegundos) y lo repite continuamente.</td>
+		<td><em>setInterval(function, milliseconds, param1, param2, ...)</em></td>
+		<td><button onClick="f_setinterval()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>	
+	<tr>
+		<td>clearInterval()</td>
+		<td>Para un temporizador iniciado con setInterval.</td>
+		<td><em>clearInterval(var)</em></td>
+		<td><button onClick="f_clearinterval()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>	
+	<tr>
+		<td>setTimeout</td>
+		<td>Llama a una función o evalúa una expresión despues de un tiempo determinado (en milisegundos).</td>
+		<td><em>setTimeout(function, milliseconds, param1, param2, ...)</em></td>
+		<td><button onClick="f_settimeout()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>	
+	<tr>
+		<td>clearTimeout()</td>
+		<td>Para un temporizador iniciado con setTimeout.</td>
+		<td><em>clearTimeout(var)</em></td>
+		<td><button onClick="f_cleartimeout()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>			
+	<tr>
+		<td>btoa()</td>
+		<td>Para codificar a un string.</td>
+		<td><em>window.btoa(str)</em></td>
+		<td><button onClick="f_btoa()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>	
+	<tr>
+		<td>atob()</td>
+		<td>Para decodificar un texto codificado.</td>
+		<td><em>window.atob(str)</em></td>
+		<td><button onClick="f_atob()" class="btn btn-primary">Pulsa</button></td>	
+	</tr>					
+</table>
+<script>
+	var ventana;
+	function f_open() {
+		ventana = window.open ("", "", "width=500,height=100");
+		ventana.document.write ("<p>Nueva ventana</p>");
+	}		
+	function f_blur() {
+		ventana = window.open ("", "", "width=500,height=100");
+		ventana.document.write ("<p>Nueva ventana</p>");
+		ventana.blur();
+	}
+	function f_focus() {
+		ventana = window.open ("", "", "width=500,height=100");
+		ventana.document.write ("<p>Nueva ventana</p>");
+		ventana.focus();
+	}	
+	function f_moveby() {
+		ventana.moveBy(75,50);
+		ventana.focus();
+	}	
+	function f_moveto() {
+		ventana.moveTo(100,200);
+		ventana.focus();
+	}	
+	function f_resizeto() {
+		ventana.resizeTo(500,500);
+		ventana.focus ();		
+	}		
+	function f_resizeby() {
+		ventana.resizeBy (450,350);
+		ventana.focus ();
+	}		
+	var x;
+	function f_setinterval() {
+		x = setInterval(function (){alert("hola")}, 1500);
+	}	
+	function f_clearinterval() {
+		clearInterval(x);
+	}
+	var y;
+	function f_settimeout() {
+		y = setTimeout(function (){alert("hola")}, 1500);
+	}		
+	function f_cleartimeout() {
+		clearTimeout(y);
+	}
+	function f_btoa() {
+		var str = "Hola";
+		var enc = window.btoa(str);
+		alert ("Texto original: " + str + "\nTexto codificado: " + enc);
+	}		
+	function f_atob() {
+		var str = "Hola";
+		var enc = window.btoa(str);
+		var decod = window.atob (enc);
+		alert ("Texto original codificado: " + enc + "\nTexto decodificado: " + decod);
+	}
+</script>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

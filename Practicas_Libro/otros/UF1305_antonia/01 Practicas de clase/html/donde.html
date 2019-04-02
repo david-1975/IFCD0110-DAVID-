@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<title>Introducción Javascript</title>
+	<link href="../css/estilos.css" rel="stylesheet" type="text/css">
+	<script src="../js/funciones.js"></script>
+<!--	<link rel="icon" href="../img/img.ico" type="image/png">-->
+	<meta name="description" content="Introducción JS"> 
+	<meta name="author" content="Antonia Garcia"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<style>
+		body {
+/*			width: 80%;*/
+			margin: 10px auto;
+		}
+	</style>
+	<script>
+		function myFunction1() {
+		  document.getElementById("demo").innerHTML = "Párrafo cambiado.";
+		}
+	</script>
+</head>
+<body class="w-75 m-auto">
+<h2>La etiqueta &lt;script&gt;</h2>
+<p>En HTML, el código JavaScript se puede insertar entre etiquetas <code>&lt;script&gt;</code> y <code>&lt;/script&gt;</code>.</p>
+<p>Se pueden poner cualquier número de scripts en un documento HTML.</p>
+<p>Los scripts se pueden poner en el <code>&lt;body&gt;</code>, o en el <code>&lt;head&gt;</code> o en ambos.</p>
+<p>Poniendo los scripts al final del &lt;body&gt; mejora la velocidad de display, porque la compilación del script ralentiza el display.</p>
+<p>Los scripts también se pueden poner en ficheros externos con extensión <code><b>.js</b></code>. Poner el nombre del fichero script en el atributo "src" de una etiqueta &lt;script&gt;, dela siguiente forma:&lt;script src="myScript.js"&gt; &lt;/script&gt;</p>
+<p>Se puede poner la referencia a script externos tanto en el &lt;head&gt; como en el &lt;body&gt;.</p>
+<p>Los scripts externos no pueden contener etiquteas &lt;script&gt;.</p>
+<p>El código Javascript se puede insertar en línea, en las etiquetas HTML, dentro del atributo de evento, por ejemplo en el  onClick</p>
+<div class="container row bg-light justify-content-between">
+	<div class="col-8 shadow p-3 mb-2 bg-white rounded">
+		<p><b>Ejemplo de JS en el head</b></p>
+		<p>&lt;!DOCTYPE html&gt;<br>
+		&lt;html&gt;</p>
+		<p>&lt;head&gt;<br>
+		&lt;script&gt;<br>
+		function myFunction() {<br>
+		document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+		}<br>
+		&lt;/script&gt;<br>
+		&lt;/head&gt;<br>
+	  &lt;body&gt;</p>
+		<p>&lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+		&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+	  &lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;</p>
+		<p>&lt;/body&gt;<br>
+	  &lt;/html&gt;</p>
+	</div>
+	<div class="col-4 shadow p-3 mb-2 bg-white rounded">
+		<p id="demo">Párrafo.</p>
+		<button class="btn btn-primary" type="button" onclick="myFunction1()">Prueba</button>
+	</div>
+</div>	
+<div class="container row bg-light justify-content-between">
+	<div class="col-8 shadow p-3 mb-2 bg-white rounded">
+	  <p><strong>Ejemplo de JS en el body </strong></p>
+	  <p>&lt;!DOCTYPE html&gt;<br>
+		&lt;html&gt;<br>
+		&lt;body&gt; <br>
+		<br>
+		&lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+		&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+		&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+		<br>
+		&lt;script&gt;<br>
+		function myFunction() {<br>
+		document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+		}<br>
+		&lt;/script&gt;<br>
+		<br>
+		&lt;/body&gt;<br>
+	  &lt;/html&gt;</p>
+	</div>
+	<div class="col-4 shadow p-3 mb-2 bg-white rounded">
+		<p id="demo2">Párrafo</p>
+		<button class="btn btn-primary" type="button" onclick="myFunction2()">Prueba</button>
+		<script>
+			function myFunction2() {
+			 document.getElementById("demo2").innerHTML = "Párrafo cambiado.";
+			}
+		</script>	
+	</div>	
+</div>	
+<div class="container row bg-light justify-content-between">	
+	<div class="col-8 shadow p-3 mb-2 bg-white rounded">
+	  <p><strong>Ejemplo de JS en un documento externo </strong></p>
+		<p>&lt;!DOCTYPE html&gt;<br>
+		&lt;html&gt;<br>
+		&lt;body&gt;</p>
+		<p>&lt;h2&gt;External JavaScript&lt;/h2&gt;</p>
+		<p>&lt;p id=&quot;demo&quot;&gt;A Paragraph.&lt;/p&gt;</p>
+		<p>&lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&gt;Try it&lt;/button&gt;</p>
+		<p>&lt;p&gt;(myFunction3 está almacenada en un fichero externo llamado &quot;funciones.js&quot;)&lt;/p&gt;</p>
+		<p>&lt;script src=&quot;myScript.js&quot;&gt;&lt;/script&gt;</p>
+	  <p>&lt;/body&gt;<br>
+	  &lt;/html&gt;</p>
+	</div>
+	<div class="col-4 shadow p-3 mb-2 bg-white rounded">
+		<p id="demo3">Párrafo</p>
+		<button class="btn btn-primary" type="button" onclick="myFunction3()">Prueba</button>
+	</div>	
+</div>	
+<div class="container row bg-light justify-content-between">		
+	<div class="col-8 shadow p-3 mb-2 bg-white rounded">
+	  <p><strong>Ejemplo de JS en una etiqueta en línea </strong></p>
+	  <p>&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; onClick=&quot;<br>
+	    document.getElementById('demo4').innerHTML = 'Párrafo cambiado.'; <br>
+	    document.getElementById('demo4').style.color = 'blue';<br>
+      &quot;&gt;Pulsar&lt;/button&gt;</p>	 
+	</div>
+	<div class="col-4 shadow p-3 mb-2 bg-white rounded">
+		<p id="demo4">Párrafo</p>
+		<button class="btn btn-primary" type="button" onClick="
+		document.getElementById('demo4').innerHTML = 'Párrafo cambiado.'; 
+		document.getElementById('demo4').style.color = 'blue';
+		">Pulsar</button>
+	</div>	
+</div>	
+<hr>
+<h2>Posibilidades de Display de JavaScript</h2>
+<p>JavaScript puede sacar datos de diferentes formas:</p>
+<ul>
+  <li>Escribiendo en un elemento HTML, usando <code>innerHTML</code>.</li>
+  <li>Escribiendo en el output de HTML usando <code>document.write()</code>.</li>
+  <li>Escribiendo en una caja de alerta, usando <code>window.alert()</code>.</li>
+  <li>Escribiendo en la consola del navegador, usando <code>console.log()</code>.</li>
+</ul>
+<h3>Usando <code>innerHTML</code></h3>
+<p>Para acceder al elemento HTML, JavaScript puede utilizar el método <code>document.getElementById(id)</code></p>
+<p>El atributo <code>id</code> define el elemento HTML. La propiedad <code>innerHTML</code> define el contenido HTML:</p>
+<div class="col-12 shadow p-3 m-1 bg-white rounded">&lt;!DOCTYPE html&gt;<br>
+  &lt;html&gt;<br>
+  &lt;body&gt;<br>
+  <br>
+  &lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+  &lt;p&gt;My First Paragraph&lt;/p&gt;<br>
+  <br>
+  &lt;p id="demo"&gt;&lt;/p&gt;<br>
+  <br>
+  &lt;script&gt;<br>
+document.getElementById("demo").innerHTML = 5 + 6;<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+	
+</div>
+<br>
+
+
+
+
+</body>
+</html>
