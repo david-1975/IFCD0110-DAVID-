@@ -23,7 +23,7 @@
 <p><strong>Más información en... </strong><a href="https://webaim.org/blog/user-agent-string-history/" target="_blank">https://webaim.org/blog/user-agent-string-history/</a></p>
 </div>
 
-<div id="infoNav" class="divNAV">Info Navegador<script>window.onload = infoNavegador();</script></div>
+	<div id="infoNav" class="divNAV"><b>Info Navegador</b><script>window.onload = infoNavegador();</script></div>
 </div>
 
 <hr>
@@ -116,6 +116,11 @@
       <td>El método history.forward () carga la  siguiente URL en la lista del historial.</td>
       <td><button type="button" onClick="irAdelante()">Ejecutar</button></td>
     </tr>
+    <tr>
+      <td><a href="@">history.go ( ) </a></td>
+      <td>El método history.go (-2)  permite volver varias páginas  hacia atrás o con hacia adelante (2) en el historial. </td>
+      <td><button type="button" onClick="irA()">Ejecutar</button></td>
+    </tr>
   </tbody>
 </table>
 <br>
@@ -159,15 +164,15 @@
       </a><a href="@">window.clearTimeout(<em>timeoutVariable</em>)</a><a href="#">;      </a></td>
       <td>El método setTimeout ( ) ejecuta una función  en un intervalo de tiempo especificado.<br>
       El método clearTimeout ( ) detiene la ejecución de la función especificada en setTimeout ( ).</td>
-      <td><button type="button" onClick="myVar = setTimeout(miFuncion, 3000)">Iniciar</button><button type="button" onClick="clearTimeout(myVar)">Parar</button></td>
+      <td><button type="button" onClick="setTimeout(myFunction, 3000)">Iniciar</button><button type="button" onClick="clearTimeout(myVar)">Parar</button></td>
     </tr>
     <tr>
       <td><a href="#">window.setInterval(function, milliseconds);<br>
       </a><a href="@">window.clearInterval(timerVariable);</a><a href="#"> </a></td>
       <td>El método setInterval ( ) repite una función dada en cada intervalo de tiempo dado..<br>
       El método clearInterval ( ) detiene la ejecución de la función especificada en setTimeout ( ).</td>
-      <td><button type="button" onClick="myTimer()">Iniciar</button>
-        <button type="button" onClick="clearInterval(myVar)">Parar</button></td>
+      <td><button type="button" onClick="intervalo()">Iniciar</button>
+        <button type="button" onClick="clearintervalo()">Parar</button></td>
     </tr>
   </tbody>
 </table>
