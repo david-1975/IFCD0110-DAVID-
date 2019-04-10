@@ -1,21 +1,38 @@
 // JavaScript Document
-// Get the modal
-var modal = document.getElementById('myModal');
+//var zoom = document.getElementById('mizoom');
+// //abre botón 
+//var span = document.getElementsByClassName("close")[0];  //coger elemento <span> que cierra el zoom
+////Cuando el usuario haga clic en <span> (x), cierre la foto
+//
+//function cerrar(){
+//	document.getElementById("micaja").style.display="none";
+//}
+//function span.onclick() {
+//  zoom.style.display = "none";
+//}
+//
+////Cuando el usuario haga clic en cualquier lugar fuera del zoom, ciérrelo
+//function window.onclick(event) {
+//  if (event.target == zoom) {
+//    zoom.style.display = "none";
+//  }
+//}
+//function abrirFoto() {
+//	document.getElementById
+//}
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+function abrirFoto1() {
+	var img = '<img id="imagen1" src="img/house1.jpg" alt="House" style="width:100%">';
+	document.getElementById("demo").innerHTML = imagen;
+	document.getElementsByClassName("modal").style.display: "block";
+	//var modal = document.getElementById('modal');
+	//modal.style.display = "block";
+	//modal.style.display = "none";
 }
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
+/*function modal(){
+document.getElementsByClassName("modal").style.display: "block";*/
+//function span.onclick() {
+//	var span = document.getElementsByClassName("close")[0];
+//  	modal.style.display = "none";
+//}
 }

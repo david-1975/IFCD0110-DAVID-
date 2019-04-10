@@ -233,24 +233,18 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
 
-.zoom Img:hover {opacity: 0.7;}
+/*---------------------------------*/
 
-
-/*revisar
-
-
-
-body {font-family: Arial, Helvetica, sans-serif;}
-
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+.marcar Img:hover {
+	opacity: 0.7;
+	border-radius: 5px;
+  	cursor: pointer;
+  	transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
+
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -264,46 +258,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
+	
+.contenido {
+	margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
 }
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
@@ -320,13 +281,3 @@ body {font-family: Arial, Helvetica, sans-serif;}
   text-decoration: none;
   cursor: pointer;
 }
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
-
-
