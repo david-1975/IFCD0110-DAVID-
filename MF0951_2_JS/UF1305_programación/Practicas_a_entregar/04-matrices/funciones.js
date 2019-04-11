@@ -24,7 +24,7 @@ function cadena3(){
 	var cochesold2 = new Array ("Volkswagen"," Bentley"," Bugatti ");
 	var cochesnew = document.getElementById("text3").value;
 	var cadena = cochesnew.split(",");
-	 
+	 alert(cochesnew);
 	
 	document.getElementById("etiqueta3").innerHTML = "<i><u>Representación de la matríz:</u> Grupo Volkswagen: " + cadena[0] + ", " + cadena[1] + ", " + cadena[2] + ", " + cochesold1  + cochesold2 + ". </i>";
 }

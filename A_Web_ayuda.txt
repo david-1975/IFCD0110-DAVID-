@@ -76,3 +76,11 @@ https://trends.google.es/trends/?geo=ES
 Bootstrap 4 (html,css,js)  para crear sitios web y aplicaciones responsivas y fiables. .
 https://www.w3schools.com/bootstrap4/default.asp
 https://getbootstrap.com/docs/4.3/getting-started/introduction/
+
+
+--------------------------------------------------------------------------------
+
+otros
+
+https://www.adictosaltrabajo.com/
+https://www.adictosaltrabajo.com/2012/04/10/videojuego-html5-javascript/

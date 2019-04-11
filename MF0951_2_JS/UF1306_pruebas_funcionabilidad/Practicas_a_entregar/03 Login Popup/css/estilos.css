@@ -1,5 +1,5 @@
-@charset "utf-8";
 /* CSS Document */
+
 /* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
@@ -234,17 +234,76 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
+/*---------------------------------*/
 
-
-
-
-/*---------------------------------------*/
-.miImagen {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+.contenedor{
+	margin: auto;
+	width: 30%; 
+	background-color: ghostwhite;
+	position: relative;
 }
-.miImagen:hover {opacity: 0.7;}
+.img {
+	border-radius: 100%;
+	margin: 5% 20%;
+	width: 60%;
+	
+	
+}
+.Char{
+	position: absolute;
+	top: 5px;
+	margin-left: 90%;
+	
+	
+}
+.Char a {
+	text-decoration: none;
+	color: black;
+	font-size: 2em;
+}
+.Char a:hover {
+	color: red;
+	
+}
+label {
+	font-size: 1.5em;
+	margin: 0% 5%;
+	
+	
+	
+}
+input[type="text"] {
+	padding: 5px;
+	margin: 1% 5%;
+	width: 90%;
+	
+}
+input[type="submit"]{
+	background-color: green;
+	width: 90%;
+	padding: 1%;
+	color: white;
+	font-size: 1.5em;
+	margin: 0% 5%;
+	
+}
+input[type="checkbox"]{
+	padding: 10px;
+	font-size: 1.7em;
+	margin: 5%;
+}
+.footer {
+	background-color: lightgray;
+	padding: 5%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+button[type="button"]{
+	background-color: red;
+	color: white;
+}
 
 /* El Modal (pantalla) */
 .modal {
@@ -261,39 +320,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 
 /* Contenido del Modal (imagen) */
-.modal-content {
+/*.modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
-}
-
-/* Captura de la imagen Modal */
-.captura {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-/* El Botón de Cerrar */
-.cerrar {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.cerrar:hover,
-.cerrar:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
+border: 1px solid red;	
+}*/

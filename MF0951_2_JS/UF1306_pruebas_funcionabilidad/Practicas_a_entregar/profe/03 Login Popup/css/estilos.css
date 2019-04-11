@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+
 /* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
@@ -233,67 +234,3 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
-
-
-
-
-
-/*---------------------------------------*/
-.miImagen {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.miImagen:hover {opacity: 0.7;}
-
-/* El Modal (pantalla) */
-.modal {
-  display: none; /*oculto por defecto*/
-  position: fixed;  /*Permanece en el sitio*/ 
-  z-index: 10000;  /*Colocado en primera posición*/  
-  padding-top: 100px;  /*Localización en la caja*/ 
-  left: 0;
-  top: 0;
-  width: 100%; /* Anchura completa */
-  height: 100%; /* Altura completa */
-  overflow: auto;  /* Scroll activado si fuese necesario */ 
-  background-color: rgba(0,0,0,0.9); /* Opacidad*/ 
-}
-
-/* Contenido del Modal (imagen) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Captura de la imagen Modal */
-.captura {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-/* El Botón de Cerrar */
-.cerrar {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.cerrar:hover,
-.cerrar:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
