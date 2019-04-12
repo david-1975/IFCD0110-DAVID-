@@ -241,7 +241,22 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	width: 30%; 
 	background-color: ghostwhite;
 	position: relative;
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
 }
+
+@-webkit-keyframes zoom{
+	from {-webkit-transform: scale(0)}
+	to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom{
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+}
+
 .img {
 	border-radius: 100%;
 	margin: 5% 20%;
@@ -294,7 +309,7 @@ input[type="checkbox"]{
 }
 .footer {
 	background-color: lightgray;
-	padding: 5%;
+	padding: 3%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
@@ -310,20 +325,24 @@ button[type="button"]{
   display: none; /*oculto por defecto*/
   position: fixed;  /*Permanece en el sitio*/ 
   z-index: 10000;  /*Colocado en primera posición*/  
-  padding-top: 100px;  /*Localización en la caja*/ 
+  padding-top: 30px;  /*Localización en la caja*/ 
   left: 0;
   top: 0;
   width: 100%; /* Anchura completa */
   height: 100%; /* Altura completa */
   overflow: auto;  /* Scroll activado si fuese necesario */ 
-  background-color: rgba(0,0,0,0.9); /* Opacidad*/ 
+  background-color: rgba(0,0,0,0.9); /* Opacidad*/
+  transition-duration: 5s;
 }
 
-/* Contenido del Modal (imagen) */
-/*.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-border: 1px solid red;	
-}*/
+#etiqueta2{
+	color:red;
+	display: none;
+}
+#etiqueta1{
+	color:red;
+	display: none;
+}
+#pin {
+	display: none;
+}
