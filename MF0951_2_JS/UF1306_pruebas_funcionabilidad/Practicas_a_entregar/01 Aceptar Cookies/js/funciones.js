@@ -25,6 +25,7 @@ var cookies = nombre + "=" + web + ";" + caduca + "=" + fechaUTC + " " + horaUTC
 document.cookie = cookies;
 alert ("Bienvenido a Gourmet de Catering");
 	}
+	document.getElementById("micaja").style.display="none";
 }
 //var crearcookies ="nombre=Gourmet de catering; expires=Tue 09 Abr 2019 12:00:00 UTC;";
 

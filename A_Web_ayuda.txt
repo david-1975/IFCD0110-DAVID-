@@ -1,11 +1,11 @@
-Herramientas.
+----------------------Herramientas.--------------------------------------------------------
 https://github.com  (realizar copias de seguridad)
 https://code.visualstudio.com/  (programa de codigos HTML)
 https://www.adobe.com/es/products/dreamweaver.html (programa de codigos HTML de pago)
 https://www.npmjs.com/package/http-server (servidor de prueba)
 https://nodejs.org/es/ (entorno de ejecución para JavaScript) 
------------------------------------------------------------------------------
-Cursos
+
+-------------------Cursos------------------------------------------------------------------
 https://miriadax.net
 https://miriadax.net/web/gitmooc/inicio
 http://www.falconmasters.com/
@@ -20,48 +20,42 @@ https://www.hostinger.es/tutoriales/que-es-javascript-introduccion-basica/
 https://geeksroom.com/2017/03/5-cursos-de-javascript/109948/
 
 https://www.kidoestudio.com/blog/mensaje-politica-de-cookies/  para hacer cookies
----
-videos:
+
+
+----------------Charlas y conferencias.-----------------------------------------------------
+https://www.campus.co/madrid/es
+https://www.meetup.com/es-ES/
+http://www.ifema.es/Institucional_01/ferias/calendario_ferial/actual/index.htm
+https://aws.amazon.com/es/
+https://mundohackerday.com/
+
+----------------videos.---------------------------------------------------------------------
 FLEX-BOX
 https://www.youtube.com/watch?v=F-KCncXMPk0&feature=youtu.be
 
------------------------------------------------------------------------------
-Libros técnicos
-Html-CSS-Java Scrips
-
+----------------Libros técnicos-Html-CSS-Java scrips----------------------------------------
 https://www.w3schools.com/html/html_intro.asp
 https://developer.mozilla.org/es/docs/Web/HTML
 https://stackoverflow.es/
 
------------------------------------------------------------------------------
-Comprobar página web
-
+-------------Comprobar página web-----------------------------------------------------------
 https://validator.w3.org/
 
------------------------------------------------------------------------------
-
-plataforma para aplicaciones que funciona como base para el navegador web 
-
+-----plataforma para aplicaciones que funciona como base para el navegador web -------------
 https://webkit.org/
 
------------------------------------------------------------------------------
-página CSS
-
+---------------página CSS ------------------------------------------------------------------
 https://lenguajecss.com/
 https://lenguajecss.com/p/css/propiedades/flexbox
-
 https://cssreference.io/flexbox/
 
------------------------------------------------------------------------------
-web que comprueba que navegadores estan viendo tu página.
-
+--------web comprueba cual navegador estan viendo tu  web.----------------------------------
 https://caniuse.com/
------------------------------------------------------------------------------
-Librerias
 
+
+-----------Librerias------------------------------------------------------------------------
 Imagenes
 https://pixabay.com
-
 
 Iconos
 https://fontawesome.com/
@@ -78,9 +72,11 @@ https://www.w3schools.com/bootstrap4/default.asp
 https://getbootstrap.com/docs/4.3/getting-started/introduction/
 
 
---------------------------------------------------------------------------------
-
-otros
-
+-------------otros-------------------------------------------------------------------------
 https://www.adictosaltrabajo.com/
 https://www.adictosaltrabajo.com/2012/04/10/videojuego-html5-javascript/
+
+
+
+
+

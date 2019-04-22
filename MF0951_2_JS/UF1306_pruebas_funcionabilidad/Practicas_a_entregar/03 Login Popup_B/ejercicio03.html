@@ -218,11 +218,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <!-----------caja modal para formulario-------------->
-	<div id="miModal" class="modal" >
+	<div id="miModal" class="modal" onClick="cerrar()" >
 		
 		
 <div class="contenedor">
-<form action="action.php" method="get" id="form1" name="Formulario de contacto" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on" target="">   <!--_blank--> <!--/mailto:correo@gmail.com-->
+<form action="ejercicio03.html" method="get" id="form1" name="Formulario de contacto" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on" target="">   <!--_blank--> <!--/mailto:correo@gmail.com-->
 	<fieldset>
 	<legend></legend>
 		<img class="img" src="img/img_avatar.png" alt="#">
@@ -236,7 +236,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 		    <input type="text" maxlength="3"  name="usuario" id="etiqueta2" placeholder="Introduce Pin">
 			<label for="etiqueta1" id="etiqueta1"></label>
 	  	 	<input type="submit" onClick="validateForm()" value="inicia sesión"><br>
-			<input type="checkbox" name="usuario" id="check" value="">Recordarme<br>
+			<input type="checkbox" name="usuario" id="check" value="" required onClick="checkCookie()">Recordarme<br>
 		<div class="footer">
 			<button type="button" onClick="cerrar()">Cancelar</button>
 			<p onClick="recuperar()">¿Has olvidado la <a href="#">contraseña?</a></p>
