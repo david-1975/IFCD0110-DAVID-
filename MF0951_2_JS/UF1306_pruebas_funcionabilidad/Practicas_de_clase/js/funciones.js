@@ -330,3 +330,45 @@ function checkCookie() {
 
 var h = document.cookie;
 alert ("Las cookies son: " + h);
+
+
+//funcion apagar
+function apagar() {
+	var x= document.getElementsByClassName("imgBombilla");
+	var i;
+	for (i=0; i < x.length; i++) {
+	x[i].src = '../img/pic_bulboff.gif';	
+	}
+}
+
+
+//funcion oncopy
+function copia() {
+  document.getElementById("demo1").innerHTML = "Texto copiado"
+}
+
+//funcion oncut
+function cortar() {
+  document.getElementById("demo2").innerHTML = "Texto cortado"
+}
+
+//funcion onpaste
+function pegar() {
+  document.getElementById("demo3").innerHTML = "Texto pegado"
+}
+
+
+//funcion onkeydown
+function presionandotecla() {
+  document.getElementById("demo4").innerHTML = "Tecla presionada"
+}
+
+//funcion onkeypress
+function presiontecla() {
+  document.getElementById("demo5").innerHTML = "Tecla presionada"
+}
+
+//funcion onkeyup
+function liberatecla() {
+  document.getElementById("demo6").innerHTML = "Tecla presionada"
+}

@@ -4,13 +4,13 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Aprende Javascript con ejemplos practicos">	
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
-<link href="css/estilos.css" rel="stylesheet" type="text/css">	
-<script src="js/funciones.js"></script>	
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/estilos.css">
+<script src="js/funciones.js"></script>
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
@@ -42,10 +42,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <a href="#" class="w3-bar-item w3-button">Shoes</a>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="#" class="w3-bar-item w3-button w3-padding" onclick="abrir()">Login</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Subscribe</a>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding" onClick="abrirForm()">Login</a>
 </nav>
-	
+
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
   <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
@@ -65,6 +66,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Jeans</p>
     <p class="w3-right">
+      <i id="login"></i>
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
     </p>
@@ -217,42 +219,6 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
 </div>
 
-<!-----------caja modal para formulario-------------->
-	<div id="miModal" class="modal" onClick="cerrar()" >
-		
-		
-<div class="contenedor">
-<form action="ejercicio03.html" method="get" id="form1" name="Formulario de contacto" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on" target="">   <!--_blank--> <!--/mailto:correo@gmail.com-->
-	<fieldset>
-	<legend></legend>
-		<img class="img" src="img/img_avatar.png" alt="#">
-			<div class="Char" ><a href="#" onClick="cerrar()">&times;</a></div>	
-	  
-			<label for="usuario">Usuario</label><br>
-	  		<input type="text" name="usuario" id="nombre" placeholder="Entrar usuario"><br>
-			<label for="password" id="contrasena1">Contraseña</label>
-			<label for="password" id="pin">Pin</label>
-			<input type="text" maxlength="4" name="password" id="contrasena" placeholder="Entrar la contraseña">
-		    <input type="text" maxlength="3"  name="usuario" id="etiqueta2" placeholder="Introduce Pin">
-			<label for="etiqueta1" id="etiqueta1"></label>
-	  	 	<input type="submit" onClick="validateForm()" value="inicia sesión"><br>
-			<input type="checkbox" name="usuario" id="check" value="" required onClick="checkCookie()">Recordarme<br>
-		<div class="footer">
-			<button type="button" onClick="cerrar()">Cancelar</button>
-			<p onClick="recuperar()">¿Has olvidado la <a href="#">contraseña?</a></p>
-			
-		</div>
-	</fieldset>
-		
-</form>		
-</div>
-		
-		<!--<p class="modal-content" id="formulario">-->
-			 <!-- <div id="micaptura" class="captura"></div>-->
-	</div>	
-	
-	<!-------------------------------------------------------------------------->
-	
 <script>
 // Accordion 
 function myAccFunc() {
@@ -280,5 +246,42 @@ function w3_close() {
 }
 </script>
 
+<!-- ---------------------------------------------------- -->
+
+<!-- FORMULARIO MODAL -->
+<div id="id01" class="modal">
+  
+  <form id="form01" class="modal-content animate" action="" method="post" onsubmit="login()">
+    <div class="imgcontainer">
+      <span onclick="cerrarForm()" class="close" title="Close Modal">&times;</span>
+      <img src="img/img_avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="usuario"><b>Usuario</b></label>
+      <input type="text" onblur="comporbarCampoUser()" placeholder="Entrar Usuario" name="usuario" id="usuario"> <!--required-->
+      <label for="usuario" id="mensajesUser"></label>
+<br>
+      <label for="password" id="contrasenya"><b>Contraseña</b></label>
+      <input name="password" type="password" id="password" placeholder="Entrar Contraseña" pattern="[0-9]{4}" onblur="comporbarCampoPass()" maxlength="4"><!--required-->
+      <label for="password" id="mensajesPass"></label><br>
+      
+      <input name="pin" type="number" id="pin" placeholder="Entrar el PIN" pattern="[0-9]{3}" onblur="comprobarCampoPin()" maxlength="4" style="display:none"><!--required-->
+      <label for="pin" id="mensajesPin" style="display:none"></label><br>
+     
+       <input type="checkbox" onClick="mostrarPassword()"> Mostrar Contraseña
+     
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" name="recordarme" onClick="funCookies()"> Recordarme
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="cerrarForm()" class="cancelbtn">Cancelar</button>
+      <span class="psw">Recordar <a href="javascript:void(0)" onClick="mostrarCampoPin()">password?</a></span>
+    </div>
+  </form>
+</div>
 </body>
 </html>

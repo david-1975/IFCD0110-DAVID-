@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+#divgrande {
+	background-color:rgba(0,0,0,0.60);
+	z-index: 99;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	padding-top: 2%;
+}
+#divpeq {
+	background-color:white;
+	z-index: 100;
+	display: none;
+	width: 35%;
+	margin: auto;
+	padding: 10px;
+	border: 10px solid rgba(138,138,138,1.00);
+}
+form {
+	width: 90%;
+	margin:auto;
+	position: relative;
+}
+fieldset {
+	border:none;
+}
+input, label {
+	margin: 10px 0;
+}
+input[type="text"], [type="password"] {
+	width: 100%;
+	border-radius: 5px;
+	height: 2em;
+}
+input[type="submit"]  {
+	padding: 8px 10px;
+	border-radius: 5px;
+	color:white;
+}
+.width100 {width: 100%}
+.colorverde {background-color:#20B50F;}
+.colornaranja {background-color:#F0770E;}
+.cerrar {
+	position: absolute;
+	top:2%;
+	right:5%;
+	cursor: pointer;
+}
+.avatar {
+	width:40%;
+	border-radius: 50%;	
+}
+.usuario {
+	text-align: center;
+}
+.datosusuario {
+	padding: 10px 15px;
+}
+.pieregistro {
+	padding: 10px;
+	background-color: #ECECEC;
+	width:100%;
+	overflow: hidden;
+}
+.fleft {float: left;}
+.fright {float: right;}
+.centrado {padding: 15px 5px;}
+.coculto {display: none;}
+.txtrojo {color: red;}
