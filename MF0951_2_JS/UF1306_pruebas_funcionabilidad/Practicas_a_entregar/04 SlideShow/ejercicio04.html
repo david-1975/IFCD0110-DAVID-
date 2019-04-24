@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/estilos.css">
+<script src="js/funciones.js"></script>	
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="img/photographer.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JANE DOE</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">JANE DOE</h5>
+    <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHER</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+	<a href="#" class="w3-bar-item w3-button" onClick="showSlides_auto()">Slideshow</a>
+    <a href="#" class="w3-bar-item w3-button" onClick="openCity(evt, cityName)">Tabs</a>
+    <a href="#" class="w3-bar-item w3-button" onClick="">Acordeón</a>
+	<a href="#" class="w3-bar-item w3-button" onClick="">Image Grid</a>
+	<a href="#" class="w3-bar-item w3-button" onClick="">Tab Gallery</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="img/falls2.jpg" alt="foto1" style="width:100%">
+    <div class="text">Foto 1</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="img/mountains2.jpg" alt="foto2" style="width:100%">
+    <div class="text">Foto 2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="img/mountainskies.jpg" alt="foto3" style="width:100%">
+    <div class="text">Foto 3</div>
+  </div>
+	
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="img/ocean.jpg" alt="foto4" style="width:100%">
+    <div class="text">Foto 4</div>
+  </div>
+	
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="img/ocean2.jpg" alt="foto5" style="width:100%">
+    <div class="text">Foto 5</div>
+  </div>
+	
+  
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 		
+</div>
+
+
+<script>
+	//Automatic Slideshow-- solo funciona aqui, si lo pones dentro de funcion java no funciona.
+
+	var slideIndex1 = 0;
+showSlides1();
+
+function showSlides1() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex1++;
+  if (slideIndex1 > slides.length) {slideIndex1 = 1} 
+  slides[slideIndex1-1].style.display = "block"; 
+  setTimeout(showSlides1, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<!---------------------------------------------------------	-->
+<!----->	
+<!-- Tab Gallery -->
+<div class="row">
+  <div class="column">
+    <img src="img/falls2.jpg" alt="Nature" onclick="tab(this);">
+  </div>
+  <div class="column">
+    <img src="img/mountains2.jpg" alt="Snow" onclick="tab(this);">
+  </div>
+  <div class="column">
+    <img src="img/mountainskies.jpg" alt="Mountains" onclick="tab(this);">
+  </div>
+  <div class="column">
+    <img src="img/ocean.jpg" alt="Lights" onclick="tab(this);">
+  </div>
+	<div class="column">
+    <img src="img/ocean2.jpg" alt="Lights" onclick="tab(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  
+
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center">Contact</h3>
+    <hr>
+    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
+
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form><br>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+
+  </div>
+
+<!-- End page content -->
+</div>
+</body>
+</html>
