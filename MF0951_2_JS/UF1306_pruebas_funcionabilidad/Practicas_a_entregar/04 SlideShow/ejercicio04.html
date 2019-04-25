@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/estilos.css">
-<script src="js/funciones.js"></script>	
+
 </head>
 <body class="w3-content" style="max-width:1200px">
 
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="img/photographer.jpg" alt="Me" width="1500" height="600">
+  <img id="inicio" class="w3-image" src="img/photographer.jpg" alt="Me" width="1500" height="600">
   <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
     <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JANE DOE</h1>
     <h5 class="w3-hide-large" style="white-space:nowrap">JANE DOE</h5>
@@ -22,11 +22,13 @@
   
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-	<a href="#" class="w3-bar-item w3-button" onClick="showSlides_auto()">Slideshow</a>
-    <a href="#" class="w3-bar-item w3-button" onClick="openCity(evt, cityName)">Tabs</a>
-    <a href="#" class="w3-bar-item w3-button" onClick="">Acordeón</a>
-	<a href="#" class="w3-bar-item w3-button" onClick="">Image Grid</a>
-	<a href="#" class="w3-bar-item w3-button" onClick="">Tab Gallery</a>
+	<a href="#inicio" class="w3-bar-item w3-button">Inicio</a>
+	<a href="#slideshow" class="w3-bar-item w3-button" onClick="showSlides_auto()">Slideshow</a>
+    <a href="#accordion" class="w3-bar-item w3-button" onClick="">Accordion</a>
+    <a href="#tab" class="w3-bar-item w3-button" onClick="">Tab</a>
+	<a href="#TabGallery" class="w3-bar-item w3-button" onClick="">Tab Gallery</a>
+	<a href="#" class="w3-bar-item w3-button" onClick="">Portfolio Gallery Filtering</a>
+	<a href="#" class="w3-bar-item w3-button" onClick="">Responsive Image Grid</a>  
   </div>
 </header>
 
@@ -43,7 +45,7 @@
 
 	<!-- Slideshow container -->
 <div class="slideshow-container">
-
+<h1 id="slideshow">Slideshow</h1>
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 5</div>
@@ -90,7 +92,7 @@
   <span class="dot" onclick="currentSlide(4)"></span> 
   <span class="dot" onclick="currentSlide(5)"></span> 		
 </div>
-
+<p id="inicio">cerrar</p>
 
 <script>
 	//Automatic Slideshow-- solo funciona aqui, si lo pones dentro de funcion java no funciona.
@@ -112,23 +114,89 @@ function showSlides1() {
 </script>
 <br>
 <!---------------------------------------------------------	-->
+<!------Accordion--------->
+<h1 id="accordion">Accordion</h1>	
+<button class="accordion">Foto 1</button>
+<div class="panel">
+ <img src="img/falls2.jpg" alt="foto1" style="width:100%">
+</div>
+
+<button class="accordion">Foto 2</button>
+<div class="panel">
+  <img src="img/mountains2.jpg" alt="foto2" style="width:100%">
+</div>
+
+<button class="accordion">Foto 3</button>
+<div class="panel">
+  <img src="img/mountainskies.jpg" alt="foto3" style="width:100%">
+</div>
+
+<button class="accordion">Foto 4</button>
+<div class="panel">
+  <img src="img/ocean.jpg" alt="foto4" style="width:100%">
+</div>
+	
+<button class="accordion">Foto 5</button>
+<div class="panel">
+  <img src="img/ocean2.jpg" alt="foto5" style="width:100%">
+</div>	
+<!----------------------------------------->
+<h1 id="tab">Tab</h1>
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'foto1')">Foto 1</button>
+  <button class="tablinks" onclick="openCity(event, 'foto2')">Foto 2</button>
+  <button class="tablinks" onclick="openCity(event, 'foto3')">Foto 3</button>
+  <button class="tablinks" onclick="openCity(event, 'foto4')">Foto 4</button>
+  <button class="tablinks" onclick="openCity(event, 'foto5')">Foto 5</button>	
+</div>
+
+<!-- Tab content -->
+<div id="foto1" class="tabcontent">
+  <h3>Foto 1</h3>
+  <img src="img/falls2.jpg" alt="foto1" style="width:100%">
+</div>
+
+<div id="foto2" class="tabcontent">
+  <h3>Foto 2</h3>
+   <img src="img/mountains2.jpg" alt="foto2" style="width:100%"> 
+</div>
+
+<div id="foto3" class="tabcontent">
+  <h3>Foto 3</h3>
+  <img src="img/mountainskies.jpg" alt="foto3" style="width:100%">
+</div>	
+	
+<div id="foto4" class="tabcontent">
+  <h3>Foto 4</h3>
+  <img src="img/ocean.jpg" alt="foto4" style="width:100%">
+</div>
+
+	<div id="foto5" class="tabcontent">
+  <h3>Foto 5</h3>
+  <img src="img/ocean2.jpg" alt="foto5" style="width:100%">
+</div>
+	
 <!----->	
 <!-- Tab Gallery -->
+<!-- The grid: four columns -->
+<h1 id="TabGallery">Tab Gallery</h1>	
 <div class="row">
   <div class="column">
-    <img src="img/falls2.jpg" alt="Nature" onclick="tab(this);">
+    <img src="img/falls2.jpg" alt="Nature" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="img/mountains2.jpg" alt="Snow" onclick="tab(this);">
+    <img src="img/mountains2.jpg" alt="Snow" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="img/mountainskies.jpg" alt="Mountains" onclick="tab(this);">
+    <img src="img/mountainskies.jpg" alt="Mountains" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="img/ocean.jpg" alt="Lights" onclick="tab(this);">
+    <img src="img/ocean.jpg" alt="Lights" onclick="myFunction(this);">
   </div>
 	<div class="column">
-    <img src="img/ocean2.jpg" alt="Lights" onclick="tab(this);">
+    <img src="img/ocean2.jpg" alt="Lights" onclick="myFunction(this);">
   </div>
 </div>
 
@@ -142,7 +210,7 @@ function showSlides1() {
 
   <!-- Image text -->
   <div id="imgtext"></div>
-</div>	
+</div>
 	
 	
 	
@@ -191,3 +259,5 @@ function showSlides1() {
 </div>
 </body>
 </html>
+<script src="js/funciones.js"></script>	
+
