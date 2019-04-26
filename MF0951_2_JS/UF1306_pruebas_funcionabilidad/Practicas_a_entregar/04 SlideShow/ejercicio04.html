@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/estilos.css">
-
+<script src="js/funciones.js"></script>	
 </head>
 <body class="w3-content" style="max-width:1200px">
 
@@ -27,8 +27,8 @@
     <a href="#accordion" class="w3-bar-item w3-button" onClick="">Accordion</a>
     <a href="#tab" class="w3-bar-item w3-button" onClick="">Tab</a>
 	<a href="#TabGallery" class="w3-bar-item w3-button" onClick="">Tab Gallery</a>
-	<a href="#" class="w3-bar-item w3-button" onClick="">Portfolio Gallery Filtering</a>
-	<a href="#" class="w3-bar-item w3-button" onClick="">Responsive Image Grid</a>  
+	<a href="#portf" class="w3-bar-item w3-button" onClick="">Portfolio Gallery Filtering</a>
+	<a href="#rig" class="w3-bar-item w3-button" onClick="">Responsive Image Grid</a>  
   </div>
 </header>
 
@@ -92,7 +92,8 @@
   <span class="dot" onclick="currentSlide(4)"></span> 
   <span class="dot" onclick="currentSlide(5)"></span> 		
 </div>
-<p id="inicio">cerrar</p>
+<a href="#inicio" class="w3-bar-item w3-button">Inicio</a>
+
 
 <script>
 	//Automatic Slideshow-- solo funciona aqui, si lo pones dentro de funcion java no funciona.
@@ -140,6 +141,8 @@ function showSlides1() {
 <div class="panel">
   <img src="img/ocean2.jpg" alt="foto5" style="width:100%">
 </div>	
+	<br>
+<a href="#inicio" class="w3-bar-item w3-button">Inicio</a>	
 <!----------------------------------------->
 <h1 id="tab">Tab</h1>
 
@@ -178,6 +181,8 @@ function showSlides1() {
   <img src="img/ocean2.jpg" alt="foto5" style="width:100%">
 </div>
 	
+<br>
+<a href="#inicio" class="w3-bar-item w3-button">Inicio</a>	
 <!----->	
 <!-- Tab Gallery -->
 <!-- The grid: four columns -->
@@ -211,14 +216,101 @@ function showSlides1() {
   <!-- Image text -->
   <div id="imgtext"></div>
 </div>
+<br>
+<a href="#inicio" class="w3-bar-item w3-button">Inicio</a>	
+	<!-------------------------------------------------
+	Portfolio Gallery with Filtering-------------------->
 	
 	
+<h2 id="portf">PORTFOLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="img/falls2.jpg" alt="Mountains" style="width:100%">
+      <h4>Foto 1</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="img/mountains2.jpg" alt="Lights" style="width:100%">
+      <h4>Foto 2</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="img/mountainskies.jpg" alt="Nature" style="width:100%">
+      <h4>Foto 3</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="img/ocean.jpg" alt="Car" style="width:100%">
+      <h4>Foto 4</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="img/ocean2.jpg" alt="Car" style="width:100%">
+      <h4>Foto 5</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <!-- END GRID -->
+</div>	
+<br>
+<a href="#inicio" class="w3-bar-item w3-button">Inicio</a>	
+	<!-----------------------------------------------
+	resposive------------------>
 	
 	
+<h1 id="rig">Responsive Image Grid</h1>	
 	
+<div class="row"> 
+  <div class="column">
+    <img src="img/falls2.jpg">
+    <img src="img/mountains2.jpg">
+    <img src="img/mountainskies.jpg">
+    <img src="img/ocean.jpg">
+    <img src="img/ocean2.jpg">
+   </div>
+  <div class="column">
+    <img src="img/falls2.jpg">
+    <img src="img/mountains2.jpg">
+    <img src="img/mountainskies.jpg">
+    <img src="img/ocean.jpg">
+	<img src="img/photographer.jpg">  
+  </div> 
+  <div class="column">
+    <img src="img/falls2.jpg">
+    <img src="img/mountains2.jpg">
+    <img src="img/mountainskies.jpg">
+    <img src="img/ocean.jpg">
+    <img src="img/ocean2.jpg">
+  </div>
+  <div class="column">
+    <img src="img/falls2.jpg">
+    <img src="img/mountains2.jpg">
+    <img src="img/mountainskies.jpg">
+    <img src="img/ocean.jpg">
+	<img src="img/photographer.jpg"> 
+  </div>
+</div>	
 	
-	
-	
+<br>
+<a href="#inicio" class="w3-bar-item w3-button">Inicio</a>	
 	
 	
 	
@@ -259,5 +351,5 @@ function showSlides1() {
 </div>
 </body>
 </html>
-<script src="js/funciones.js"></script>	
+
 
