@@ -1,0 +1,15 @@
+<html>
+<body>
+<script language="javascript">
+  var semana=new Array("domingo","lunes","martes","miércoles",
+                       "jueves","viernes", "sábado");
+  var fec=new Date();
+  var anno=fec.getFullYear();
+  anno++;
+  fec.setFullYear(anno);
+  diasem=fec.getDay();
+  document.write("Dentro de un año será ");
+  document.write(semana[diasem]); 
+</script>
+</body>
+</html>

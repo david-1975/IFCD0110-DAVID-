@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript" src="livevalidation_standalone.js"></script>
+</head>
+<body>
+<form action="#" method="post">  	            
+Nombre:<input type="text" id="nom"/><br/>
+       <script type="text/javascript">
+       var nombre=new LiveValidation('nom');
+       nombre.add( Validate.Presence, 
+       { failureMessage: "No debe estar en blanco" } );
+       </script>										
+Edad:<input type="text" id="edad"/><br/>
+       <script type="text/javascript">
+       var edad = new LiveValidation('edad');
+       edad.add( Validate.Numericality, { minimum: 0, maximum: 130});
+       </script>						      
+Email:<input type="text" id="email"/><br/>
+       <script type="text/javascript">
+       var email = new LiveValidation('email');					  
+	   email.add( Validate.Format, 
+       { pattern: /^[\w-\.]{3,}@([\w-]{2,}\.)+\w{2,4}$/, 
+	   failureMessage: "Formato de email invalido" } );
+</script>
+<input type="submit" value="Enviar datos">
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language="javascript">
+function ffocus1(){document.getElementById("ayuda1").innerHTML=
+                                "Introduzca su nombre completo";}
+function fblur1(){document.getElementById("ayuda1").innerHTML="";}
+function ffocus2(){document.getElementById("ayuda2").innerHTML=
+                                "Introduzca su edad";}
+function fblur2(){document.getElementById("ayuda2").innerHTML="";}
+</script>
+</head>
+<body>
+<form>
+Nombre: <input type="text" onfocus="ffocus1();" onblur="fblur1();">
+<span id="ayuda1"></span><br/>
+Edad: <input type="text" onfocus="ffocus2();" onblur="fblur2();">
+<span id="ayuda2"></span><br/>
+<input type="submit" value="Enviar"/>
+</form>
+</body>
+</html>
+
+

@@ -1,0 +1,30 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">  
+function validar() {
+     var CantMay=0; var CantMin=0; var CantNum=0;
+     var passw=document.getElementById("pw").value;
+	 if (passw.length < 7 || passw.length> 12) {
+	    alert ("Contraseña con longitud inválida");
+		return;
+	 }
+     for (cont=0; cont<passw.length; cont++) {
+       if ( passw.charAt(cont)>="0" && 
+            passw.charAt(cont)<="9") CantNum++;
+	   else {
+	    if ( passw.charAt(cont)==passw.charAt(cont).toUpperCase()) 
+             CantMay++;
+	    if ( passw.charAt(cont)==passw.charAt(cont).toLowerCase()) 
+             CantMin++;
+	   }
+     }
+     if (CantMay==0 || CantMin==0 || CantNum<2)  
+	    alert ("Contraseña no cumple criterios de seguridad");
+}
+</script>
+</head>
+<body>
+CONTRASEÑA:<input type="password" id="pw" onblur="validar();"><br/>
+NOMBRE:<input type="text" id="nom">
+</body>
+</html>

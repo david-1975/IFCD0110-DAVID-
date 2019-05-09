@@ -1,0 +1,20 @@
+<html>
+<body>
+<script language="javascript">
+   var dia = parseInt(prompt ("introduce un dia de mes"));
+   var mes = parseInt(prompt ("introduce un mes"));
+   if ( (mes >= 1 && mes <= 12 && dia >= 1)                             && 
+        ((mes == 2 && dia <= 28)                                           ||  
+         ((mes == 4 || mes ==  6 || mes ==  9 || mes ==11  ) && dia <= 30) ||
+	     ((mes == 1 || mes ==  3 || mes ==  5 || mes == 7 ||
+		   mes == 8 || mes == 10 || mes == 12              ) && dia <= 31) 
+		)	   
+	  )  	  
+      alert ("dia y mes correcto para año no bisiesto");      
+   else
+	  alert ("dia y mes incorrecto para año no bisiesto");      
+</script> 
+</body>
+</html>
+
+

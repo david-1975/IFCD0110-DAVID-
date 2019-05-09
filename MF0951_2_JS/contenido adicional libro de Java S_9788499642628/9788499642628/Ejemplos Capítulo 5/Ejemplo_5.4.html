@@ -1,0 +1,18 @@
+<html>
+<head>
+<script language="javascript">
+function ver_texto(){
+  var texto="";
+  var cajas = document.getElementsByTagName("input");
+  for (var cont=0; cont < cajas.length; cont++)
+       texto+=cajas[cont].value;
+   alert(texto);
+}
+</script>
+</head>
+<body>
+<input type="text"><br/><input type="text"><br/>
+<input type="text"><br/><input type="text"><br/>
+<a href="javascript:ver_texto();">Ver texto</a>
+</body>
+</html>

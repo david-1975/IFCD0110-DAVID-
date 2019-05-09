@@ -1,0 +1,21 @@
+<html>
+<body>
+<script language="javascript">
+  numeros = new Array(6);
+  for (var cont=0;cont<=5;cont++){
+     do {
+	   var num=Math.random()*49;
+	   num=Math.ceil(num);	   
+	   var repetido=false;
+	   for (busq=0;busq<cont;busq++){
+	       if (numeros[busq]==num) repetido=true;
+	   }
+	 } while (repetido);
+	  numeros[cont]=num;
+  }
+  numeros.sort(function(a,b){return a-b});
+  for (var cont=0;cont<=5;cont++)
+      document.write(numeros[cont]+"<br/>");
+  </script>
+</body>
+</html>

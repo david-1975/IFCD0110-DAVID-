@@ -1,0 +1,34 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">  
+function enviar() {
+ if ( document.getElementById('hombre').checked==false &&
+      document.getElementById('mujer').checked==false   ) {
+     alert("Elija su sexo");
+	 return false;
+ }
+ if ( document.getElementById('servicio').checked==false) {
+     alert("Debe aceptar las condiciones de servicio");
+	 return false;
+ }
+ if ( document.getElementById('datospers').checked==false) {
+     alert("Debe aceptar el uso de datos personales");
+	 return false;
+ }
+ return true;
+}
+</script>
+</head>
+<body>
+<form action="#" method="post" onsubmit="return enviar();">  
+Elija su sexo<br />
+<input type="radio" name="sexo" id="hombre" value="hombre">Hombre<br /> 
+<input type="radio" name="sexo" id="mujer" value="mujer">Mujer<br /><br />
+<input type="checkbox" id="servicio" value="servicio">
+       Acepto las condiciones de servicio<br /> 
+<input type="checkbox" id="datospers" value="datospers">
+       Permito el uso de mis datos con caracter comercial<br /><br />
+<input type="submit" value="Enviar datos">
+</form>
+</body>
+</html>

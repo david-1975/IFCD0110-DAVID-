@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function reloj () {
+	var ventana=window.open("","Reloj",
+		        "toolbar=no, resizable=no,width=80, height=50");
+    var fec=new Date();
+    var hora=fec.getHours()+":"+fec.getMinutes();
+    ventana.document.write(hora);
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="reloj();" value="¿Que hora es?"/>
+</body>
+</html>
+
+
+
+
+
+
+
+

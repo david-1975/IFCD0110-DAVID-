@@ -1,0 +1,22 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">  
+function validar() {
+     var edad=parseInt(document.getElementById("edad").value);
+	 if (isNaN(edad)) {
+	    alert ("La edad introducida no es un numero");
+		return;
+	 }
+	 if (edad<0 || edad >150) {
+	    alert ("Valor de edad erroneo");
+		return;
+	}
+	alert (edad);
+} 
+</script>
+</head>
+<body>
+EDAD:<input type="text" id="edad" onblur="validar();"><br/>
+NOMBRE:<input type="text" id="nom">
+</body>
+</html>

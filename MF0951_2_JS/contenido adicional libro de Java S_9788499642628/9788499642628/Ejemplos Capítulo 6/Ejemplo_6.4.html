@@ -1,0 +1,21 @@
+<html>
+<head>
+<script language="javascript">
+  function validar(){
+    var num=parseInt(document.getElementById("numero").value);
+	if (isNaN(num)) return false;
+	else return true;
+  }
+</script>
+</head>
+<body>
+<form  id="formulario" action="#" method="post" 
+       onsubmit="return validar();">
+<input type="text" id="numero"/><br/> 
+<input type="submit" value="Envia"/>
+</form>
+</body>
+</html>
+
+
+

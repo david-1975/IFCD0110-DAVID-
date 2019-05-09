@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript"> 
+var rutaimg = new Array;
+rutaimg[0]="../images/foto1.jpg";
+rutaimg[1]="../images/foto2.jpg";
+rutaimg[2]="../images/foto3.jpg";
+rutaimg[3]="../images/foto4.jpg";
+var cont=0;
+function galeria() {
+	setInterval("cambia_foto()",2000);
+} 
+function cambia_foto() {
+	cont++;
+	if (cont==4)cont=0;
+	document.images[0].src=rutaimg[cont];
+} 
+</script>
+</head>
+<body onload="galeria();">
+<img src="../images/foto1.jpg"/>
+</body>
+</html>

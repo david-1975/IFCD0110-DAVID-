@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">  
+function validar() {
+ if ( document.getElementById('hombre').checked==false &&
+      document.getElementById('mujer').checked==false   )
+     alert("Elija su sexo");
+ if ( document.getElementById('servicio').checked==false)
+     alert("Debe aceptar las condiciones de servicio");
+if ( document.getElementById('datospers').checked==false)
+     alert("Debe aceptar el uso de datos personales");
+}
+</script>
+</head>
+<body>
+Elija su sexo<br />
+<input type="radio" name="sexo" id="hombre" value="hombre">Hombre<br /> 
+<input type="radio" name="sexo" id="mujer" value="mujer">Mujer<br /><br />
+<input type="checkbox" id="servicio" value="servicio">
+       Acepto las condiciones de servicio<br /> 
+<input type="checkbox" id="datospers" value="datospers">
+       Permito el uso de mis datos con caracter comercial<br /><br />
+<input type="button" value="Validar" onclick="validar();">
+</body>
+</html>

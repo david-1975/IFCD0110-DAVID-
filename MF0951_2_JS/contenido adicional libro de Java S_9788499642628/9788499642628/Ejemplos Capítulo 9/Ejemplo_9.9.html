@@ -1,0 +1,33 @@
+<html>
+<head>
+<style type="text/css">    
+div {
+   background-color:yellow;
+   width:100px;height:100px;
+   display:none;
+ }
+</style>
+<script language="javascript" type="text/javascript">
+function mostrar1() {
+    document.getElementById("oferta1").style.display="block";
+	document.getElementById("oferta2").style.display="none";
+} 
+function mostrar2() {
+    document.getElementById("oferta2").style.display="block";
+	document.getElementById("oferta1").style.display="none";	
+} 
+</script>
+</head>
+<body>
+Oferta 1<a href="javascript:mostrar1();">Más info</a> <br/>
+<div id="oferta1">
+    El precio final de esta oferta son 100 euros
+</div><br/>
+Oferta 2<a href="javascript:mostrar2();">Más info</a>
+<div id="oferta2">
+    El precio final de esta oferta son 200 euros
+</div>
+</body>
+</html>
+
+

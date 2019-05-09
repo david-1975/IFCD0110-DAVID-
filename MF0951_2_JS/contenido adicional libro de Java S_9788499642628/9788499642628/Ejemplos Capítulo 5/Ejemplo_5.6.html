@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="javascript">
+var cont=1;
+function eliminar_parrafo (){
+    var idparrafo="p"+cont;   //obtener el id del parrafo a borrar: p1,p2,etc.
+    var parrafo = document.getElementById(idparrafo);
+    var padre = parrafo.parentNode;    
+    padre.removeChild(parrafo);        
+	cont--;                            
+}
+function annadir_parrafo (){
+    cont++;                            
+    var parrafo = document.createElement("p");  
+	parrafo.innerHTML="Bienvenido a nuestro sitio web - " + cont;
+	parrafo.setAttribute("id","p"+cont);       
+	document.getElementsByTagName("body")[0].appendChild(parrafo); 
+}
+</script>
+</head>
+<body>
+<a href="javascript:eliminar_parrafo();">Borrar párrafo</a><br/>
+<a href="javascript:annadir_parrafo();">Añadir párrafo</a><br/>
+<p id="p1">Bienvenido a nuestro sitio web - 1</p>
+</body>
+</html>

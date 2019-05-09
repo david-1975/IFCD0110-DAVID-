@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Ejemplo 3.01 -JQuery</title>
+<script language="javascript" src="jquery.js"></script>
+<script language="javascript">
+$(document).ready(function(){
+	$('#boton1').click(function() {$('#foto').fadeOut('slow', function(){} );})
+	$('#boton2').click(function() {$('#foto').fadeIn('slow', function(){} );})
+});
+</script>
+</head>
+<body>
+<input type="button" id="boton1" value="Desvanecer"/>
+<input type="button" id="boton2" value="Reaparecer"/>
+<br />
+<img id="foto" src="./foto.jpg"/>
+</body>
+</html>

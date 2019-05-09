@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Ejemplo 2.11</title>
+<script languaje="JavaScript">
+function escribir_fecha(){
+  var fecha=new Date
+		  var dia=fecha.getDate();
+		  var mes=fecha.getMonth()+1;
+		  var anio=fecha.getFullYear();
+		  document.write("<h2>"+dia + " del " +mes+" de "+anio+"</h2>");
+}
+function cambiarmoneda(){
+  var eur=document.getElementById('euros').value;  //obtener euros
+  var dolar=eur*1.35;                              //cambiar a dolares
+  dolar=Math.round(dolar*100)/100;                 //redondeo a dos decimales
+  document.getElementById('dolares').value=dolar;  //resultado a caja de texto
+}
+</script>
+</head>
+<body>
+<h1>Cambio de moneda</h1>
+<script languaje="JavaScript">escribir_fecha();</script>
+Eur:<input type="text" id="euros" size="5">
+<a href="javascript:cambiar_moneda();">Cambiar</a>
+Dolar:<input type="text" id="dolares" size="5">
+</body>
+</html>

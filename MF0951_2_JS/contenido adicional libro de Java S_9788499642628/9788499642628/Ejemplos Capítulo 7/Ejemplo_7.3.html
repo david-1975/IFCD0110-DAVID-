@@ -1,0 +1,40 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">  
+    function LetraNIF(num) {  
+       letras = new Array('T','R','W','A','G','M','Y','F','P','D','X','B',
+	                      'N','J','Z','S','Q','V','H','L','C','K','E','U'); 
+       if (num > 0 && num < 99999999) { 
+          var resto = num % 23;          
+          return letras[resto];            
+       } 
+	   else return "ERR";         
+    }  
+	function CalcularLetraNIF(tx_nif){
+	   var n=parseInt (tx_nif);
+	   if (isNaN(n)) document.getElementById('letra').innerHTML="ERR";
+	   else {
+	       ret=LetraNIF(n);
+	       document.getElementById('letra').innerHTML=ret;
+	   }
+	}
+</script>
+</head>
+<body>
+<form>
+<table border="1">
+<tr><td>NOMBRE</td>
+<td><input type="text" id="txt_nombre"/></td>
+</tr>
+<tr><td>NUMERO NIF</td>
+<td><input type="text" id="txt_nif" 
+           onchange="CalcularLetraNIF(document.getElementById('txt_nif').value);"/>
+</td></tr>
+<tr><td>LETRA NIF</td><td id="letra">&nbsp;</td></tr>
+<tr><td colspan="2"><input type="submit" value="Enviar"/><td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+

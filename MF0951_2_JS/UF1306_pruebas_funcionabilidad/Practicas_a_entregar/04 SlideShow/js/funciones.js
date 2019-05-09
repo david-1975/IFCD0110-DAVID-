@@ -1,55 +1,10 @@
 // JavaScript Document
 
-var slideIndex = 1;
-showSlides(slideIndex);
+//El script del SLIDESHOW está añadido en el html para que funcione en automático y en manual
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+//ACORDEON
+//Está en el html porque si no no funciona
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-
-//----------------------------------------------
-//Accordion
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-//-------------------------------------------
 //TAB
 function openCity(evt, cityName) {
   // Declare all variables
@@ -73,13 +28,12 @@ function openCity(evt, cityName) {
 }
 
 
-//-----------------------------------------
-//tab gallery
-function myFunction(imgs){
+//TAB gallery
+function myFunction(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
   // Get the image text
-  var imgText = document.getElementById("imgtxt");
+  var imgText = document.getElementById("imgtext");
   // Use the same src in the expanded image as the image being clicked on from the grid
   expandImg.src = imgs.src;
   // Use the value of the alt attribute of the clickable image as text inside the expanded image
@@ -88,17 +42,23 @@ function myFunction(imgs){
   expandImg.parentElement.style.display = "block";
 }
 
-//------------------portfolio---------------------
 
+
+
+//RESPONSIVE IMAGE GRID gallery
 filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
+  if (c == "all"){
+	  c = "";
+  } 
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1){
+		w3AddClass(x[i], "show");
+	} 
   }
 }
 
@@ -137,3 +97,6 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
+

@@ -1,0 +1,21 @@
+<html>
+<body>
+<script language="javascript">
+   var dia = parseInt(prompt ("introduce un dia de la semana"));
+   switch (dia){
+     case 1: var mensaje="Lunes"; break;
+	 case 2: var mensaje="Martes"; break;
+	 case 3: var mensaje="Miércoles"; break;
+	 case 4: var mensaje="Jueves"; break;
+	 case 5: var mensaje="Viernes"; break;
+	 case 6: var mensaje="Sabado"; break;
+	 case 7: var mensaje="Domingo"; break;
+	 default: var mensaje="Incorrecto";
+   }
+   (dia == 6  || dia ==7) ? mensaje+=". Fin de semana" : mensaje+=". No fin de semana";
+   alert (mensaje);
+</script> 
+</body>
+</html>
+
+

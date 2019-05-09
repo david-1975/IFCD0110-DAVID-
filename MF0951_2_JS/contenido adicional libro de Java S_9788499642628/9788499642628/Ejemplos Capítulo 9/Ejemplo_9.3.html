@@ -1,0 +1,20 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript"> 
+var foto;
+function precarga(){
+   foto = new Image();
+   foto.src = src="http://www.imgpotter.com/data/media/753/big.jpg" 
+}
+function ver_foto(){
+    document.images[0].src=foto.src;
+}
+</script>
+</head>
+<body onLoad="precarga();">
+<a href="javascript:ver_foto();">
+   Pulse aqui para ver la imagen
+</a><br/>
+<img src="../images/signo.png"/>
+</body>
+</html>

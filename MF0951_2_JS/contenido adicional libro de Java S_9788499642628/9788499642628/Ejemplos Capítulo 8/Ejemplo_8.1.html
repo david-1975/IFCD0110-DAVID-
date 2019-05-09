@@ -1,0 +1,16 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">  
+function validar(ev) {
+    var tecla= (document.all) ? ev.keyCode : ev.which;
+    if (tecla==8)return true;             //retroceso
+    var dig=String.fromCharCode(tecla);
+    if (dig>="0" && dig<="9") return true;
+    return false; 
+} 
+</script>
+</head>
+<body>
+<input type="text" id=txt" onkeypress="return validar(event);">
+</body>
+</html>

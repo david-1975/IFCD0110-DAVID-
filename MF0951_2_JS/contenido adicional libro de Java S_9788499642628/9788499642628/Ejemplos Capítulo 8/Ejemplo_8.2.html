@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">  
+function validar() {
+     var texto=document.getElementById("txt").value;
+     if (texto.length<5 ||texto.length>10){
+	    alert ("longitud de la cadena invalida");
+		document.getElementById("txt").value="";
+		return;
+	 }
+	 if (texto!=texto.toUpperCase()) {
+	    alert ("el texto no está en mayúsculas");
+		document.getElementById("txt").value="";
+		return;
+	 }
+} 
+</script>
+</head>
+<body>
+ALIAS:<input type="text" id="txt" onblur="validar();"><br/>
+NOMBRE:<input type="text" id="nom"><br/>
+APELLIDOS:<input type="text" id="apell">
+</body>
+</html>

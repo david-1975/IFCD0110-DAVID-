@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language="javascript">
+  function mayusculas(){
+  
+    var textos = document.getElementsByTagName("input");
+    for (var cont=0;cont<3;cont++)
+	       textos[cont].value=textos[cont].value.toUpperCase();
+	alert ("Se enviarán los datos en mayúsculas");
+  }
+</script>
+</head>
+<body>
+<form id="formulario" action="#" method="post" onsubmit="mayusculas();">
+Nombre<input type="text" id="nombre"/><br/> 
+Edad<input type="text" id="apellidos"/><br/> 
+Domicilio<input type="text" id="domicilio"/><br/> 
+<input type="submit" value="Envia"/>
+</form>
+</body>
+</html>
+
+
+

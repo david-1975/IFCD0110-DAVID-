@@ -1,0 +1,27 @@
+<html>
+<head>
+<style type="text/css"> 
+  #envio{background-color:white;}
+</style>
+<script language="javascript">
+  function enviar(){
+    document.getElementById("envio").style.backgroundColor="green";
+    var resp=confirm("¿Está seguro?");
+	if (resp) formulario.submit();
+  }
+  function resaltar(){
+    document.getElementById("envio").style.backgroundColor="white";
+  }
+</script>
+</head>
+<body>
+<form id="formulario" action="#" method="post">
+Nombre<input type="text" id="nombre"/><br/> 
+Edad<input type="text" id="edad"/><br/> 
+<input type="button" id="envio" value="Envia" 
+       onmousedown="enviar();" 
+	   onmouseup="restaurar();"/>
+</form>	   
+</body>
+</html>
+

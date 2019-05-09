@@ -1,0 +1,31 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">  
+function validar() {
+   var dias_mes=new Array (31,28,31,30,31,30,31,31,30,31,30,31); 
+   fec=document.getElementById("f").value;
+   var patron = /^\d{2}-\d{2}-\d{4}$/;
+   if (patron.test(fec)==false) {
+       alert ("Error: la fecha debe ser DD-MM-AAAA"); return; }
+   var anno=parseInt(fec.substring(6,10));
+   var mes=parseInt(fec.substring(3,5));
+   var dia=parseInt(fec.substring(0,2));
+   if (mes<1 || mes >12) {
+       alert ("Mes incorrecto"); return;}
+   if (anno < 1901 || anno > 2100) {
+       alert ("Año incorrecto"); return;}
+   if (dia<1) {
+      alert ("Dia incorrecto"); return;}
+   if (anno%4==0) dias_mes[1]=29;	  //año bisiesto    	  
+   if (dia>dias_mes[mes-1]) {
+      alert ("Dia incorrecto"); return;}
+   alert ("Fecha correcta");
+}
+</script>
+</head>
+<body>
+Introduzca una fecha entre 1901 y 2099:<br/>
+<input type="text" id="f"><br/>
+<input type="button" value="Valida fecha" onclick="validar();">
+</body>
+</html>

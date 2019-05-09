@@ -1,0 +1,17 @@
+<html>
+<head>
+<script language="javascript">
+  function tecla_pulsada(e){
+   var codigo;  
+   if (window.event) codigo=window.event.keyCode;
+   else if(e) codigo=e.which;
+   letra=String.fromCharCode(codigo);
+   alert("Pulsaste la tecla" + letra +".Codigo:"+ codigo);
+}
+</script>
+</head>
+<body>
+<input type="text" onkeypress="tecla_pulsada(event);">
+</body>
+</html>
+

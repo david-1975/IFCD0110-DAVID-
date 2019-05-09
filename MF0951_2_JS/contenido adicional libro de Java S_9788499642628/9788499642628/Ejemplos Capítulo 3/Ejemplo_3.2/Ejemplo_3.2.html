@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Ejemplo 3.02 - Validar datos</title>
+<script type="text/javascript" language="javascript" src="./scriptaculous/lib/prototype.js"></script>
+<script type="text/javascript" language="javascript" src="./scriptaculous/src/scriptaculous.js"></script>
+<script type="text/javascript" language="javascript" src="./jsvalidate.js"></script>
+</head>
+<body>
+<form name="contacto" action="#" method="post">
+Formulario de contacto:<br /> 
+Nombre:<input type="text" name="nombre" class="jsrequired jsvalidate_alphanum" /><br />                  
+Email:<input type="text" name="email" class="jsrequired jsvalidate_email"/><br />
+Comentarios:<br /> 
+<textarea name="comentarios" class="jsrequired {errorLocation:'none'}" rows="5" cols="30"></textarea>
+<span id="jsvalidator_comentarios" class="jsvalidation">Debes introducir un comentario</span><br /> 
+<input type="submit" value="Enviar" />
+</form>
+</body>
+</html>

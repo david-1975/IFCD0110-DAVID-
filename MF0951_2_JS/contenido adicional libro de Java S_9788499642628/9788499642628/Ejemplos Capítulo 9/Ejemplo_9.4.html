@@ -1,0 +1,22 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript"> 
+function foto_encima(){
+    document.images[0].src="../images/botonOVER.jpg";
+}
+function foto_origen(){
+    document.images[0].src="../images/boton.jpg";
+}
+function foto_clic() {
+	document.images[0].src="../images/botonOK.jpg";
+	setTimeout("foto_origen()",700);
+} 
+</script>
+</head>
+<body>
+<img id="foto" src="../images/botonOK.jpg"
+     onmouseover="foto_encima();"
+	 onmouseout="foto_origen();"
+	 onclick="foto_clic();"/>
+</body>
+</html>

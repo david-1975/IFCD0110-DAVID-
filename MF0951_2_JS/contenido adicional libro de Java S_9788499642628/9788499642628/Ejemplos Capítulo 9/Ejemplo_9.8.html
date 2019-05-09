@@ -1,0 +1,31 @@
+<html>
+<head>
+<style type="text/css">    
+#capa1 {
+   background-color:yellow;
+   width:140px;height:100px;
+   position:absolute;
+   left:500px;top:1px;
+   text-align:center;
+}
+</style>
+<script language="javascript" type="text/javascript">
+var alto=1;
+var increm=3;
+var baja=1;
+function mueve_capa() {
+    if (alto<1 || alto > 50) increm=increm*-1; //cambia direccion
+    alto+=increm;
+    document.getElementById("capa1").style.top=alto+"px";
+} 
+</script>
+</head>
+<body onload="setInterval('mueve_capa()', 50)">
+<div id="capa1">Texto de la capa en movimiento<br/> 
+                que oscila verticalmente
+</div>
+Texto de la página
+</body>
+</html>
+
+

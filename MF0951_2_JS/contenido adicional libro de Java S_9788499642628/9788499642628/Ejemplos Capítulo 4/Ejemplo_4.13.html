@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">  
+function potencia (base, expon) {
+   var resul=1;
+   for (var cont=1;cont<=expon;cont++){
+        resul=resul*base;
+   }
+   return resul;
+}
+</script>     
+</head>
+<body>
+<script type="text/javascript">  
+var b=parseInt(prompt("introduce la base:"));
+var e=parseInt(prompt("introduce el exponente:"));
+var r=potencia (b,e);
+alert("Resultado: " + r);
+</script>     
+</body>
+</html>
+
+

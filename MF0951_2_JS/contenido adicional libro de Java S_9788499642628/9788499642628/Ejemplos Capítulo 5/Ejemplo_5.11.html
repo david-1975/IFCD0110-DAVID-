@@ -1,0 +1,33 @@
+<html>
+<head>
+<script language="javascript">
+function tratar_cookies(){
+   var pais; var prov;
+   var ck=unescape(document.cookie);
+   if(!ck) {    //la cookie no existe
+      pais=prompt("Introduzca su país");
+	  prov=prompt("Introduzca su provincia");
+	  var txt_cookie="país="+pais; 
+	  txt_cookie+="; provincia="+prov;
+	  var fec_expira=new Date();
+	  fec_expira.setDate(fec_expira.getDate()+30);
+	  txt_cookie+="; expires="+fec_expira.toGMTString();
+	  document.cookie=escape(txt_cookie);
+   } 
+   else {  //la cookie ya existe 
+      var array_cookies=ck.split("; ");
+	  var pos=array_cookies[0].indexOf("=");
+	  pais = array_cookies[0].substring(pos+1);
+	  var pos=array_cookies[1].indexOf("=");
+	  prov = array_cookies[1].substring(pos+1);
+   }
+   document.getElementById("pais").innerHTML=pais; 
+   document.getElementById("provin").innerHTML=prov; 
+}
+</script>
+</head>
+<body onload="tratar_cookies();">
+País:<span id="pais"></span><br/>
+Provincia:<span id="provin"></span><br/>
+</body>
+</html>

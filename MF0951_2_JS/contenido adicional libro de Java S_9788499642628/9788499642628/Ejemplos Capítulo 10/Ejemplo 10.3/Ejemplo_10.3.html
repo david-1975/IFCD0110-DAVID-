@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script language="javascript" type="text/javascript">  
+    var vers=99;
+    if (navigator.appName.indexOf("Explorer")!=-1)  {
+       var expresion  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+       if (expresion.exec(navigator.userAgent)!= null)
+           vers=parseFloat( RegExp.$1 );
+	}
+    if (vers<=6)
+        document.write('<link rel="stylesheet" href="Ejemplo_10.3_IE6.css" type="text/css">');
+    else 
+        document.write('<link rel="stylesheet" href="Ejemplo_10.3.css" type="text/css">');
+  </script>
+</head>
+<body>
+Este es el cuerpo de la página
+</body>
+</html>

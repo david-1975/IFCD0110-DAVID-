@@ -1,0 +1,21 @@
+<html>
+<head>
+<style type="text/css">    
+#txt {color:blue;font-size:3em;}
+</style>
+<script language="javascript" type="text/javascript">
+function cambio_color() {
+    var texto=document.getElementById("txt");
+	if (texto.style.color=="blue")
+	    texto.style.color="red";
+	else
+	    texto.style.color="blue";
+} 
+</script>
+</head>
+<body onload="setInterval('cambio_color()', 500)">
+<span id="txt">Texto que cambia de color</span>
+</body>
+</html>
+
+

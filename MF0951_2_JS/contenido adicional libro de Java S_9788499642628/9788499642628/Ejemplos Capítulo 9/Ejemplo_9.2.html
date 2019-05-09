@@ -1,0 +1,14 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript"> 
+function imagen_cargada(){
+    document.getElementById("mensaje").innerHTML="Página totalmente cargada";
+}
+</script>
+</head>
+<body>
+<span id="mensaje">Espere mientra se carga la imagen</span>
+<img id="foto" src="http://www.imgpotter.com/data/media/753/big.jpg" 
+     onLoad="imagen_cargada();"/>
+</body>
+</html>

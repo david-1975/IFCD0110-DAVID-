@@ -1,0 +1,18 @@
+<html>
+<head>
+<script language="javascript">
+  function mayusculas(){
+    var txt=document.getElementById("nombre").value;
+	txt=txt.toUpperCase();
+	document.getElementById("nombre").value=txt;
+  }
+</script>
+</head>
+<body>
+<form id="formulario" action="#" method="post">
+Nombre<input type="text" id="nombre" onchange="mayusculas();"/><br/> 
+Edad<input type="text" id="edad"/><br/> 
+<input type="submit" value="Envia"/>
+</form>
+</body>
+</html>

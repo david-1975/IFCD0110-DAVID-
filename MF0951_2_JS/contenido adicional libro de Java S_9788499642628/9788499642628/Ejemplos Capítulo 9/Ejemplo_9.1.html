@@ -1,0 +1,24 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">  
+var cont; var reloj;
+function inicio() {
+    cont=0;
+	reloj=setInterval("actualizacion()",100);
+} 
+function parar() {
+    clearInterval(reloj);
+}
+function actualizacion(){
+    cont+=0.1;
+	cont=Math.round(cont*10)/10;
+    document.getElementById("contador").innerHTML=cont;
+}
+</script>
+</head>
+<body>
+<span id="contador">Pulse Inicio para arrancar el contador...</span><br/>
+<input type="button" value="Inicio" onclick="inicio();"/>
+<input type="button" value="Parar" onclick="parar();"/>
+</body>
+</html>

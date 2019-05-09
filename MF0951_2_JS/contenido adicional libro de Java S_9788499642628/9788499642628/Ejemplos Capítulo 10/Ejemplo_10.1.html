@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<script language="javascript" type="text/javascript">  
+	function obtener_navegador(){
+		if (navigator.userAgent.indexOf("Chrome")!=-1) return "Chrome"; 
+		if (navigator.userAgent.indexOf("Safari")!=-1) return "Safari";
+		if (navigator.userAgent.indexOf("Konqueror")!=-1) return "Konqueror"; 
+		if (navigator.userAgent.indexOf("Firefox")!=-1) return "Firefox"; 
+		if (navigator.appName.indexOf("Explorer")!=-1) return "Explorer"; 
+		return "Desconocido";
+	}
+</script>
+<body>
+Está usted utilizando el navegador web:&nbsp;
+<script>document.write(obtener_navegador());</script>
+</body>
+</html>

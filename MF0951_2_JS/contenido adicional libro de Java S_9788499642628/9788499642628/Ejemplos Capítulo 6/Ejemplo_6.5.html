@@ -1,0 +1,32 @@
+<html>
+<head>
+<style type="text/css">    
+#capainfo {
+    width:140px;height:100px;
+	background-color:gray;color:white;
+	position:absolute;top:250px;
+}
+</style>
+<script languaje="JavaScript">
+var cuadro1="Las Meninas<br/>Velázquez<br/>1656";
+var cuadro2="La Gioconda<br/>Da Vinci<br/>1506";
+
+function mostrar1(){
+   document.getElementById('capainfo').innerHTML=cuadro1;
+}
+function mostrar2(){
+      document.getElementById('capainfo').innerHTML=cuadro2;
+}
+function ocultar(){
+      document.getElementById('capainfo').innerHTML=
+	         "Pase el ratón por encima de un cuadro";
+}
+</script>
+</head>
+<body>
+<img src="../images/meninas.jpg" onmouseover="mostrar1();" onmouseout="ocultar();"/>
+<img src="../images/gioconda.jpg" onmouseover="mostrar2();" onmouseout="ocultar();"/>
+<div id="capainfo">Pase el ratón por encima de un cuadro</div>
+</body>
+</html>
+
