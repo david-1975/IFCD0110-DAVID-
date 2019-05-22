@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es-ES">	
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Formulario_Contacto.css">
+<!--<link rel="icon" href="" type="img/xx.ico">	-->
+<title>Formulario de contacto</title>
+</head>
+
+<body>
+	<h1>Formulario de Contacto</h1>
+<form action="/mailto:correo@gmail.com" method="get" name="Formulario de contacto" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on" target="_blank">
+  <fieldset>
+	  <legend><h1></h1></legend>
+	 	
+			<label for="nombre">Nombre <span>*</span></label><br>
+	  		<input type="text" name="nombre" placeholder="Tu nombre.." required><br>
+	  		<label for="apellidos">Apellidos <span>*</span></label><br>
+	  		<input type="text" name="apellidos" placeholder="Tus apellidos.." required><br>
+		 	<label for="telefono">Teléfono <span>*</span></label><br>
+	  		<input type="text" name="telefono" placeholder="Tu teléfono.." maxlength="9" required><br>
+		 	<label for="email">Correo Electrónico <span>*</span></label><br>
+			<input type="text" name="email" placeholder="Tu correo electrónico.." required><br><br>
+		 	<label for="consulta">Consulta <span>*</span></label><br>
+		 	<textarea name="text" rows="10" cols="80" placeholder="Tu consulta.." required></textarea><br>
+		 	<label for="usuario"></label><br>
+			<input type="checkbox" name="usuario" id="usuario" value="" spellcheck="true" required> Acepta lo términos y <a href="#">condiciones de privacidad</a><br>
+ 			<input type="submit" value="Enviar">
+	  		<a href="../index.html">Inicio</a>
+	 
+	  </fieldset>
+</form>	
+</body>
+</html>
